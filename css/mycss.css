@@ -1,0 +1,5 @@
+/* Menu changes */
+.uk-navbar-nav:first-child > li:first-child > a {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
