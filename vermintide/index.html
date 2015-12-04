@@ -4,159 +4,301 @@
     <title></title>
     <link rel="stylesheet" href="../css/uikit.almost-flat.css" />
     <link rel="stylesheet" href="../css/components/sticky.almost-flat.min.css" />
+    <link rel="stylesheet" href="../css/mycss.css" />
 
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/uikit.min.js"></script>
     <script src="../js/components/sticky.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
-<!-- Navigation -->
-<nav class="uk-navbar" data-uk-sticky="animation: 'uk-animation-slide-top', top: -50}">
-    <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
-    <!-- <div class="uk-navbar-flip">
-        <a href="#" class="uk-navbar-toggle uk-navbar-flip"></a>
-    </div> -->
-    <div class="uk-flex uk-flex-center">
-        <ul class="uk-navbar-nav" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 25} }">
-            <li><a href="#vermintide">Vermintide</a></li>
-            <li><a href="#redmooninn">Red Moon Inn</a></li>
-            <li><a href="#char-items-stats">Character Items and Stats</a></li>
-            <li><a href="#">Weapon Stats</a></li>
-            <li><a href="#">Weapon and Trinket Traits</a></li>
-            <li><a href="#">Mission Items</a></li>
-            <li><a href="#">Loot and Loot Roll</a></li>
-            <li><a href="#">Skaven - The Enemy</a></li>
-        </ul>
-    </div>
-</nav>
-<!-- Navigation -->
+<div class="headerbar">
+    <!-- Navigation -->
+    <nav class="uk-navbar" data-uk-sticky="{animation: 'uk-animation-slide-top', top: -50}">
+        <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
+        <!-- <div class="uk-navbar-flip">
+            <a href="#" class="uk-navbar-toggle uk-navbar-flip"></a>
+        </div> -->
+        <div class="uk-flex uk-flex-center">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Vermintide</a></li>
+                <li><a href="#">Red Moon Inn</a></li>
+                <li><a href="#">Character Items and Stats</a></li>
+                <li><a href="#">Weapon Stats</a></li>
+                <li><a href="#">Weapon and Trinket Traits</a></li>
+                <li><a href="#">Mission Items</a></li>
+                <li><a href="#">Loot and Loot Roll</a></li>
+                <li><a href="#">Skaven - The Enemy</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation -->
+</div>
 
 <!-- Content -->
 <div class="uk-container uk-container-center uk-margin-top">
-    <div class="uk-article" id="vermintide">
-        <h1 class="uk-article-title">Vermintide</h1>
-        <p class="uk-article-lead">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
-        <p>Vermintide takes place in and around Ubersreik, a city overrun by Skaven. You will assume the role of one of five heroes, each featuring different play-styles, abilities, gear and personality. Working cooperatively, you must use their individual attributes to survive an apocalyptic invasion from the hordes of relentless rat-men, known as the Skaven. Battles will take place across a range of environments stretching from the top of the Magnus Tower to the bowels of the Under Empire.</p>
-        <p>Here I have collected some information about the game function and mechanics</p>
+    <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+        <!-- Main -->
+        <div class="uk-width-medium-4-5">
+            <div class="uk-article" id="vermintide">
+                <h1 class="uk-article-title">Vermintide</h1>
+                <p class="uk-article-lead">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
+                <p>Vermintide takes place in and around Ubersreik, a city overrun by Skaven. You will assume the role of one of five heroes, each featuring different play-styles, abilities, gear and personality. Working cooperatively, you must use their individual attributes to survive an apocalyptic invasion from the hordes of relentless rat-men, known as the Skaven. Battles will take place across a range of environments stretching from the top of the Magnus Tower to the bowels of the Under Empire.</p>
+                <p>Here I have collected some information about the game function and mechanics</p>
+            </div>
+
+            <div class="uk-article" id="redmooninn">
+                <h2 class="uk-article-title">Red Moon Inn</h2>
+                <p class="uk-article-meta">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
+                <p class="uk-article-lead">The Red Moon Inn. The home for you and your party.<br>An Innkeeper that have nothing else to do then telling you that you should join the “party” instead of hiding in your room.<br>You can take a beer, have a chat or just trash the place.</p>
+                <p><img src="http://www.vermintide.com/wp-content/uploads/2015/09/Red_Moon_Inn_Concept_1.png" width="350" height="184" style="float: right; margin-left: 10px;">The Red Moon Inn is your home. Where you have your own room that is decorated with stuff from your character. From here you operate your mission and gather your party before going to the mission. Get to know a little bit more about the innkeeper story <a href="http://www.vermintide.com/dev-blog-26-the-inn-keeper/" target="_blank">here</a>.</p>
+                <h3>Lobby</h3>
+                <ul>
+                    <li>The Map</li>
+                    <li>Ammo Crate</li>
+                    <li>Inventory (Shown after first victory)</li>
+                    <li>Forge (Unlocked at Level 1)</li>
+                    <li>Change Character</li>
+                </ul>
+                <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;">
+                <h3>The Map</h3>
+                <p>The Map is where you can set up your party, select your mission and search for party. Only the one created a party (Host) can interact with the map if you are in party already.</p>
+                <ul>
+                    <li>You/Host(if in a party) can start missions</li>
+                    <li style="list-style: none;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/7b/f6b5eac7f9a8f71ed15e4f7d89a01a.png" style="display: inline-block;" /> <img src="http://forums.fatsharkgames.com/uploads/Uploader/42/0d96393c858641a5f1626d9db98d11.png" style="display: inline-block;" /></li>
+                    <li>Choose mission and set difficulty</li>
+                    <li>Advance settings like distance, hero filter, hosting and/or auto ready</li>
+                    <li>See if friends are online to invite or join</li>
+                    <li>Set the mission to private</li>
+                </ul>
+                <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
+                <h3>Ammo Crate</h3>
+                <p>Why not have some extra ammo when you have a party. Perfect if you want to test your new weapon or just want to shoot something in the Inn.</p>
+                <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
+                <h3>Inventory</h3>
+                <p>Here you can go and change weapons and trinkets for your character.</p>
+                <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
+                <h3>Forge</h3>
+                <p>In our lovely home the Red Moon Inn we have a Forge. On this forge we can make stuff, upgrade, mould our items or destroy them.</p>
+                <p>On the Forge upgrading cost and salvage collect "shards". Every type of shards represents the rarity of the items.</p>
+                <ul>
+                    <li>White (Plentiful)</li>
+                    <li>Green (Common)</li>
+                    <li>Blue (Rare)</li>
+                    <li>Orange (Exotic)</li>
+                </ul>
+                <p><img src="http://forums.fatsharkgames.com/uploads/Uploader/90/3c961a1b1ce9b12f20886eced18308.png" alt="image" style="width: 33%;display: inline-block;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/96/161876f06567ac57e0dfb7f2b4bffb.png" alt="image" style="display: inline-block;width: 33%;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/1d/fc5e787fd601f06aa4a10cf76f2d06.png" alt="image" style="display: inline-block;width: 33%;"></p>
+                <h4>Fuse</h4>
+                <ul>
+                    <li>Takes 5 items of the same rarity and fuse them to a new and better one.</li>
+                    <li>You can only fuse items of the same rarity.</li>
+                    <li>Fuse will have 20% probability for each weapon you add.</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li>Example 1: 5 Common Great Hammers will give you 1 Rare Great Hammer</li>
+                            <li>Example 2: 1 Common Crossbow, 2 Common Great Hammers and 2 Common Longbows will give you a (20%, 40%, 40% chance) Rare item.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Upgrade</h4>
+                <ul>
+                    <li>Takes one <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> or higher item and unlock one passive trait.</li>
+                    <li>Upgrading weapons by unlocking traits becomes more expensive as you upgrade your weapon.</li>
+                    <li>First trait will cost 1 shard while the 2nd trait will cost 3 shards and the 3rd trait will cost 5 shards.</li>
+                    <li>You can however choose freely which trait you want to get as the 1st and cheaper one.</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li>Common traits require Plentiful shards</li>
+                            <li>Rare traits require Common shards</li>
+                            <li>Exotic traits require Rare shards</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Salvage</h4>
+                <ul>
+                    <li>Salvage every item you click on and make it to 1-3 shards of the same rarity.</li>
+                </ul>
+                <p>You can only get items by the <a href="http://forums.fatsharkgames.com/discussion/719/loot-and-loot-roll-explaining/p1">Loot Roll</a> or level up your account.</p>
+                <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
+                <h3>Change Character</h3>
+                <p>By going to the menu you can change character you are using. Get to know a little bit more about the characters story <a href="http://www.vermintide.com/heroes/" target="_blank">here</a>.</p>
+                <p><img src="http://www.vermintide.com/wp-content/uploads/2015/07/bh-heroes.jpg" alt="All heros" style="width:100%;" /></p>
+                <p>Remember that this is not officially from the Fatshark. I have only made this to start understand how things work in the game and to start discussions about it.</p>
+            </div>
+
+            <div class="uk-article" id="char-items-stats">
+                <h2 class="uk-article-title">Character Items and Stats</h2>
+                <p class="uk-article-meta">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
+                <p class="uk-article-lead">art</p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">What is Character Items?</span></p>
+                <p>Character Items is the items we get from <a href="http://forums.fatsharkgames.com/discussion/719/loot-and-loot-roll-explaining/p1">loot roll</a> and can be used on your characters to fight the skaven or in <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) to make better one.</p>
+                <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
+                <h3>Character items</h3>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Head gear</span></p>
+                <p><ul><li>Purely cosmetic</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Weapons</span></p>
+                <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
+                <tr style="height:20px;"><th style="text-align: center;"><span style="font-weight: bold; color: rgb(120, 11, 12); margin:0;">Bright Wizard</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(113, 113, 103); margin:0;">Dwarf Ranger</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(238, 234, 236); margin:0;">Empire Soldier</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(213, 104, 10); margin:0;">Witch Hunter</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(50, 73, 54); margin:0;">Waywatcher</span></th></tr>
+                <tr style="height:20px;"><td colspan="5" style="text-align: Center; border-top: solid 1px #eee; font-weight: bold; background-color: #111; color: #fff;">Melee</td></tr>
+                <tr style="height:20px;"><td>Sword</td><td>Axe and Shield</td><td>Two-Handed Hammer</td><td>Rapier</td><td>Dual Daggers</td></tr>
+                <tr style="height:20px;"><td>Mace</td><td>Hammer and Shield</td><td>Two-Handed Sword</td><td>Two-Handed Sword</td><td>Dual Swords</td></tr>
+                <tr style="height:20px;"><td>Flaming Sword</td><td>Great Axe</td><td>Sword</td><td>Axe</td><td>Sword and Dagger</td></tr>
+                <tr style="height:20px;"><td></td><td>Two-Handed Hammer</td><td>Mace</td><td></td><td>Sword</td></tr>
+                <tr style="height:20px;"><td></td><td>Hammer</td><td>Mace and Shield</td><td></td><td></td></tr>
+                <tr style="height:20px;"><td></td><td>Axe</td><td>Sword and Shield</td><td></td><td></td></tr>
+                <tr style="height:20px;"><td colspan="5" style="text-align: Center; border-top: solid 1px #eee; font-weight: bold; background-color: #111; color: #fff;">Range</td></tr>
+                <tr style="height:20px;"><td>Fireball Staff</td><td>Crossbow</td><td>Blunderbuss</td><td>Brace of Pistols</td><td>Swift Bow</td></tr>
+                <tr style="height:20px;"><td>Bolt Staff</td><td>Handgun</td><td>Handgun</td><td>Crossbow</td><td>Longbow</td></tr>
+                <tr style="height:20px;"><td>Beam Staff</td><td>Grudge-Raker</td><td>Repeater Handgun</td><td>Repeater Pistol</td><td>Hagbane Swift Bow</td></tr>
+                <tr style="height:20px;"><td>Conflagration Staff</td><td>Drakefire Pistols</td><td></td><td></td><td>Trueflight Longbow</td></tr>
+                </tbody></table>
+                <p><ul><li>Every weapon combination you can have on your character will give you different attacks.</li><li style="list-style: none;"><ul><li><span style="font-weight: bold;">Normal</span> (Soft)</li><li><span style="font-weight: bold;">Charged/Aimed</span> (Hard)</li><li><span style="font-weight: bold;">Special</span> (Various) (Not on many weapons)</li></ul></li><li>Every ranged weapon have different range and dispersion.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Trinkets</span></p>
+                <p><ul><li>Will give you different passive traits.</li><li>Are also cosmetic for your character.</li></ul></p>
+                <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
+                <h3>Weapon Stats</h3>
+                <p>In the inventory at the Red Moon Inn you can see a graph that shows the stats and traits for all your weapons. More detailed version of the weapons can be found at my <a href="http://forums.fatsharkgames.com/discussion/855/weapon-stats-explaining">Weapon stats thread</a>.</p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stats</span></p>
+                <p><ul><li style="list-style: none;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" /></li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Special</span></p>
+                <p><ul><li>Some weapons have special passive characteristics like Armor penetration and Head shot.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stamina</span></p>
+                <p><ul><li>All melee weapons have their stamina for blocking and pushing.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Weapon Traits</span></p>
+                <p><ul><li>Passive traits that can be unlocked from the forge on <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li></ul></p>
+                <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
+                <h3>Attack styles</h3>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Attack</span></p>
+                <p>All weapons have their way of hitting the enemies. Some can hit more than one enemy and some can easily damage heavier enemies like Stormvermin. While some will have problems with heavier enemies.</p>
+                <p>For melee there is everything from slashing, bashing, piercing, swinging and Stabbing. For ranged we have more of how hard it can hit, dispersion and range. Where magic have everything from missiles to Area of effect.</p>
+                <p>All melee weapons have a series of attack motions for both Normal and Charged attacks (varies from weapon to weapon). Max is 3. You can combine this attacks to get the full use of them.</p>
+                <p>Normal attacks is a tap with left mouse button. Charged attacks is holding down the left mouse button. But you might just need to hold it in for 0.5-1 sec. and not wait for the animation to be fully done.</p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Example - Dwarf Ranger:</span></p>
+                <p><ul><li><span style="font-weight: bold;color: rgb(0, 153, 0);">Normal attacks</span> - 1. Slice from right, 2. Slice from left, 3. Hack from top.</li><li><span style="font-weight: bold;color: rgb(0, 153, 0);">Charged attack</span> - 1. Bash forward, 2. Swing from left, 3. Swing from right.</li><li style="list-style: none;">I might want to attack with Charged (1) first to get the skaven pushed back a little and get one with a Normal (2) hit and finish with a charged (3) to separate them one more time and even get a kill on it. This can give me hits on the skavens without them hitting me. Less damage on me and i can fight more before i need to heal and survive the mission.</li><li style="list-style: none;">Or it can be a horde attacking and you see the first skavens are coming one by one. You can then do the combo with Normal 1, Normal 2 and after that more than one skaven are just in front of you and you can finish it with C3 to push them off before you do a next combo or just attack with normal.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Block</span></p>
+                <p>Block and push can help you and your friends survive longer and to make more attacks. By splitting up the skavens makes it harder for them to hit you and you can attack easier an enemy that is by them self without get hit yourself.</p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Overcharge</span></p>
+                <p>When the Bright Wizard uses her magic she starts to fill her overcharged meter. when she get over 30%ish (notches in the meter) she will take longer to cooldown and you can start ventilate by using your reload button. It will ventilate only down to this notches. After that it will cooldown in normal speed. Bright wizard will cooldown as soon as she do not use the staff and when using the melee weapon.</p>
+                <p>See my separate thread for <a href="http://forums.fatsharkgames.com/discussion/855/weapon-stats-explaining">weapon stats</a> where i try to give you the strength, weakness and attack styles for every weapons.</p>
+                <p>Remember that this is not officially from the Fatshark. I have only made this to start understand how things work in the game and to start discussions about it.</p>
+            </div>
+
+            <div class="uk-article" id="weapon-stats">
+                <h2 class="uk-article-title">Weapon Stats</h2>
+                <p style="text-align: center;">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
+                <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character.</p>
+                <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
+                <h3>Weapon Stats</h3>
+                <p><img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" style="float: right; margin-left: 5px;" /></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Damage</span></p>
+                <p><ul><li>The higher bar you have the easier it is the kill with one blow.</li><li>Clan rats kills with one blow from around 1/2 of the bar (Various from mission difficulty).</li><li>Depending on rarity of the weapon you will get a higher damage boost. Damage boost varies from weapon types.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Attack speed</span></p>
+                <p><ul><li>Hard to set a number on this.</li><li>Max is like almost instant while in the bottom we have maybe up to 2 sec.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Targets</span> (how many targets you can hit)</p>
+                <p><ul><li>See it as a cone in front of you, the higher bar you have the bigger the the cone are. Max is like 90 degree from you.</li><li>If you like to see with numbers I have split it up in 6 zones:</li><li style="list-style: none;"><ul><li>1 target</li><li>1-2 targets</li><li>2-3 targets</li><li>3-4 targets</li><li>4-5 targets</li><li>5-7 targets</li></ul></li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Knockback</span> (pushback on hits)</p>
+                <p><ul><li>The Higher you have the more push/stun on the enemy you get on a hit.</li><li>Low bar is likely not to push/stun at all</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Range</span></p>
+                <p><ul><li>The distance is from just in front of you to almost the other side of a square (Thinking of the big square with the Sigmar statue in the magnus mission)</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Special</span></p>
+                <p>Some weapons have special passive characteristics.</p>
+                <p><ul><li><span style="font-weight: bold;">Armor penetration</span> - Can penetrate heavy armor</li><li><span style="font-weight: bold;">Head shot</span> - High damage when hitting the head</li><li><span style="font-weight: bold;">Burn</span> - Small damage over time</li><li><span style="font-weight: bold;">Poison</span> - Small damage over time</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stamina</span></p>
+                <p><ul><li>All melee weapons have their stamina for blocking and pushing.</li><li>Push off cost two Stamina (one shield icon)</li><li>Higher mission difficulty makes blocking and pushing more important to use.</li></ul></p>
+                <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Traits</span></p>
+                <p><ul><li>Passive traits that can be unlocked on <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) from <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li><li>Depending on rarity of the weapon will give you different amount of trait slots.</li><li style="list-style: none;"><ul><li><span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span> (1 Trait slot)</li><li><span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span> (2 Trait slots)</li><li><span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span> (3 Trait slots)</li></ul></li><li>List of traits can be found at my <a href="http://forums.fatsharkgames.com/discussion/952/weapon-and-trinket-traits-explaining">weapon and trinket traits</a> thread.</li></ul></p>
+                <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
+                <h3>Weapons and their strength</h3>
+                <p>Below I have one post for each character and I have started to list all the weapons with the stats as rarity Plentiful (White).</p>
+                <p>For now the list will not be big, but I will work on it. I have rumor it might be a lot of info.</p>
+                <div ng-app="charApp" ng-controller="charCtrl">
+                    <h3><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Bright_Wizard_Symbols.png" style="display: inline-block;" /> <span style="font-weight: bold; color: rgb(120, 11, 12);">Bright Wizard</span></h3>
+                    <p>Brun them all. If you are not afraid of a little fire, Bright Wizard is a character for you. With the balance of fire and death you as at Bright Wizard will do a lot of damage. Bright Wizard is a special character and have unique mechanics. Staff is the weapon with most variations of attacks. Every one is unique and can be from single enemy to Multi enemies and Area of effect.</p>
+                    <p>(*) Starter weapon.</p>
+                    <h4>Melee</h4>
+                    <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
+                    <tr style="height:20px;"><th width="80px"></th><th width="100px" style="text-align: center;">Weapon</th><th width="70px" style="text-align: center;">Attack</th><th width="80px" style="text-align: center;">Damage</th><th width="110px" style="text-align: center;">Attack Speed</th><th width="70px" style="text-align: center;">Targets</th><th width="80px" style="text-align: center;">Knockback</th><th style="text-align: center;">Special</th><th width="80px" style="text-align: center;">Stamina</th></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Sword</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">3-4</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid-Low</td><td>Mid</td><td>5-7</td><td>Mid</td><td>Head shot, Armor Penetration</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_flame_sword.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Flaming Sword (Old Stats)</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid</td><td>5-7</td><td>Mid-High</td><td>Armor Penetration, Burn</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_morningstar.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Mace</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid-Low</td><td>1-2</td><td>Mid-Low</td><td>Armor Penetration</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody></table>
+                    <h4>Range</h4>
+                    <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
+                    <tr style="height:20px;"><th width="80px"></th><th width="100px" style="text-align: center;">Weapon</th><th width="70px" style="text-align: center;">Attack</th><th width="80px" style="text-align: center;">Damage</th><th width="110px" style="text-align: center;">Attack Speed</th><th width="70px" style="text-align: center;">Targets</th><th width="80px" style="text-align: center;">Knockback</th><th width="70px" style="text-align: center;">Range</th><th style="text-align: center;">Special</th></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_firball.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Fireball Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>High</td><td>Mid</td><td>Armor Penetration, Burn</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_spear.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Bolt Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;">High</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>Mid-Low</td><td>High</td><td>Head Shot, Armor Penetration</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_beam.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Beam Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">4-5</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Burn</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Aiming</td><td>Low</td><td>High</td><td>1</td><td>Low</td><td>High</td><td>Armor Penetration, Burn</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_geiser.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Conflagration Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
+                    <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-Low</td><td>Mid-Low</td><td>5-7</td><td>High</td><td>Mid-Low</td><td>Burn</td></tr>
+                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody></table>
+                </div>
+            </div>
+
+            <!--<div class="uk-article" id="test">
+                test
+                <div ng-app="myApp" ng-controller="customersCtrl">
+
+                    <ul>
+                        <li ng-repeat="x in melee">
+                            {{ x.WeaponType }}
+                        </li>
+                    </ul>
+                    <ul>
+                        <li ng-repeat="x in range">
+                            {{ x.WeaponType }}
+                        </li>
+                    </ul>
+
+                </div>
+
+                <script>
+                    var app = angular.module('charApp', []);
+                    app.controller('charCtrl', function($scope, $http) {
+                        $http.get("weapon-stats.json")
+                                .then(function(response) {
+                                    $scope.melee = response.data.melee;
+                                    $scope.range = response.data.range;
+                                });
+                    });
+                </script>
+            </div>-->
+        </div>
+        <!-- Sidebar -->
+        <aside class="uk-width-medium-1-5">
+            <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 70}">
+                <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0px;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                    <li class="uk-nav-header">Page Index</li>
+                    <li><a href="#redmooninn">Red Moon Inn</a></li>
+                    <li><a href="#char-items-stats">Character Items and Stats</a></li>
+                    <li><a href="#weapon-stats">Weapon Stats</a></li>
+                    <li><a href="#">Template Settings</a></li>
+                    <li><a href="#">Custom Widgets</a></li>
+                    <li><a href="#">Additional Pages</a></li>
+                    <li><a href="#">Custom Classes</a></li>
+                </ul>
+            </div>
+        </aside>
     </div>
 
-    <div class="uk-article" id="redmooninn">
-        <h2 class="uk-article-title">Red Moon Inn</h2>
-        <p class="uk-article-meta">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
-        <p class="uk-article-lead">The Red Moon Inn. The home for you and your party.<br>An Innkeeper that have nothing else to do then telling you that you should join the “party” instead of hiding in your room.<br>You can take a beer, have a chat or just trash the place.</p>
-        <p><img src="http://www.vermintide.com/wp-content/uploads/2015/09/Red_Moon_Inn_Concept_1.png" width="350" height="184" style="float: right; margin-left: 10px;">The Red Moon Inn is your home. Where you have your own room that is decorated with stuff from your character. From here you operate your mission and gather your party before going to the mission. Get to know a little bit more about the innkeeper story <a href="http://www.vermintide.com/dev-blog-26-the-inn-keeper/" target="_blank">here</a>.</p>
-        <h3>Lobby</h3>
-        <ul>
-                <li><span style="font-weight: bold;color: rgb(0, 153, 0);">The Map</span></li>
-                <li><span style="font-weight: bold;color: rgb(0, 153, 0);">Ammo Crate</span></li>
-                <li><span style="font-weight: bold;color: rgb(0, 153, 0);">Inventory</span> (Shown after first victory)</li>
-                <li><span style="font-weight: bold;color: rgb(0, 153, 0);">Forge</span> (Unlocked at Level 1)</li>
-                <li><span style="font-weight: bold;color: rgb(0, 153, 0);">Change Character</span></li>
-        </ul>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
-        <h3>The Map</h3>
-        <p>The Map is where you can set up your party, select your mission and search for party. Only the one created a party (Host) can interact with the map if you are in party already.</p>
-        <ul>
-            <li>You/Host(if in a party) can start missions</li>
-            <li style="list-style: none;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/7b/f6b5eac7f9a8f71ed15e4f7d89a01a.png" style="display: inline-block;" /> <img src="http://forums.fatsharkgames.com/uploads/Uploader/42/0d96393c858641a5f1626d9db98d11.png" style="display: inline-block;" /></li>
-            <li>Choose mission and set difficulty</li>
-            <li>Advance settings like distance, hero filter, hosting and/or auto ready</li>
-            <li>See if friends are online to invite or join</li>
-            <li>Set the mission to private</li>
-        </ul>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-        <h3>Ammo Crate</h3>
-        <p>Why not have some extra ammo when you have a party. Perfect if you want to test your new weapon or just want to shoot something in the Inn.</p>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-        <h3>Inventory</h3>
-        <p>Here you can go and change weapons and trinkets for your character.</p>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-        <h3>Forge</h3>
-        <p>In our lovely home the Red Moon Inn we have a Forge. On this forge we can make stuff, upgrade, mould our items or destroy them.</p>
-        <p>On the Forge upgrading cost and salvage collect "shards". Every type of shards represents the rarity of the items.</p>
-        <ul>
-            <li>White (<span style="font-weight: bold;">Plentiful</span>)</li>
-            <li>Green (<span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span>)</li>
-            <li>Blue (<span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span>)</li>
-            <li>Orange (<span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span>)</li>
-        </ul>
-        <p><img src="http://forums.fatsharkgames.com/uploads/Uploader/90/3c961a1b1ce9b12f20886eced18308.png" alt="image" style="width: 33%;display: inline-block;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/96/161876f06567ac57e0dfb7f2b4bffb.png" alt="image" style="display: inline-block;width: 33%;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/1d/fc5e787fd601f06aa4a10cf76f2d06.png" alt="image" style="display: inline-block;width: 33%;"></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Fuse</span></p>
-        <p><ul><li>Takes 5 items of the same rarity and fuse them to a new and better one.</li><li>You can only fuse items of the same rarity.</li><li>Fuse will have 20% probability for each weapon you add.</li><li style="list-style: none;"><ul><li>Example 1: 5 Common Great Hammers will give you 1 Rare Great Hammer</li><li>Example 2: 1 Common Crossbow, 2 Common Great Hammers and 2 Common Longbows will give you a (20%, 40%, 40% chance) Rare item.</li></ul></li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Upgrade</span></p>
-        <p><ul><li>Takes one <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> or higher item and unlock one passive trait.</li><li>Upgrading weapons by unlocking traits becomes more expensive as you upgrade your weapon.</li><li>First trait will cost 1 shard while the 2nd trait will cost 3 shards and the 3rd trait will cost 5 shards.</li><li>You can however choose freely which trait you want to get as the 1st and cheaper one.</li><li style="list-style: none;"><ul><li>Common traits require Plentiful shards</li><li>Rare traits require Common shards</li><li>Exotic traits require Rare shards</li></ul></li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Salvage</span></p>
-        <p><ul><li>Salvage every item you click on and make it to 1-3 shards of the same rarity.</li></ul></p>
-        <p>You can only get items by the <a href="http://forums.fatsharkgames.com/discussion/719/loot-and-loot-roll-explaining/p1">Loot Roll</a> or level up your account.</p>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-        <h3>Change Character</h3>
-        <p>By going to the menu you can change character you are using. Get to know a little bit more about the characters story <a href="http://www.vermintide.com/heroes/" target="_blank">here</a>.</p>
-        <p><img src="http://www.vermintide.com/wp-content/uploads/2015/07/bh-heroes.jpg" alt="All heros" style="width:100%;" /></p>
-        <p>Remember that this is not officially from the Fatshark. I have only made this to start understand how things work in the game and to start discussions about it.</p>
-    </div>
-
-    <div class="uk-article" id="char-items-stats">
-        <h1 class="uk-article-title">Character Items and Stats</h1>
-        <p class="uk-article-meta">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
-        <p class="uk-article-lead">art</p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">What is Character Items?</span></p>
-        <p>Character Items is the items we get from <a href="http://forums.fatsharkgames.com/discussion/719/loot-and-loot-roll-explaining/p1">loot roll</a> and can be used on your characters to fight the skaven or in <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) to make better one.</p>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
-        <h4>Character items</h4>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Head gear</span></p>
-        <p><ul><li>Purely cosmetic</li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Weapons</span></p>
-        <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
-        <tr style="height:20px;"><th style="text-align: center;"><span style="font-weight: bold; color: rgb(120, 11, 12); margin:0;">Bright Wizard</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(113, 113, 103); margin:0;">Dwarf Ranger</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(238, 234, 236); margin:0;">Empire Soldier</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(213, 104, 10); margin:0;">Witch Hunter</span></th><th style="text-align: center;"><span style="font-weight: bold; color: rgb(50, 73, 54); margin:0;">Waywatcher</span></th></tr>
-        <tr style="height:20px;"><td colspan="5" style="text-align: Center; border-top: solid 1px #eee; font-weight: bold; background-color: #111; color: #fff;">Melee</td></tr>
-        <tr style="height:20px;"><td>Sword</td><td>Axe and Shield</td><td>Two-Handed Hammer</td><td>Rapier</td><td>Dual Daggers</td></tr>
-        <tr style="height:20px;"><td>Mace</td><td>Hammer and Shield</td><td>Two-Handed Sword</td><td>Two-Handed Sword</td><td>Dual Swords</td></tr>
-        <tr style="height:20px;"><td>Flaming Sword</td><td>Great Axe</td><td>Sword</td><td>Axe</td><td>Sword and Dagger</td></tr>
-        <tr style="height:20px;"><td></td><td>Two-Handed Hammer</td><td>Mace</td><td></td><td>Sword</td></tr>
-        <tr style="height:20px;"><td></td><td>Hammer</td><td>Mace and Shield</td><td></td><td></td></tr>
-        <tr style="height:20px;"><td></td><td>Axe</td><td>Sword and Shield</td><td></td><td></td></tr>
-        <tr style="height:20px;"><td colspan="5" style="text-align: Center; border-top: solid 1px #eee; font-weight: bold; background-color: #111; color: #fff;">Range</td></tr>
-        <tr style="height:20px;"><td>Fireball Staff</td><td>Crossbow</td><td>Blunderbuss</td><td>Brace of Pistols</td><td>Swift Bow</td></tr>
-        <tr style="height:20px;"><td>Bolt Staff</td><td>Handgun</td><td>Handgun</td><td>Crossbow</td><td>Longbow</td></tr>
-        <tr style="height:20px;"><td>Beam Staff</td><td>Grudge-Raker</td><td>Repeater Handgun</td><td>Repeater Pistol</td><td>Hagbane Swift Bow</td></tr>
-        <tr style="height:20px;"><td>Conflagration Staff</td><td>Drakefire Pistols</td><td></td><td></td><td>Trueflight Longbow</td></tr>
-        </tbody></table>
-        <p><ul><li>Every weapon combination you can have on your character will give you different attacks.</li><li style="list-style: none;"><ul><li><span style="font-weight: bold;">Normal</span> (Soft)</li><li><span style="font-weight: bold;">Charged/Aimed</span> (Hard)</li><li><span style="font-weight: bold;">Special</span> (Various) (Not on many weapons)</li></ul></li><li>Every ranged weapon have different range and dispersion.</li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Trinkets</span></p>
-        <p><ul><li>Will give you different passive traits.</li><li>Are also cosmetic for your character.</li></ul></p>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-        <h4>Weapon Stats</h4>
-        <p>In the inventory at the Red Moon Inn you can see a graph that shows the stats and traits for all your weapons. More detailed version of the weapons can be found at my <a href="http://forums.fatsharkgames.com/discussion/855/weapon-stats-explaining">Weapon stats thread</a>.</p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stats</span></p>
-        <p><ul><li style="list-style: none;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" /></li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Special</span></p>
-        <p><ul><li>Some weapons have special passive characteristics like Armor penetration and Head shot.</li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stamina</span></p>
-        <p><ul><li>All melee weapons have their stamina for blocking and pushing.</li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Weapon Traits</span></p>
-        <p><ul><li>Passive traits that can be unlocked from the forge on <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li></ul></p>
-        <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-        <h4>Attack styles</h4>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Attack</span></p>
-        <p>All weapons have their way of hitting the enemies. Some can hit more than one enemy and some can easily damage heavier enemies like Stormvermin. While some will have problems with heavier enemies.</p>
-        <p>For melee there is everything from slashing, bashing, piercing, swinging and Stabbing. For ranged we have more of how hard it can hit, dispersion and range. Where magic have everything from missiles to Area of effect.</p>
-        <p>All melee weapons have a series of attack motions for both Normal and Charged attacks (varies from weapon to weapon). Max is 3. You can combine this attacks to get the full use of them.</p>
-        <p>Normal attacks is a tap with left mouse button. Charged attacks is holding down the left mouse button. But you might just need to hold it in for 0.5-1 sec. and not wait for the animation to be fully done.</p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Example - Dwarf Ranger:</span></p>
-        <p><ul><li><span style="font-weight: bold;color: rgb(0, 153, 0);">Normal attacks</span> - 1. Slice from right, 2. Slice from left, 3. Hack from top.</li><li><span style="font-weight: bold;color: rgb(0, 153, 0);">Charged attack</span> - 1. Bash forward, 2. Swing from left, 3. Swing from right.</li><li style="list-style: none;">I might want to attack with Charged (1) first to get the skaven pushed back a little and get one with a Normal (2) hit and finish with a charged (3) to separate them one more time and even get a kill on it. This can give me hits on the skavens without them hitting me. Less damage on me and i can fight more before i need to heal and survive the mission.</li><li style="list-style: none;">Or it can be a horde attacking and you see the first skavens are coming one by one. You can then do the combo with Normal 1, Normal 2 and after that more than one skaven are just in front of you and you can finish it with C3 to push them off before you do a next combo or just attack with normal.</li></ul></p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Block</span></p>
-        <p>Block and push can help you and your friends survive longer and to make more attacks. By splitting up the skavens makes it harder for them to hit you and you can attack easier an enemy that is by them self without get hit yourself.</p>
-        <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Overcharge</span></p>
-        <p>When the Bright Wizard uses her magic she starts to fill her overcharged meter. when she get over 30%ish (notches in the meter) she will take longer to cooldown and you can start ventilate by using your reload button. It will ventilate only down to this notches. After that it will cooldown in normal speed. Bright wizard will cooldown as soon as she do not use the staff and when using the melee weapon.</p>
-        <p>See my separate thread for <a href="http://forums.fatsharkgames.com/discussion/855/weapon-stats-explaining">weapon stats</a> where i try to give you the strength, weakness and attack styles for every weapons.</p>
-        <p>Remember that this is not officially from the Fatshark. I have only made this to start understand how things work in the game and to start discussions about it.</p>
-    </div>
 </div>
 <!-- Content -->
 
 <!-- Footer -->
 <footer class="uk-flex uk-flex-center">
-    <a href="#" data-uk-smooth-scroll="">Top ^</a>
+    <a href="#" data-uk-smooth-scroll>Top ^</a>
 </footer>
 </body>
 </html>

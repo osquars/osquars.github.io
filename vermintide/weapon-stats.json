@@ -1,0 +1,24 @@
+{
+  "melee" : [
+    {
+      "WeaponType" : "mwp1"
+    },
+    {
+      "WeaponType" : "mwp2"
+    },
+    {
+      "WeaponType" : "mwp3"
+    }
+  ],
+  "range" : [
+    {
+      "WeaponType" : "rwp1"
+    },
+    {
+      "WeaponType" : "rwp2"
+    },
+    {
+      "WeaponType" : "rwp3"
+    }
+  ]
+}
