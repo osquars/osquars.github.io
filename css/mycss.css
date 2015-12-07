@@ -1,4 +1,8 @@
 /* Menu changes */
+.osq-brand {
+    position: absolute;
+    left: 0;
+}
 .uk-navbar-nav:first-child > li:first-child > a {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;

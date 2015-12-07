@@ -9,10 +9,27 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/components/sticky.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
 </head>
-<body ng-app="">
-<div class="headerbar" ng-include="'headerbar.html'"></div>
+<body>
+<div class="headerbar">
+    <!-- Navigation -->
+    <nav class="uk-navbar uk-navbar-attached" data-uk-sticky="{animation: 'uk-animation-slide-top', top: -50}">
+        <div class="osq-brand uk-flex uk-flex-middle">
+            <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
+        </div>
+        <div class="uk-flex uk-flex-center uk-hidden-small">
+            <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">Vermintide</a></li>
+                    <li><a href="#">More...</a></li>
+                </ul>
+            </ul>
+        </div>
+        <a href="#" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"></a>
+    </nav>
+    <!-- Navigation -->
+</div>
 
 <div class="uk-container uk-container-center uk-margin-top">
 	<div class="uk-grid"  data-uk-grid-match data-uk-grid-margin>
@@ -36,13 +53,41 @@
 							<h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							<p class="uk-margin-small-top">
-								<a href="#" title="Read more">Continue Reading</a>
+								<a href="#" title="Read more">Read more</a>
 							</p>
 							<hr class="uk-margin-top uk-margin-bottom">
-							<div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span> <span><a href="#">Blog</a></span></div>
+							<div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span></div>
 						</div>
 					</article>
 				</div>
+                <div class="uk-width-small-1-2">
+                    <article class="uk-article">
+                        <div class="uk-panel uk-panel-box">
+                            <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/412x150"></a>
+                            <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="uk-margin-small-top">
+                                <a href="#" title="Read more">Read more</a>
+                            </p>
+                            <hr class="uk-margin-top uk-margin-bottom">
+                            <div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="uk-width-small-1-2">
+                    <article class="uk-article">
+                        <div class="uk-panel uk-panel-box">
+                            <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/412x150"></a>
+                            <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="uk-margin-small-top">
+                                <a href="#" title="Read more">Read more</a>
+                            </p>
+                            <hr class="uk-margin-top uk-margin-bottom">
+                            <div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span></div>
+                        </div>
+                    </article>
+                </div>
 			</div>
 		</div>
 		<aside class="uk-width-medium-1-4">
@@ -51,6 +96,7 @@
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</aside>
+    </div>
 </div>
 
 <footer>
