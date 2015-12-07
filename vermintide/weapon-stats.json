@@ -1,16 +1,64 @@
 {
-  "melee" : [
+  "bwMelee" : [
     {
-      "WeaponType" : "mwp1"
+      "Name" : "Sword",
+      "Stamina" : "6 (3)",
+      "NormalDmg" : "Mid-Low",
+      "NormalAttSp" : "Mid-High",
+      "NormalTargets" : "3-4",
+      "NormalKnockback" : "Low",
+      "NormalSpecial" : "",
+      "ChargedDmg" : "Mid-Low",
+      "ChargedAttSp" : "Mid",
+      "ChargedTargets" : "5-7",
+      "ChargedKnockback" : "Mid",
+      "ChargedSpecial" : "Head shot, Armor Penetration",
+      "SpecialDmg" : "",
+      "SpecialAttSp" : "",
+      "SpecialTargets" : "",
+      "SpecialKnockback" : "",
+      "SpecialSpecial" : ""
     },
     {
-      "WeaponType" : "mwp2"
+      "Name" : "Sword2",
+      "Stamina" : "3",
+      "NormalDmg" : "",
+      "NormalAttSp" : "",
+      "NormalTar" : "",
+      "NormalKnockback" : "",
+      "NormalSpecial" : "",
+      "ChargedDmg" : "",
+      "ChargedAttSp" : "",
+      "ChargedTargets" : "",
+      "ChargedKnockback" : "",
+      "ChargedSpecial" : "",
+      "SpecialDmg" : "",
+      "SpecialAttSp" : "",
+      "SpecialTargets" : "",
+      "SpecialKnockback" : "",
+      "SpecialSpecial" : ""
     },
     {
-      "WeaponType" : "mwp3"
-    }
+      "Name" : "Sword3",
+      "Stamina" : "3",
+      "NormalDmg" : "",
+      "NormalAttSp" : "",
+      "NormalTar" : "",
+      "NormalKnockback" : "",
+      "NormalSpecial" : "",
+      "ChargedDmg" : "",
+      "ChargedAttSp" : "",
+      "ChargedTargets" : "",
+      "ChargedKnockback" : "",
+      "ChargedSpecial" : "",
+      "SpecialDmg" : "",
+      "SpecialAttSp" : "",
+      "SpecialTargets" : "",
+      "SpecialKnockback" : "",
+      "SpecialSpecial" : ""
+    },
   ],
-  "range" : [
+  "bwRange" : [
     {
       "WeaponType" : "rwp1"
     },

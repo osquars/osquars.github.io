@@ -216,11 +216,46 @@
                     <p>Brun them all. If you are not afraid of a little fire, Bright Wizard is a character for you. With the balance of fire and death you as at Bright Wizard will do a lot of damage. Bright Wizard is a special character and have unique mechanics. Staff is the weapon with most variations of attacks. Every one is unique and can be from single enemy to Multi enemies and Area of effect.</p>
                     <p>(*) Starter weapon.</p>
                     <h4>Melee</h4>
-                    <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
-                    <tr style="height:20px;"><th width="80px"></th><th width="100px" style="text-align: center;">Weapon</th><th width="70px" style="text-align: center;">Attack</th><th width="80px" style="text-align: center;">Damage</th><th width="110px" style="text-align: center;">Attack Speed</th><th width="70px" style="text-align: center;">Targets</th><th width="80px" style="text-align: center;">Knockback</th><th style="text-align: center;">Special</th><th width="80px" style="text-align: center;">Stamina</th></tr>
-                    <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Sword</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">3-4</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
-                    <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid-Low</td><td>Mid</td><td>5-7</td><td>Mid</td><td>Head shot, Armor Penetration</td></tr>
-                    <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <table cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                            <th width="80px"></th>
+                            <th width="100px" style="text-align: center;">Weapon</th>
+                            <th width="70px" style="text-align: center;">Attack</th>
+                            <th width="80px" style="text-align: center;">Damage</th>
+                            <th width="110px" style="text-align: center;">Attack Speed</th>
+                            <th width="70px" style="text-align: center;">Targets</th>
+                            <th width="80px" style="text-align: center;">Knockback</th>
+                            <th style="text-align: center;">Special</th>
+                            <th width="80px" style="text-align: center;">Stamina</th>
+                        </tr>
+                        <tr ng-repeat="x in bwMelee">
+                            <td rowspan="3"></td>
+                            <td rowspan="3">{{ x.Name }}</td>
+                            <td rowspan="3">{{ x.Stamina }}</td>
+                            <td>Normal</td>
+                            <td>{{ x.NormalDmg }}</td>
+                            <td>{{ x.NormalAttSp }}</td>
+                            <td>{{ x.NormalTargets }}</td>
+                            <td>{{ x.NormalKnockback }}</td>
+                            <td>{{ x.NormalSpecial }}</td>
+                        </tr>
+                        <tr>
+                            <td>Charged</td>
+                            <td>{{ x.ChargedDmg }}</td>
+                            <td>{{ x.ChargedAttSp }}</td>
+                            <td>{{ x.ChargedTargets }}</td>
+                            <td>{{ x.ChargedKnockback }}</td>
+                            <td>{{ x.ChargedSpecial }}</td>
+                        </tr>
+                        <tr>
+                            <td>Special</td>
+                            <td>{{ x.SpecialDmg }}</td>
+                            <td>{{ x.SpecialAttSp }}</td>
+                            <td>{{ x.SpecialTargets }}</td>
+                            <td>{{ x.SpecialKnockback }}</td>
+                            <td>{{ x.SpecialSpecial }}</td>
+                        </tr>
                     <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_flame_sword.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Flaming Sword (Old Stats)</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
                     <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid</td><td>5-7</td><td>Mid-High</td><td>Armor Penetration, Burn</td></tr>
                     <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -245,6 +280,16 @@
                     <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                     </tbody></table>
                 </div>
+                <script>
+                    var app = angular.module('charApp', []);
+                    app.controller('charCtrl', function($scope, $http) {
+                        $http.get("weapon-stats.json")
+                                .then(function(response) {
+                                    $scope.bwMelee = response.data.bwMelee;
+                                    $scope.bwRange = response.data.bwRange;
+                                });
+                    });
+                </script>
             </div>
 
             <!--<div class="uk-article" id="test">
