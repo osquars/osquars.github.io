@@ -15,12 +15,42 @@
 <div class="headerbar" ng-include="'headerbar.html'"></div>
 
 <div class="uk-container uk-container-center uk-margin-top">
-    <!-- Content -->
-    <div class="uk-panel uk-panel-box uk-text-center">
-        <h1>Osquars Pages</h1>
-            <p>This pages that is created with help from the Github and will be used for me to crate text and material for games and other fun stuff that might be used here. And for me to test around with git.</p>
-    </div>
-    <!-- Content -->
+	<div class="uk-grid"  data-uk-grid-match data-uk-grid-margin>
+		<div class="uk-width-medium-3-4">
+			<div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+				<div class="uk-width-small-1-2">
+					<article class="uk-article">
+						<!-- Content -->
+						<div class="uk-panel uk-panel-box uk-text-center">
+							<a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/412x150"></a>
+							<h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Osquars Pages</a></h1>
+							<p>This pages that is created with help from the Github and will be used for me to crate text and material for games and other fun stuff that might be used here. And for me to test around with git.</p>
+						</div>
+						<!-- Content -->
+					</article>
+				</div>
+				<div class="uk-width-small-1-2">
+					<article class="uk-article">
+						<div class="uk-panel uk-panel-box">
+							<a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/412x150"></a>
+							<h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p class="uk-margin-small-top">
+								<a href="#" title="Read more">Continue Reading</a>
+							</p>
+							<hr class="uk-margin-top uk-margin-bottom">
+							<div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span> <span><a href="#">Blog</a></span></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<aside class="uk-width-medium-1-4">
+			<div class="uk-panel uk-panel-box">
+				<a class="twitter-timeline" href="https://twitter.com/osquars" data-widget-id="673206950566477824">Tweets by @osquars</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+		</aside>
 </div>
 
 <footer>
