@@ -2,11 +2,13 @@
   "mainmenu" : [
     {
       "Title" : "Vermintide",
-      "Url" : "vermintide/"
+      "Url" : "vermintide/",
+      "Sub" : "vermintidemenu"
     },
     {
       "Title" : "Lerning",
-      "Url" : "lerning/"
+      "Url" : "lerning/",
+      "Sub" : ""
     }
   ],
   "vermintidemenu" : [
@@ -17,6 +19,26 @@
     {
       "Title" : "Character Items and Stats",
       "Url" : "vermintide/characteritemsstats/"
+    },
+    {
+      "Title" : "Weapon Stats",
+      "Url" : "#"
+    },
+    {
+      "Title" : "Weapon and Trinkets Traits",
+      "Url" : "#"
+    },
+    {
+      "Title" : "Mission Items",
+      "Url" : "#"
+    },
+    {
+      "Title" : "Loot and Loot Roll",
+      "Url" : "#"
+    },
+    {
+      "Title" : "Skaven - The Enemy",
+      "Url" : "#"
     }
   ]
 }
