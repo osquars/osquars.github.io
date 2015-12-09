@@ -1,0 +1,22 @@
+{
+  "mainmenu" : [
+    {
+      "Title" : "Vermintide",
+      "Url" : "vermintide/"
+    },
+    {
+      "Title" : "Lerning",
+      "Url" : "lerning/"
+    }
+  ],
+  "vermintidemenu" : [
+    {
+      "Title" : "Red Moon Inn",
+      "Url" : "vermintide/redmooninn/"
+    },
+    {
+      "Title" : "Character Items and Stats",
+      "Url" : "vermintide/characteritemsstats/"
+    }
+  ]
+}
