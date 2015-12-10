@@ -11,25 +11,25 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body ng-app="pageApp">
-<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home='../../'" data-uk-dropdown-overlay="{cls: 'osq-dropdown-overlay'}">
+<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home='../../'">
     <!-- Navigation -->
     <nav class="uk-navbar uk-navbar-attached">
         <div class="osq-brand uk-flex uk-flex-middle">
             <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
         </div>
         <div class="uk-flex uk-flex-center uk-hidden-small">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
-                        <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <li ng-repeat="x in sublinks">
-                                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
+                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <li ng-repeat="x in sublinks">
+                                <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
         <a href="#" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"></a>
     </nav>
@@ -37,11 +37,11 @@
 </div>
 
 <!-- Content -->
-<div class="osq-block uk-block uk-block-default">
+<div class="osq-block-main uk-block uk-block-default">
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
             <!-- Main -->
-            <div class="uk-width-medium-4-5">
+            <div class="uk-width-medium-3-4">
                 <div class="uk-article" id="weapon-stats">
                     <h2 class="uk-article-title">Weapon Stats</h2>
                     <p style="text-align: center;">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
@@ -152,7 +152,7 @@
                 </div>
             </div>
             <!-- Sidebar -->
-            <aside class="uk-width-medium-1-5">
+            <aside class="uk-width-medium-1-4">
                 <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
                     <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
                         <li class="uk-nav-header">Page Index</li>
@@ -172,7 +172,7 @@
 <!-- Content -->
 
 <!-- Footer -->
-<div class="uk-block uk-block-secondary uk-block-large">
+<div class="osq-block-footer uk-block uk-block-secondary uk-block-large">
     <footer class="uk-flex uk-flex-center">
         <a href="#" data-uk-smooth-scroll>Top ^</a>
     </footer>

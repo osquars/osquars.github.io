@@ -2,7 +2,7 @@ html {
   font: normal 14px / 20px "Trebuchet MS", Verdana, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  background: #272526;
+  background: #ffffff;
   color: #000000;
 }
 body {
@@ -980,25 +980,25 @@ iframe {
   margin: 0 -15px;
 }
 .uk-panel-box-primary {
-  background-color: #ebf7fd;
-  color: #2d7091;
-  border-color: rgba(45, 112, 145, 0.3);
+  background-color: #dddddd;
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.3);
 }
 .uk-panel-box-primary-hover:hover {
-  color: #2d7091;
+  color: #000000;
 }
 .uk-panel-box-primary .uk-panel-title {
-  color: #2d7091;
+  color: #2a2a2a;
 }
 .uk-panel-box-secondary {
-  background-color: #ffffff;
-  color: #444444;
+  background-color: #2a2a2a;
+  color: #ffffff;
 }
 .uk-panel-box-secondary-hover:hover {
-  color: #444444;
+  color: #ffffff;
 }
 .uk-panel-box-secondary .uk-panel-title {
-  color: #444444;
+  color: #dddddd;
 }
 .uk-panel-hover {
   padding: 15px;
@@ -1104,10 +1104,10 @@ iframe {
   background: #f9f9f9;
 }
 .uk-block-primary {
-  background: #00a8e6;
+  background: #dddddd;
 }
 .uk-block-secondary {
-  background: #222222;
+  background: #2a2a2a;
 }
 .uk-block-default + .uk-block-default,
 .uk-block-muted + .uk-block-muted,
@@ -1529,12 +1529,12 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar-brand {
   font-size: 18px;
-  color: #818181;
+  color: #dddddd;
   text-decoration: none;
 }
 .uk-navbar-brand:hover,
 .uk-navbar-brand:focus {
-  color: #dddddd;
+  color: #818181;
   text-decoration: none;
   outline: none;
 }
@@ -1816,7 +1816,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-tab > li.uk-active > a {
   border-color: #dddddd;
   border-bottom-color: transparent;
-  background: #272526;
+  background: #ffffff;
   color: #000000;
 }
 .uk-tab > li.uk-disabled > a {
@@ -2253,7 +2253,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   max-width: 100%;
   padding: 4px 6px;
   border: 1px solid #dddddd;
-  background: #272526;
+  background: #ffffff;
   color: #000000;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
@@ -4672,7 +4672,7 @@ select.uk-form-width-mini {
 .uk-close-alt {
   padding: 2px;
   border-radius: 50%;
-  background: #272526;
+  background: #ffffff;
   opacity: 1;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.3);
 }
@@ -4778,13 +4778,13 @@ a.uk-badge:hover {
   margin: 0;
   padding: 4px;
   border: 1px solid #dddddd;
-  background: #272526;
+  background: #ffffff;
   border-radius: 4px;
 }
 a.uk-thumbnail:hover,
 a.uk-thumbnail:focus {
   border-color: #aaaaaa;
-  background-color: #272526;
+  background-color: #ffffff;
   text-decoration: none;
   outline: none;
 }
@@ -5791,7 +5791,7 @@ a.uk-thumbnail:focus {
   width: 600px;
   max-width: 100%;
   max-width: calc(100% - 20px);
-  background: #272526;
+  background: #ffffff;
   opacity: 0;
   -webkit-transform: translateY(-100px);
   transform: translateY(-100px);
@@ -7431,7 +7431,7 @@ a.uk-datepicker-table-muted {
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
-  background: #272526;
+  background: #ffffff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
