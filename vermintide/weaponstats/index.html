@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Moon Inn - Vermintide - Osquars Laboratory</title>
+    <link rel="stylesheet" href="../../assets/css/uikit.css" />
+    <link rel="stylesheet" href="../../assets/css/mycss.css" />
+
+    <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../assets/js/uikit.min.js"></script>
+    <script src="../../assets/js/components/sticky.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="pageApp">
+<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home='../../'" data-uk-dropdown-overlay="{cls: 'osq-dropdown-overlay'}">
+    <!-- Navigation -->
+    <nav class="uk-navbar uk-navbar-attached">
+        <div class="osq-brand uk-flex uk-flex-middle">
+            <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
+        </div>
+        <div class="uk-flex uk-flex-center uk-hidden-small">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
+                        <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
+                            <ul class="uk-nav uk-nav-navbar">
+                                <li ng-repeat="x in sublinks">
+                                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        <a href="#" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"></a>
+    </nav>
+    <!-- Navigation -->
+</div>
+
+<!-- Content -->
+<div class="osq-block uk-block uk-block-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+            <!-- Main -->
+            <div class="uk-width-medium-4-5">
+                <div class="uk-article" id="weapon-stats">
+                    <h2 class="uk-article-title">Weapon Stats</h2>
+                    <p style="text-align: center;">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
+                    <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character.</p>
+                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
+                    <h3>Weapon Stats</h3>
+                    <p><img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" style="float: right; margin-left: 5px;" /></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Damage</span></p>
+                    <p><ul><li>The higher bar you have the easier it is the kill with one blow.</li><li>Clan rats kills with one blow from around 1/2 of the bar (Various from mission difficulty).</li><li>Depending on rarity of the weapon you will get a higher damage boost. Damage boost varies from weapon types.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Attack speed</span></p>
+                    <p><ul><li>Hard to set a number on this.</li><li>Max is like almost instant while in the bottom we have maybe up to 2 sec.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Targets</span> (how many targets you can hit)</p>
+                    <p><ul><li>See it as a cone in front of you, the higher bar you have the bigger the the cone are. Max is like 90 degree from you.</li><li>If you like to see with numbers I have split it up in 6 zones:</li><li style="list-style: none;"><ul><li>1 target</li><li>1-2 targets</li><li>2-3 targets</li><li>3-4 targets</li><li>4-5 targets</li><li>5-7 targets</li></ul></li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Knockback</span> (pushback on hits)</p>
+                    <p><ul><li>The Higher you have the more push/stun on the enemy you get on a hit.</li><li>Low bar is likely not to push/stun at all</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Range</span></p>
+                    <p><ul><li>The distance is from just in front of you to almost the other side of a square (Thinking of the big square with the Sigmar statue in the magnus mission)</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Special</span></p>
+                    <p>Some weapons have special passive characteristics.</p>
+                    <p><ul><li><span style="font-weight: bold;">Armor penetration</span> - Can penetrate heavy armor</li><li><span style="font-weight: bold;">Head shot</span> - High damage when hitting the head</li><li><span style="font-weight: bold;">Burn</span> - Small damage over time</li><li><span style="font-weight: bold;">Poison</span> - Small damage over time</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stamina</span></p>
+                    <p><ul><li>All melee weapons have their stamina for blocking and pushing.</li><li>Push off cost two Stamina (one shield icon)</li><li>Higher mission difficulty makes blocking and pushing more important to use.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Traits</span></p>
+                    <p><ul><li>Passive traits that can be unlocked on <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) from <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li><li>Depending on rarity of the weapon will give you different amount of trait slots.</li><li style="list-style: none;"><ul><li><span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span> (1 Trait slot)</li><li><span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span> (2 Trait slots)</li><li><span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span> (3 Trait slots)</li></ul></li><li>List of traits can be found at my <a href="http://forums.fatsharkgames.com/discussion/952/weapon-and-trinket-traits-explaining">weapon and trinket traits</a> thread.</li></ul></p>
+                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
+                    <h3>Weapons and their strength</h3>
+                    <p>Below I have one post for each character and I have started to list all the weapons with the stats as rarity Plentiful (White).</p>
+                    <p>For now the list will not be big, but I will work on it. I have rumor it might be a lot of info.</p>
+                    <div ng-app="charApp" ng-controller="charCtrl">
+                        <h3><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Bright_Wizard_Symbols.png" style="display: inline-block;" /> <span style="font-weight: bold; color: rgb(120, 11, 12);">Bright Wizard</span></h3>
+                        <p>Brun them all. If you are not afraid of a little fire, Bright Wizard is a character for you. With the balance of fire and death you as at Bright Wizard will do a lot of damage. Bright Wizard is a special character and have unique mechanics. Staff is the weapon with most variations of attacks. Every one is unique and can be from single enemy to Multi enemies and Area of effect.</p>
+                        <p>(*) Starter weapon.</p>
+                        <h4>Melee</h4>
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <th width="80px"></th>
+                                <th width="100px" style="text-align: center;">Weapon</th>
+                                <th width="70px" style="text-align: center;">Attack</th>
+                                <th width="80px" style="text-align: center;">Damage</th>
+                                <th width="110px" style="text-align: center;">Attack Speed</th>
+                                <th width="70px" style="text-align: center;">Targets</th>
+                                <th width="80px" style="text-align: center;">Knockback</th>
+                                <th style="text-align: center;">Special</th>
+                                <th width="80px" style="text-align: center;">Stamina</th>
+                            </tr>
+                            <tr ng-repeat="x in bwMelee">
+                                <td rowspan="3"></td>
+                                <td rowspan="3">{{ x.Name }}</td>
+                                <td rowspan="3">{{ x.Stamina }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td>{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr>
+                                <td>Charged</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td>{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td>{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_flame_sword.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Flaming Sword (Old Stats)</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
+                            <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid</td><td>5-7</td><td>Mid-High</td><td>Armor Penetration, Burn</td></tr>
+                            <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_morningstar.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Mace</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
+                            <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid-Low</td><td>1-2</td><td>Mid-Low</td><td>Armor Penetration</td></tr>
+                            <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            </tbody></table>
+                        <h4>Range</h4>
+                        <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
+                        <tr style="height:20px;"><th width="80px"></th><th width="100px" style="text-align: center;">Weapon</th><th width="70px" style="text-align: center;">Attack</th><th width="80px" style="text-align: center;">Damage</th><th width="110px" style="text-align: center;">Attack Speed</th><th width="70px" style="text-align: center;">Targets</th><th width="80px" style="text-align: center;">Knockback</th><th width="70px" style="text-align: center;">Range</th><th style="text-align: center;">Special</th></tr>
+                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_firball.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Fireball Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
+                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>High</td><td>Mid</td><td>Armor Penetration, Burn</td></tr>
+                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_spear.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Bolt Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;">High</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
+                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>Mid-Low</td><td>High</td><td>Head Shot, Armor Penetration</td></tr>
+                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_beam.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Beam Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">4-5</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Burn</td></tr>
+                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Low</td><td>High</td><td>1</td><td>Low</td><td>High</td><td>Armor Penetration, Burn</td></tr>
+                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_geiser.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Conflagration Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
+                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-Low</td><td>Mid-Low</td><td>5-7</td><td>High</td><td>Mid-Low</td><td>Burn</td></tr>
+                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </tbody></table>
+                    </div>
+                    <script>
+                        var app = angular.module('charApp', []);
+                        app.controller('charCtrl', function($scope, $http) {
+                            $http.get("weapon-stats.json")
+                                    .then(function(response) {
+                                        $scope.bwMelee = response.data.bwMelee;
+                                        $scope.bwRange = response.data.bwRange;
+                                    });
+                        });
+                    </script>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="uk-width-medium-1-5">
+                <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
+                    <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                        <li class="uk-nav-header">Page Index</li>
+                        <li><a href="#redmooninn">Red Moon Inn</a></li>
+                        <li><a href="#themap">The Map</a></li>
+                        <li><a href="#ammocrate">Ammo Crate</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#forge">Forge</a></li>
+                        <li><a href="#changecharacter">Change Character</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</div>
+<!-- Content -->
+
+<!-- Footer -->
+<div class="uk-block uk-block-secondary uk-block-large">
+    <footer class="uk-flex uk-flex-center">
+        <a href="#" data-uk-smooth-scroll>Top ^</a>
+    </footer>
+</div>
+<script>
+    /*
+    Angular JS for the page.
+    Script to pick upp the data that is picked up from other files.
+    =>  app.controller('menuCtrl') = controls menus
+     */
+    var app = angular.module('pageApp', []);
+
+    //Controller for menus.
+    app.controller('menuCtrl', function($scope, $http) {
+        $http.get("../../headerbar.json")
+                .then(function(response) {
+                    $scope.mainlinks = response.data.mainmenu;
+                    // Sublink need to be set for the right submenu from the JSON file.
+                    $scope.sublinks = response.data.vermintidemenu;
+                });
+    });
+</script>
+</body>
+</html>

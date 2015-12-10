@@ -8,6 +8,16 @@
     border-bottom-left-radius: 0px;
 }
 
+.uk-dropdown-navbar:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 48%;
+    border-width: 0 8px 10px 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.85);
+}
+
 /*".osq-dropdown-overlay {
     background: rgba(0,0,0,0.3);
 }*/

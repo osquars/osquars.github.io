@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Items and Stats - Vermintide - Osquars Laboratory</title>
+    <link rel="stylesheet" href="../../assets/css/uikit.css" />
+    <link rel="stylesheet" href="../../assets/css/mycss.css" />
+
+    <script src="../../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../../assets/js/uikit.min.js"></script>
+    <script src="../../assets/js/components/sticky.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="pageApp">
+<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home='../../'" data-uk-dropdown-overlay="{cls: 'osq-dropdown-overlay'}">
+    <!-- Navigation -->
+    <nav class="uk-navbar uk-navbar-attached">
+        <div class="osq-brand uk-flex uk-flex-middle">
+            <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
+        </div>
+        <div class="uk-flex uk-flex-center uk-hidden-small">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent" data-uk-dropdown ng-repeat="x in mainlinks">
+                        <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
+                            <ul class="uk-nav uk-nav-navbar">
+                                <li ng-repeat="x in sublinks">
+                                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        <a href="#" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"></a>
+    </nav>
+    <!-- Navigation -->
+</div>
+
+<!-- Content -->
+<div class="osq-block uk-block uk-block-default">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+            <!-- Main -->
+            <div class="uk-width-medium-4-5">
+                <div class="uk-article" id="char-items-stats">
+                    <h1 class="uk-article-title">Character Items and Stats</h1>
+                    <p class="uk-article-meta">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
+                    <p class="uk-article-lead">art</p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">What is Character Items?</span></p>
+                    <p>Character Items is the items we get from <a href="http://forums.fatsharkgames.com/discussion/719/loot-and-loot-roll-explaining/p1">loot roll</a> and can be used on your characters to fight the skaven or in <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) to make better one.</p>
+                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
+                    <h3>Character items</h3>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Head gear</span></p>
+                    <p><ul><li>Purely cosmetic</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Weapons</span></p>
+                    <table class="uk-table">
+                        <thead>
+                        <tr class="uk-panel-box uk-panel-box-primary">
+                            <th><span style="color: rgb(120, 11, 12);">Bright Wizard</span></th>
+                            <th><span style="color: rgb(113, 113, 103);">Dwarf Ranger</span></th>
+                            <th><span style="color: rgb(238, 234, 236);">Empire Soldier</span></th>
+                            <th><span style="color: rgb(213, 104, 10);">Witch Hunter</span></th>
+                            <th><span style="color: rgb(50, 73, 54);">Waywatcher</span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="uk-panel-box-secondary">
+                            <td colspan="5" class="uk-text-center">Melee</td>
+                        </tr>
+                        <tr>
+                            <td>Sword</td>
+                            <td>Axe and Shield</td>
+                            <td>Two-Handed Hammer</td>
+                            <td>Rapier</td>
+                            <td>Dual Daggers</td>
+                        </tr>
+                        <tr>
+                            <td>Mace</td>
+                            <td>Hammer and Shield</td>
+                            <td>Two-Handed Sword</td>
+                            <td>Two-Handed Sword</td>
+                            <td>Dual Swords</td>
+                        </tr>
+                        <tr>
+                            <td>Flaming Sword</td>
+                            <td>Great Axe</td>
+                            <td>Sword</td>
+                            <td>Axe</td>
+                            <td>Sword and Dagger</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Two-Handed Hammer</td>
+                            <td>Mace</td>
+                            <td></td>
+                            <td>Sword</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Hammer</td>
+                            <td>Mace and Shield</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Axe</td>
+                            <td>Sword and Shield</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">Range</td>
+                        </tr>
+                        <tr>
+                            <td>Fireball Staff</td>
+                            <td>Crossbow</td>
+                            <td>Blunderbuss</td>
+                            <td>Brace of Pistols</td>
+                            <td>Swift Bow</td>
+                        </tr>
+                        <tr>
+                            <td>Bolt Staff</td>
+                            <td>Handgun</td>
+                            <td>Handgun</td>
+                            <td>Crossbow</td>
+                            <td>Longbow</td>
+                        </tr>
+                        <tr>
+                            <td>Beam Staff</td>
+                            <td>Grudge-Raker</td>
+                            <td>Repeater Handgun</td>
+                            <td>Repeater Pistol</td>
+                            <td>Hagbane Swift Bow</td>
+                        </tr>
+                        <tr>
+                            <td>Conflagration Staff</td>
+                            <td>Drakefire Pistols</td>
+                            <td></td>
+                            <td></td>
+                            <td>Trueflight Longbow</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p><ul><li>Every weapon combination you can have on your character will give you different attacks.</li><li style="list-style: none;"><ul><li><span style="font-weight: bold;">Normal</span> (Soft)</li><li><span style="font-weight: bold;">Charged/Aimed</span> (Hard)</li><li><span style="font-weight: bold;">Special</span> (Various) (Not on many weapons)</li></ul></li><li>Every ranged weapon have different range and dispersion.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Trinkets</span></p>
+                    <p><ul><li>Will give you different passive traits.</li><li>Are also cosmetic for your character.</li></ul></p>
+                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
+                    <h3>Weapon Stats</h3>
+                    <p>In the inventory at the Red Moon Inn you can see a graph that shows the stats and traits for all your weapons. More detailed version of the weapons can be found at my <a href="http://forums.fatsharkgames.com/discussion/855/weapon-stats-explaining">Weapon stats thread</a>.</p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stats</span></p>
+                    <p><ul><li style="list-style: none;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" /></li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Special</span></p>
+                    <p><ul><li>Some weapons have special passive characteristics like Armor penetration and Head shot.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stamina</span></p>
+                    <p><ul><li>All melee weapons have their stamina for blocking and pushing.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Weapon Traits</span></p>
+                    <p><ul><li>Passive traits that can be unlocked from the forge on <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li></ul></p>
+                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
+                    <h3>Attack styles</h3>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Attack</span></p>
+                    <p>All weapons have their way of hitting the enemies. Some can hit more than one enemy and some can easily damage heavier enemies like Stormvermin. While some will have problems with heavier enemies.</p>
+                    <p>For melee there is everything from slashing, bashing, piercing, swinging and Stabbing. For ranged we have more of how hard it can hit, dispersion and range. Where magic have everything from missiles to Area of effect.</p>
+                    <p>All melee weapons have a series of attack motions for both Normal and Charged attacks (varies from weapon to weapon). Max is 3. You can combine this attacks to get the full use of them.</p>
+                    <p>Normal attacks is a tap with left mouse button. Charged attacks is holding down the left mouse button. But you might just need to hold it in for 0.5-1 sec. and not wait for the animation to be fully done.</p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Example - Dwarf Ranger:</span></p>
+                    <p><ul><li><span style="font-weight: bold;color: rgb(0, 153, 0);">Normal attacks</span> - 1. Slice from right, 2. Slice from left, 3. Hack from top.</li><li><span style="font-weight: bold;color: rgb(0, 153, 0);">Charged attack</span> - 1. Bash forward, 2. Swing from left, 3. Swing from right.</li><li style="list-style: none;">I might want to attack with Charged (1) first to get the skaven pushed back a little and get one with a Normal (2) hit and finish with a charged (3) to separate them one more time and even get a kill on it. This can give me hits on the skavens without them hitting me. Less damage on me and i can fight more before i need to heal and survive the mission.</li><li style="list-style: none;">Or it can be a horde attacking and you see the first skavens are coming one by one. You can then do the combo with Normal 1, Normal 2 and after that more than one skaven are just in front of you and you can finish it with C3 to push them off before you do a next combo or just attack with normal.</li></ul></p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Block</span></p>
+                    <p>Block and push can help you and your friends survive longer and to make more attacks. By splitting up the skavens makes it harder for them to hit you and you can attack easier an enemy that is by them self without get hit yourself.</p>
+                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Overcharge</span></p>
+                    <p>When the Bright Wizard uses her magic she starts to fill her overcharged meter. when she get over 30%ish (notches in the meter) she will take longer to cooldown and you can start ventilate by using your reload button. It will ventilate only down to this notches. After that it will cooldown in normal speed. Bright wizard will cooldown as soon as she do not use the staff and when using the melee weapon.</p>
+                    <p>See my separate thread for <a href="http://forums.fatsharkgames.com/discussion/855/weapon-stats-explaining">weapon stats</a> where i try to give you the strength, weakness and attack styles for every weapons.</p>
+                    <p>Remember that this is not officially from the Fatshark. I have only made this to start understand how things work in the game and to start discussions about it.</p>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="uk-width-medium-1-5">
+                <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
+                    <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                        <li class="uk-nav-header">Page Index</li>
+                        <li><a href="#redmooninn">Red Moon Inn</a></li>
+                        <li><a href="#themap">The Map</a></li>
+                        <li><a href="#ammocrate">Ammo Crate</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#forge">Forge</a></li>
+                        <li><a href="#changecharacter">Change Character</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</div>
+<!-- Content -->
+
+<!-- Footer -->
+<div class="uk-block uk-block-secondary uk-block-large">
+    <footer class="uk-flex uk-flex-center">
+        <a href="#" data-uk-smooth-scroll>Top ^</a>
+    </footer>
+</div>
+<script>
+    /*
+    Angular JS for the page.
+    Script to pick upp the data that is picked up from other files.
+    =>  app.controller('menuCtrl') = controls menus
+     */
+    var app = angular.module('pageApp', []);
+
+    //Controller for menus.
+    app.controller('menuCtrl', function($scope, $http) {
+        $http.get("../../headerbar.json")
+                .then(function(response) {
+                    $scope.mainlinks = response.data.mainmenu;
+                    // Sublink need to be set for the right submenu from the JSON file.
+                    $scope.sublinks = response.data.vermintidemenu;
+                });
+    });
+</script>
+</body>
+</html>

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Red Moon Inn - Vermintide - Osquars Laboratory</title>
     <link rel="stylesheet" href="../../assets/css/uikit.css" />
-    <!--<link rel="stylesheet" href="../../assets/css/components/sticky.almost-flat.min.css" />-->
     <link rel="stylesheet" href="../../assets/css/mycss.css" />
 
     <script src="../../assets/js/jquery-1.11.3.min.js"></script>
@@ -34,15 +33,6 @@
         </div>
         <a href="#" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"></a>
     </nav>
-    <!--<div class="osq-subnav uk-navbar uk-navbar-attached uk-hidden-small">
-        <div class="uk-flex uk-flex-center">
-            <ul class="uk-navbar-nav">
-                <li ng-repeat="x in sublinks">
-                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
-                </li>
-            </ul>
-        </div>
-    </div>-->
     <!-- Navigation -->
 </div>
 
@@ -134,7 +124,7 @@
             <!-- Sidebar -->
             <aside class="uk-width-medium-1-5">
                 <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
-                    <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0px;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                    <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
                         <li class="uk-nav-header">Page Index</li>
                         <li><a href="#redmooninn">Red Moon Inn</a></li>
                         <li><a href="#themap">The Map</a></li>
@@ -158,11 +148,19 @@
     </footer>
 </div>
 <script>
+    /*
+    Angular JS for the page.
+    Script to pick upp the data that is picked up from other files.
+    =>  app.controller('menuCtrl') = controls menus
+     */
     var app = angular.module('pageApp', []);
+
+    //Controller for menus.
     app.controller('menuCtrl', function($scope, $http) {
         $http.get("../../headerbar.json")
                 .then(function(response) {
                     $scope.mainlinks = response.data.mainmenu;
+                    // Sublink need to be set for the right submenu from the JSON file.
                     $scope.sublinks = response.data.vermintidemenu;
                 });
     });
