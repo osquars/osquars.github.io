@@ -8,6 +8,22 @@
     border-bottom-left-radius: 0px;
 }
 
+/*".osq-dropdown-overlay {
+    background: rgba(0,0,0,0.3);
+}*/
+
+/* Blocks */
+.osq-block{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1220px) {
+    .osq-block {
+        max-width: 1200px;
+    }
+}
+
 /* article panel*/
 .osq-panel-teaser {
 	display: inherit;
