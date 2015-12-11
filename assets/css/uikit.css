@@ -1423,7 +1423,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar {
   background: #171618;
-  color: #818181;
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 4px;
 }
@@ -1452,7 +1452,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   height: 41px;
   padding: 0 15px;
   line-height: 40px;
-  color: #818181;
+  color: #ffffff;
   font-size: 14px;
   font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
   font-weight: normal;
@@ -1469,7 +1469,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 .uk-navbar-nav > li > a:focus,
 .uk-navbar-nav > li.uk-open > a {
   background-color: #818181;
-  color: #000000;
+  color: #ffffff;
   outline: none;
   position: relative;
   z-index: 1;
@@ -1486,7 +1486,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar-nav > li.uk-active > a {
   background-color: #818181;
-  color: #000000;
+  color: #ffffff;
   border-left-color: rgba(255, 255, 255, 0.1);
   border-right-color: rgba(255, 255, 255, 0.1);
   border-top-color: rgba(0, 0, 0, 0.1);
@@ -1540,12 +1540,12 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 }
 .uk-navbar-toggle {
   font-size: 18px;
-  color: #818181;
+  color: #dddddd;
   text-decoration: none;
 }
 .uk-navbar-toggle:hover,
 .uk-navbar-toggle:focus {
-  color: #dddddd;
+  color: #818181;
   text-decoration: none;
   outline: none;
 }
