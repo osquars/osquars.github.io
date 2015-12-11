@@ -19,12 +19,12 @@
         </div>
         <div class="uk-flex uk-flex-center uk-hidden-small">
             <ul class="uk-navbar-nav">
-                <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
-                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks" ng-class="{ active: isActive('{{ x.Url }}')}">
+                    <a href="{{ x.Url }}">{{ x.Title }}</a>
                     <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
                         <ul class="uk-nav uk-nav-navbar">
                             <li ng-repeat="x in sublinks">
-                                <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                                <a href="{{ x.Url }}">{{ x.Title }}</a>
                             </li>
                         </ul>
                     </div>
@@ -190,19 +190,23 @@
     var app = angular.module('pageApp', []);
 
     //Controller for menus.
-    app.controller('menuCtrl', function($scope, $http) {
+    app.controller('menuCtrl', function($scope, $http, $location) {
         $http.get("../headerbar.json")
                 .then(function(response) {
                     $scope.mainlinks = response.data.mainmenu;
                     // Sublink need to be set for the right submenu from the JSON file.
                     $scope.sublinks = response.data.vermintidemenu;
                 });
+        console.log($location.path());
+        $scope.isActive = function (viewLocation) {
+            return viewLocation === $location.path();
+        };
     });
     app.controller('patchCtrl', function($scope, $http) {
         $http.get("patchlatest.txt")
                 .then(function(response) {
                     $scope.patchLatest = response.data.split('\n');
-                    console.log($scope.patchLatest);
+                    //console.log($scope.patchLatest);
                 });
     })
 </script>

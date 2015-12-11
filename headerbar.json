@@ -2,27 +2,27 @@
   "mainmenu" : [
     {
       "Title" : "Vermintide: The End Times",
-      "Url" : "vermintide/",
+      "Url" : "/vermintide",
       "Sub" : "vermintidemenu"
     },
     {
       "Title" : "Lerning",
-      "Url" : "lerning/",
+      "Url" : "/lerning",
       "Sub" : ""
     }
   ],
   "vermintidemenu" : [
     {
       "Title" : "Red Moon Inn",
-      "Url" : "vermintide/redmooninn/"
+      "Url" : "/vermintide/redmooninn"
     },
     {
       "Title" : "Character Items and Stats",
-      "Url" : "vermintide/characteritemsandstats/"
+      "Url" : "/vermintide/characteritemsandstats"
     },
     {
       "Title" : "Weapon Stats",
-      "Url" : "vermintide/weaponstats/"
+      "Url" : "/vermintide/weaponstats"
     },
     {
       "Title" : "Weapon and Trinkets Traits",
