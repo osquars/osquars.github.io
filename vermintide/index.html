@@ -35,20 +35,23 @@
     </nav>
     <!-- Navigation -->
 </div>
+<!-- Top Block -->
 <div class="osq-block-border uk-block uk-block-primary" ng-controller="patchCtrl">
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
             <div class="uk-width-medium-2-3">
                 <div class="uk-panel uk-panel-box uk-text-center">
                     <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/742x250"></a>
-                    <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Osquars Pages</a></h1>
-                    <p>This pages that is created with help from the Github and will be used for me to crate text and material for games and other fun stuff that might be used here. And for me to test around with git.</p>
+                    <h1 class="uk-article-title uk-margin-bottom">Vermintide: The End Times</h1>
+                    <p class="uk-article-lead">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
+                    <p>Vermintide takes place in and around Ubersreik, a city overrun by Skaven. You will assume the role of one of five heroes, each featuring different play-styles, abilities, gear and personality. Working cooperatively, you must use their individual attributes to survive an apocalyptic invasion from the hordes of relentless rat-men, known as the Skaven. Battles will take place across a range of environments stretching from the top of the Magnus Tower to the bowels of the Under Empire.</p>
                 </div>
             </div>
             <div class="uk-width-medium-1-3">
                 <div class="uk-panel uk-panel-box">
                     <div class="corner-ribbon">
-                        <div></div>
+                        <div class="ribbon"></div>
+                        <div class="ribbon-text"><h3>Patch Notes</h3></div>
                     </div>
                     <!--<div class="uk-panel-badge uk-badge">Patch note</div>-->
                     <div class="uk-scrollable-box">
@@ -67,12 +70,6 @@
         <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
             <!-- Main -->
             <div class="uk-width-medium-3-4">
-                <div class="uk-article" id="vermintide">
-                    <h1 class="uk-article-title">Vermintide</h1>
-                    <p class="uk-article-lead">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
-                    <p>Vermintide takes place in and around Ubersreik, a city overrun by Skaven. You will assume the role of one of five heroes, each featuring different play-styles, abilities, gear and personality. Working cooperatively, you must use their individual attributes to survive an apocalyptic invasion from the hordes of relentless rat-men, known as the Skaven. Battles will take place across a range of environments stretching from the top of the Magnus Tower to the bowels of the Under Empire.</p>
-                    <p>Here I have collected some information about the game function and mechanics</p>
-                </div>
 
                 <div class="uk-article" id="redmooninn">
                     <h2 class="uk-article-title">Red Moon Inn</h2>
@@ -201,9 +198,6 @@
         $http.get("patchlatest.txt")
                 .then(function(response) {
                     $scope.patchLatest = response.data.split('\n');
-                    //var line = response.data.split('\n');
-
-                    console.log($scope.patchLatest);
                 });
     })
 </script>

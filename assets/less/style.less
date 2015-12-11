@@ -2,39 +2,83 @@
 
 
 //
-// General
-//
-
-@global-background: #ffffff;
-
-//
 // Typography
 //
 
 @global-color: #000000;
+@global-muted-color: #818181;
+@global-link-color: #B78252;
+@global-link-hover-color: #616161;
+@global-font-size: 14px;
+@global-line-height: 22px;
 @base-body-font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
 @base-heading-font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+
+//
+// Buttons, Navs & Badges
+//
+
+@global-primary-background: #818181;
+@global-success-background: #38943C;
+@global-warning-background: #e8b53a;
+@global-danger-background: #C5152C;
+
+//
+// Article
+//
+
+@article-meta-font-size: 14px;
+@article-meta-line-height: 24px;
+@article-meta-font-weight: 300;
+@article-lead-font-size: 20px;
+@article-lead-line-height: 32px;
+
+//
+// Base
+//
+
+@base-body-font-style: normal;
+@base-strong-font-weight: 400;
 
 //
 // Block
 //
 
-@block-default-background: #ffffff;
 @block-padding-vertical-large: 40px;
 @block-large-padding-vertical-large: 70px;
+@block-muted-background: #171618;
 @block-primary-background: #dddddd;
-@block-secondary-background: #2a2a2a;
+
+//
+// Button
+//
+
+@button-primary-hover-background: #a1a1a1;
+@button-primary-active-background: #868686;
+
+//
+// Description
+//
+
+@description-list-line-color: #868686;
 
 //
 // Dropdown
 //
 
+@dropdown-color: #fff;
+@dropdown-link-hover-color: #fff;
 @dropdown-navbar-margin: 5px;
-@dropdown-animation: uk-fade;
-@dropdown-navbar-animation: uk-fade;
+@dropdown-navbar-color: #fff;
 @dropdown-background: #ffffff;
 @dropdown-navbar-background: rgba(0, 0, 0, 0.85);
 @dropdown-border: 0;
+
+//
+// Form
+//
+
+@form-legend-border: rgba(190, 190, 190, 0.28);
 
 //
 // Icon
@@ -46,22 +90,32 @@
 // Nav
 //
 
-@nav-navbar-color: #818181;
-@nav-navbar-hover-background: #818181;
-@nav-side-hover-background: rgba(0, 0, 0, 0.3);
-@nav-side-active-background: @nav-side-hover-background;
-@nav-side-hover-text-shadow: rgba(0,0,0,0.3);
+@nav-navbar-color: #fff;
+@nav-navbar-divider-border: rgba(255, 255, 255, 0.1);
+@nav-navbar-header-color: #fff;
+@nav-navbar-nested-hover-color: #fff;
+@nav-side-color: @global-color;
+@nav-dropdown-color: #fff;
+@nav-dropdown-header-color: #fff;
+@nav-dropdown-divider-border: rgba(255, 255, 255, 0.1);
+@nav-dropdown-nested-hover-color: #fff;
 @nav-dropdown-hover-text-shadow: rgba(255,255,255,0.3);
-@nav-side-hover-color: #fff;
+@nav-offcanvas-color: #fff;
+@nav-offcanvas-header-color: #fff;
+@nav-offcanvas-nested-hover-color: #fff;
+@nav-offcanvas-divider-border: rgba(255, 255, 255, 0.1);
+@nav-search-color: @nav-navbar-color;
 
 //
 // Navbar
 //
 
 @navbar-nav-font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-@navbar-background: #2a2a2a;
+@navbar-background: #171618;
 @navbar-color: #818181;
+@navbar-link-color: #fff;
 @navbar-brand-color: #ddd;
+@navbar-brand-hover-color: #818181;
 @navbar-text-shadow: rgba(255,255,255,0.1);
 @navbar-nav-hover-background: #818181;
 @navbar-border: rgba(255, 255, 255, 0.06);
@@ -69,17 +123,40 @@
 @navbar-nav-hover-border: rgba(255, 255, 255, 0.1);
 @navbar-nav-color: #818181;
 @navbar-nav-active-background: #818181;
-@navbar-brand-hover-color: #818181;
 @navbar-toggle-color: #818181;
 @navbar-toggle-hover-color: #ddd;
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-background: #171618;
+@offcanvas-panel-title-color: #fff;
+@offcanvas-panel-color: #818181;
+@offcanvas-panel-link-color: #fff;
+@offcanvas-panel-link-hover-color: #818181;
 
 //
 // Panel
 //
 
+@panel-title-font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+@panel-title-font-size: 20px;
+@panel-title-line-height: 26px;
+@panel-title-font-weight: 400;
+@panel-box-primary-link: #A0A0A0;
+@panel-box-primary-link-hover-color: #fff;
 @panel-box-primary-background: #dddddd;
 @panel-box-primary-color: #000000;
 @panel-box-primary-title-color: #2a2a2a;
 @panel-box-secondary-background: #2a2a2a;
 @panel-box-secondary-color: #ffffff;
 @panel-box-secondary-title-color: #dddddd;
+@panel-box-teaser-margin: -15px;
+
+//
+// Text
+//
+
+@text-large-font-size: 20px;
+@text-large-line-height: 30px;
