@@ -41,9 +41,13 @@
         <div class="uk-grid" data-uk-grid data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
             <div class="uk-width-medium-2-3">
                 <div class="uk-panel uk-panel-box uk-text-center">
-                    <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/742x250"></a>
-                    <h1 class="uk-article-title uk-margin-bottom">Vermintide: The End Times</h1>
-                    <p class="uk-article-lead">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
+                    <div class="uk-panel-teaser uk-cover-background uk-position-relative" style="background-image: url('http://i379.photobucket.com/albums/oo237/osquars/osquars_github/Wallpaper_1920x1080_Heroes_zpsljzxdncz.png');">
+                        <img class="uk-invisible" style="min-height: 200px;" src="http://i379.photobucket.com/albums/oo237/osquars/osquars_github/Wallpaper_1920x1080_Heroes_zpsljzxdncz.png">
+                        <div class="uk-position-bottom uk-margin-left uk-margin-right uk-contrast">
+                            <h1 class="uk-article-title ">Vermintide: The End Times</h1>
+                            <p class="uk-article-lead uk-contrast uk-hidden-small">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
+                        </div>
+                    </div>
                     <p>Vermintide takes place in and around Ubersreik, a city overrun by Skaven. You will assume the role of one of five heroes, each featuring different play-styles, abilities, gear and personality. Working cooperatively, you must use their individual attributes to survive an apocalyptic invasion from the hordes of relentless rat-men, known as the Skaven. Battles will take place across a range of environments stretching from the top of the Magnus Tower to the bowels of the Under Empire.</p>
                 </div>
             </div>
@@ -51,7 +55,7 @@
                 <div class="uk-panel uk-panel-box">
                     <div class="corner-ribbon">
                         <div class="ribbon"></div>
-                        <div class="ribbon-text"><h3>Patch Notes</h3></div>
+                        <div class="ribbon-text"><p>Patch Notes</p></div>
                     </div>
                     <!--<div class="uk-panel-badge uk-badge">Patch note</div>-->
                     <div class="uk-scrollable-box">
@@ -198,6 +202,7 @@
         $http.get("patchlatest.txt")
                 .then(function(response) {
                     $scope.patchLatest = response.data.split('\n');
+                    console.log($scope.patchLatest);
                 });
     })
 </script>
