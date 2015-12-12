@@ -8,6 +8,7 @@
     <script src="../assets/js/jquery-1.11.3.min.js"></script>
     <script src="../assets/js/uikit.min.js"></script>
     <script src="../assets/js/components/sticky.min.js"></script>
+    <script src="../assets/js/components/grid.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body ng-app="pageApp" ng-controller="hostCtrl">
@@ -38,13 +39,13 @@
 <!-- Top Block -->
 <div class="osq-block-border uk-block uk-block-primary" ng-controller="patchCtrl">
     <div class="uk-container uk-container-center">
-        <div class="uk-grid" data-uk-grid data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+        <div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
             <div class="uk-width-medium-2-3">
                 <div class="uk-panel uk-panel-box uk-text-center">
                     <div class="uk-panel-teaser uk-cover-background uk-position-relative" style="background-image: url('http://i379.photobucket.com/albums/oo237/osquars/osquars_github/Wallpaper_1920x1080_Heroes_zpsljzxdncz.png');">
                         <img class="uk-invisible" style="min-height: 200px;" src="http://i379.photobucket.com/albums/oo237/osquars/osquars_github/Wallpaper_1920x1080_Heroes_zpsljzxdncz.png">
                         <div class="uk-position-bottom uk-margin-left uk-margin-right uk-contrast">
-                            <h1 class="uk-article-title ">Vermintide: The End Times</h1>
+                            <h1 class="uk-article-title ">Warhammer: The End Times - Vermintide</h1>
                             <p class="uk-article-lead uk-contrast uk-hidden-small">Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world.</p>
                         </div>
                     </div>
@@ -52,17 +53,23 @@
                 </div>
             </div>
             <div class="uk-width-medium-1-3">
-                <div class="uk-panel uk-panel-box">
+                <div class="uk-panel uk-panel-box uk-panel-box-secondary">
                     <div class="corner-ribbon">
                         <div class="ribbon"></div>
-                        <div class="ribbon-text"><p>Patch Notes</p></div>
+                        <div class="ribbon-text"><p><i class="uk-icon-cogs"></i> Features</p></div>
                     </div>
-                    <!--<div class="uk-panel-badge uk-badge">Patch note</div>-->
-                    <div class="uk-scrollable-box">
-                        <ul class="uk-list">
-                            <li ng-repeat="x in patchLatest track by $index"><span ng-if="x==''">---</span>{{ x }}</li>
-                        </ul>
-                    </div>
+                    <ul class="uk-list uk-list-line uk-list-space uk-text-warning">
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Cooperative Survival For up to 4 Players</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Play as Five Unique Heroes</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Huge Hero Arsenal</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Embark on an Epic Quest</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Experience the Skaven Like Never Before</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Gather Mountains of Shiny Loot</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Battle Unpredictable Enemies</li>
+                        <li class="uk-margin"><i class="uk-icon-asterisk"></i> Experience an Immersive Story</li>
+                        <li class="uk-margin-large"><i class="uk-icon-asterisk"></i> Find a Path to Safety</li>
+                    </ul>
+                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" class="uk-align-center">
                 </div>
             </div>
         </div>
@@ -70,151 +77,83 @@
 </div>
 <!-- Content -->
 <div class="osq-block-border uk-block uk-block-default">
-    <div class="uk-container uk-container-center">
-        <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
-            <!-- Main -->
-            <div class="uk-width-medium-3-4">
-
-                <div class="uk-article" id="redmooninn">
-                    <h2 class="uk-article-title">Red Moon Inn</h2>
-                    <p class="uk-article-meta">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
-                    <p class="uk-article-lead">The Red Moon Inn. The home for you and your party.<br>An Innkeeper that have nothing else to do then telling you that you should join the “party” instead of hiding in your room.<br>You can take a beer, have a chat or just trash the place.</p>
-                    <p><img src="http://www.vermintide.com/wp-content/uploads/2015/09/Red_Moon_Inn_Concept_1.png" width="350" height="184" style="float: right; margin-left: 10px;">The Red Moon Inn is your home. Where you have your own room that is decorated with stuff from your character. From here you operate your mission and gather your party before going to the mission. Get to know a little bit more about the innkeeper story <a href="http://www.vermintide.com/dev-blog-26-the-inn-keeper/" target="_blank">here</a>.</p>
-                    <h3>Lobby</h3>
-                    <ul>
-                        <li>The Map</li>
-                        <li>Ammo Crate</li>
-                        <li>Inventory (Shown after first victory)</li>
-                        <li>Forge (Unlocked at Level 1)</li>
-                        <li>Change Character</li>
-                    </ul>
-                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;">
-                    <h3>The Map</h3>
-                    <p>The Map is where you can set up your party, select your mission and search for party. Only the one created a party (Host) can interact with the map if you are in party already.</p>
-                    <ul>
-                        <li>You/Host(if in a party) can start missions</li>
-                        <li style="list-style: none;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/7b/f6b5eac7f9a8f71ed15e4f7d89a01a.png" style="display: inline-block;" /> <img src="http://forums.fatsharkgames.com/uploads/Uploader/42/0d96393c858641a5f1626d9db98d11.png" style="display: inline-block;" /></li>
-                        <li>Choose mission and set difficulty</li>
-                        <li>Advance settings like distance, hero filter, hosting and/or auto ready</li>
-                        <li>See if friends are online to invite or join</li>
-                        <li>Set the mission to private</li>
-                    </ul>
-                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
-                    <h3>Ammo Crate</h3>
-                    <p>Why not have some extra ammo when you have a party. Perfect if you want to test your new weapon or just want to shoot something in the Inn.</p>
-                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
-                    <h3>Inventory</h3>
-                    <p>Here you can go and change weapons and trinkets for your character.</p>
-                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
-                    <h3>Forge</h3>
-                    <p>In our lovely home the Red Moon Inn we have a Forge. On this forge we can make stuff, upgrade, mould our items or destroy them.</p>
-                    <p>On the Forge upgrading cost and salvage collect "shards". Every type of shards represents the rarity of the items.</p>
-                    <ul>
-                        <li>White (Plentiful)</li>
-                        <li>Green (Common)</li>
-                        <li>Blue (Rare)</li>
-                        <li>Orange (Exotic)</li>
-                    </ul>
-                    <p><img src="http://forums.fatsharkgames.com/uploads/Uploader/90/3c961a1b1ce9b12f20886eced18308.png" alt="image" style="width: 33%;display: inline-block;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/96/161876f06567ac57e0dfb7f2b4bffb.png" alt="image" style="display: inline-block;width: 33%;"><img src="http://forums.fatsharkgames.com/uploads/Uploader/1d/fc5e787fd601f06aa4a10cf76f2d06.png" alt="image" style="display: inline-block;width: 33%;"></p>
-                    <h4>Fuse</h4>
-                    <ul>
-                        <li>Takes 5 items of the same rarity and fuse them to a new and better one.</li>
-                        <li>You can only fuse items of the same rarity.</li>
-                        <li>Fuse will have 20% probability for each weapon you add.</li>
-                        <li style="list-style: none;">
-                            <ul>
-                                <li>Example 1: 5 Common Great Hammers will give you 1 Rare Great Hammer</li>
-                                <li>Example 2: 1 Common Crossbow, 2 Common Great Hammers and 2 Common Longbows will give you a (20%, 40%, 40% chance) Rare item.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h4>Upgrade</h4>
-                    <ul>
-                        <li>Takes one <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> or higher item and unlock one passive trait.</li>
-                        <li>Upgrading weapons by unlocking traits becomes more expensive as you upgrade your weapon.</li>
-                        <li>First trait will cost 1 shard while the 2nd trait will cost 3 shards and the 3rd trait will cost 5 shards.</li>
-                        <li>You can however choose freely which trait you want to get as the 1st and cheaper one.</li>
-                        <li style="list-style: none;">
-                            <ul>
-                                <li>Common traits require Plentiful shards</li>
-                                <li>Rare traits require Common shards</li>
-                                <li>Exotic traits require Rare shards</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h4>Salvage</h4>
-                    <ul>
-                        <li>Salvage every item you click on and make it to 1-3 shards of the same rarity.</li>
-                    </ul>
-                    <p>You can only get items by the <a href="http://forums.fatsharkgames.com/discussion/719/loot-and-loot-roll-explaining/p1">Loot Roll</a> or level up your account.</p>
-                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;">
-                    <h3>Change Character</h3>
-                    <p>By going to the menu you can change character you are using. Get to know a little bit more about the characters story <a href="http://www.vermintide.com/heroes/" target="_blank">here</a>.</p>
-                    <p><img src="http://www.vermintide.com/wp-content/uploads/2015/07/bh-heroes.jpg" alt="All heros" style="width:100%;" /></p>
-                    <p>Remember that this is not officially from the Fatshark. I have only made this to start understand how things work in the game and to start discussions about it.</p>
+    <div class="uk-flex uk-flex-center uk-margin-large-right uk-margin-large-left">
+        <div class="uk-grid uk-grid-match uk-width-1-1" data-uk-grid-match="{target: .osq-grid-match}" data-uk-grid-margin="">
+        <div class="uk-width-medium-1-2 uk-width-large-1-3">
+            <div class="uk-panel uk-panel-box uk-panel-box-secondary osq-grid-match">
+                <div class="uk-panel-teaser"><img style="min-height: 200px;" src="http://www.vermintide.com/wp-content/uploads/2015/10/Ubersreik_View.png"></div>
+                <h3 class="uk-panel-title"><i class="uk-icon-book"></i> Tutorials and Explanations</h3>
+                <p>I have under my time as beta tester for the Vermintide created this texts to help players understand the game and make it easier to get into the game.</p>
+                <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" class="uk-align-center">
+            </div>
+        </div>
+        <div class="uk-width-medium-1-2 uk-width-large-2-3">
+            <div class="uk-container uk-padding-remove uk-position-relative osq-grid-match">
+                <div data-uk-grid="{gutter: 20}" class="uk-grid-width-medium-1-2 uk-grid-width-large-1-3">
+                    <!-- Main -->
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-badge uk-badge uk-badge-danger"><a class="uk-text-contrast" href="redmooninn/">Read more</a></div>
+                            <h2 class="uk-panel-title">Red Moon Inn</h2>
+                            <p>The Red Moon Inn. The home for you and your party.<br>An Innkeeper that have nothing else to do then telling you that you should join the "party" instead of hiding in your room.<br>You can take a beer, have a chat or just trash the place.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-badge uk-badge uk-badge-danger"><a class="uk-text-contrast" href="characteritemsandstats/">Read more</a></div>
+                            <h2 class="uk-panel-title">Character Items and Stats</h2>
+                            <p>Character Items is the items we get from loot roll and can be used on your characters to fight the skaven or in the Forge (Red Moon Inn thread) to make better one.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <div class="uk-panel-badge uk-badge uk-badge-danger"><a class="uk-text-contrast" href="weaponstats/">Read more</a></div>
+                            <h2 class="uk-panel-title">Weapon Stats</h2>
+                            <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character..</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <h2 class="uk-panel-title">Weapon and Trinkets Traits</h2>
+                            <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character..</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <h2 class="uk-panel-title">Mission Items</h2>
+                            <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character..</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <h2 class="uk-panel-title">Loot and Loot Roll</h2>
+                            <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character..</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-panel uk-panel-box">
+                            <h2 class="uk-panel-title">Skaven - The Enemy</h2>
+                            <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character..</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Sidebar -->
-            <aside class="uk-width-medium-1-4">
-                <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
-                    <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0px;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
-                        <li class="uk-nav-header">Page Index</li>
-                        <li><a href="#redmooninn">Red Moon Inn</a></li>
-                        <li><a href="#char-items-stats">Character Items and Stats</a></li>
-                        <li><a href="#weapon-stats">Weapon Stats</a></li>
-                        <li><a href="#">Template Settings</a></li>
-                        <li><a href="#">Custom Widgets</a></li>
-                        <li><a href="#">Additional Pages</a></li>
-                        <li><a href="#">Custom Classes</a></li>
-                    </ul>
-                </div>
-            </aside>
         </div>
-
+        </div>
     </div>
 </div>
 <!-- Content -->
-
-<!-- Footer -->
 <div class="osq-block-footer uk-block uk-block-secondary uk-block-large">
-    <footer class="uk-flex uk-flex-center">
+    <div class="uk-width-medium-1-2 uk-container-center uk-text-center uk-contrast">
+        <p><a href="http://www.vermintide.com" target="_blank">Warhammer: The End Times - Vermintide</a> and the names of the characters, items, missions and otherwise mentioned herein are trademarks of <a href="http://www.fatsharkgames.com" target="_blank">Fatshark AB</a> under license to <a href="http://www.games-workshop.com/" target="_blank">Games Workshop</a>.</p>
+    </div>
+</div>
+<!-- Footer -->
+<div class="osq-block-footer uk-block uk-block-default uk-block-large">
+    <footer class="uk-width-medium-1-2 uk-container-center uk-text-center">
         <a href="#" data-uk-smooth-scroll>Top ^</a>
     </footer>
 </div>
-<script>
-    /* Angular JS for the page. */
-    /*var app = angular.module('pageApp', []);
-    app.controller('hostCtrl', function($scope, $location) {
-        console.log($location.host());
-        var host = $location.host();
-        var hostUrl = "http://osquars.github.io/";
-        if (host=='localhost') {
-            hostUrl = "http://localhost/osquars.github.io/";
-        }
-        $scope.hostUrl = hostUrl;
-        console.log(hostUrl);
-    });*/
-
-    //Controller for menus.
-    /*app.controller('menuCtrl', function($scope, $http, $location) {
-
-        $http.get($scope.hostUrl + 'headerbar.json')
-                .then(function(response) {
-                    $scope.mainlinks = response.data.mainmenu;
-                    // Sublink need to be set for the right submenu from the JSON file.
-                    $scope.sublinks = response.data.vermintidemenu;
-                    $scope.location = $location;
-                    console.log($scope.location);
-                });
-    });
-    app.controller('patchCtrl', function($scope, $http) {
-        $http.get("patchlatest.txt")
-                .then(function(response) {
-                    $scope.patchLatest = response.data.split('\n');
-                    //console.log($scope.patchLatest);
-                });
-    })*/
-</script>
 <script src="../assets/js/pageApp.js"></script>
 <script src="../assets/js/hostCtrl.js"></script>
 <script src="../assets/js/menuCtrl.js"></script>
