@@ -969,7 +969,7 @@ iframe {
 }
 .uk-panel-box .uk-panel-badge {
   top: 10px;
-  right: 10px;
+  right: -10px;
 }
 .uk-panel-box > .uk-panel-teaser {
   margin-top: -16px;
@@ -4691,9 +4691,9 @@ select.uk-form-width-mini {
   display: inline-block;
   padding: 0 5px;
   background: #818181;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 14px;
+  line-height: 19px;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
