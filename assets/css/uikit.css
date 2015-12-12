@@ -968,7 +968,7 @@ iframe {
   color: #000000;
 }
 .uk-panel-box .uk-panel-badge {
-  top: 10px;
+  top: -5px;
   right: -10px;
 }
 .uk-panel-box > .uk-panel-teaser {
