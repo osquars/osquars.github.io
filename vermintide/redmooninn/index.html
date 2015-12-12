@@ -10,21 +10,21 @@
     <script src="../../assets/js/components/sticky.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
-<body ng-app="pageApp">
-<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home='../../'">
+<body ng-app="pageApp" ng-controller="hostCtrl">
+<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home=''">
     <!-- Navigation -->
     <nav class="uk-navbar uk-navbar-attached">
         <div class="osq-brand uk-flex uk-flex-middle">
-            <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/">Osquars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
+            <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="{{ hostUrl }}"><span>O</span>squars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
         </div>
         <div class="uk-flex uk-flex-center uk-hidden-small">
             <ul class="uk-navbar-nav">
                 <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
-                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                    <a href="{{ hostUrl }}{{ x.Url }}">{{ x.Title }}</a>
                     <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
                         <ul class="uk-nav uk-nav-navbar">
                             <li ng-repeat="x in sublinks">
-                                <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                                <a href="{{ hostUrl }}{{ x.Url }}">{{ x.Title }}</a>
                             </li>
                         </ul>
                     </div>
@@ -147,23 +147,8 @@
         <a href="#" data-uk-smooth-scroll>Top ^</a>
     </footer>
 </div>
-<script>
-    /*
-    Angular JS for the page.
-    Script to pick upp the data that is picked up from other files.
-    =>  app.controller('menuCtrl') = controls menus
-     */
-    var app = angular.module('pageApp', []);
-
-    //Controller for menus.
-    app.controller('menuCtrl', function($scope, $http) {
-        $http.get("../../headerbar.json")
-                .then(function(response) {
-                    $scope.mainlinks = response.data.mainmenu;
-                    // Sublink need to be set for the right submenu from the JSON file.
-                    $scope.sublinks = response.data.vermintidemenu;
-                });
-    });
-</script>
+<script src="../../assets/js/pageApp.js"></script>
+<script src="../../assets/js/hostCtrl.js"></script>
+<script src="../../assets/js/menuCtrl.js"></script>
 </body>
 </html>
