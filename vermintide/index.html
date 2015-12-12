@@ -19,12 +19,12 @@
         </div>
         <div class="uk-flex uk-flex-center uk-hidden-small">
             <ul class="uk-navbar-nav">
-                <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks" ng-class="{ active: isActive('{{ x.Url }}')}">
-                    <a href="{{ x.Url }}">{{ x.Title }}</a>
+                <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
+                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
                     <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
                         <ul class="uk-nav uk-nav-navbar">
                             <li ng-repeat="x in sublinks">
-                                <a href="{{ x.Url }}">{{ x.Title }}</a>
+                                <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
                             </li>
                         </ul>
                     </div>
@@ -182,25 +182,20 @@
     </footer>
 </div>
 <script>
-    /*
-     Angular JS for the page.
-     Script to pick upp the data that is picked up from other files.
-     =>  app.controller('menuCtrl') = controls menus
-     */
+    /* Angular JS for the page. */
     var app = angular.module('pageApp', []);
 
     //Controller for menus.
     app.controller('menuCtrl', function($scope, $http, $location) {
+        console.log($location);
         $http.get("../headerbar.json")
                 .then(function(response) {
                     $scope.mainlinks = response.data.mainmenu;
                     // Sublink need to be set for the right submenu from the JSON file.
                     $scope.sublinks = response.data.vermintidemenu;
+                    $scope.location = $location;
+                    console.log($scope.location);
                 });
-        console.log($location.path());
-        $scope.isActive = function (viewLocation) {
-            return viewLocation === $location.path();
-        };
     });
     app.controller('patchCtrl', function($scope, $http) {
         $http.get("patchlatest.txt")
@@ -210,5 +205,8 @@
                 });
     })
 </script>
+<!--<script src="../assets/js/pageApp.js"></script>
+<script src="../assets/js/menuCtrl.js"></script>
+<script src="../assets/js/patchCtrl.js"></script>-->
 </body>
 </html>
