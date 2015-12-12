@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="assets/css/uikit.css" />
+    <link rel="stylesheet" href="assets/css/mycss.css" />
+
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/components/sticky.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="pageApp">
+<div class="headerbar" data-uk-sticky="" ng-controller="menuCtrl" ng-init="Home=''">
+    <!-- Navigation -->
+    <nav class="uk-navbar uk-navbar-attached">
+        <div class="osq-brand uk-flex uk-flex-middle">
+            <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="/"><span>O</span>squars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
+        </div>
+        <div class="uk-flex uk-flex-center uk-hidden-small">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
+                    <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                    <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" ng-if="x.Sub">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <li ng-repeat="x in sublinks">
+                                <a href="{{ Home }}{{ x.Url }}">{{ x.Title }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="uk-navbar-toggle uk-navbar-flip uk-visible-small"></a>
+    </nav>
+    <!-- Navigation -->
+</div>
+
+<div class="osq-block-border uk-block">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid"  data-uk-grid-match data-uk-grid-margin>
+            <div class="uk-width-large-3-4">
+                <div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+                    <div class="uk-width-small-1-2">
+                        <article class="uk-article">
+                            <!-- Content -->
+                            <div class="uk-panel uk-panel-box uk-text-center">
+                                <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/434x150"></a>
+                                <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Osquars Pages</a></h1>
+                                <p>This pages that is created with help from the Github and will be used for me to crate text and material for games and other fun stuff that might be used here. And for me to test around with git.</p>
+                            </div>
+                            <!-- Content -->
+                        </article>
+                    </div>
+                    <div class="uk-width-small-1-2">
+                        <article class="uk-article">
+                            <div class="uk-panel uk-panel-box">
+                                <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/434x150"></a>
+                                <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p class="uk-margin-small-top">
+                                    <a href="#" title="Read more">Read more</a>
+                                </p>
+                                <hr class="uk-margin-top uk-margin-bottom">
+                                <div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span></div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="uk-width-small-1-2">
+                        <article class="uk-article">
+                            <div class="uk-panel uk-panel-box">
+                                <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/434x150"></a>
+                                <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p class="uk-margin-small-top">
+                                    <a href="#" title="Read more">Read more</a>
+                                </p>
+                                <hr class="uk-margin-top uk-margin-bottom">
+                                <div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span></div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="uk-width-small-1-2">
+                        <article class="uk-article">
+                            <div class="uk-panel uk-panel-box">
+                                <a class="osq-panel-teaser uk-panel-teaser" href="#" title=""><img src="http://placehold.it/434x150"></a>
+                                <h1 class="uk-article-title uk-margin-bottom"><a href="#" title="Joomla Templates">Header</a></h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p class="uk-margin-small-top">
+                                    <a href="#" title="Read more">Read more</a>
+                                </p>
+                                <hr class="uk-margin-top uk-margin-bottom">
+                                <div class="uk-article-meta"><span><time datetime="2014-04-02">02 April 2014</time></span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <aside class="uk-width-large-1-4">
+                <div class="uk-panel uk-panel-box">
+                    <a class="twitter-timeline" href="https://twitter.com/osquars" data-widget-id="673206950566477824">Tweets by @osquars</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="osq-block-footer uk-block uk-block-secondary uk-block-large">
+    <footer class="uk-flex uk-flex-center">
+        <a href="#" data-uk-smooth-scroll>Top ^</a>
+    </footer>
+</div>
+<script>
+    /*
+     Angular JS for the page.
+     Script to pick upp the data that is picked up from other files.
+     =>  app.controller('menuCtrl') = controls menus
+     */
+    var app = angular.module('pageApp', []);
+
+    //Controller for menus.
+    app.controller('menuCtrl', function($scope, $http, $location) {
+        $http.get("headerbar.json")
+                .then(function(response) {
+                    $scope.mainlinks = response.data.mainmenu;
+                    // Sublink need to be set for the right submenu from the JSON file.
+                    $scope.sublinks = response.data.vermintidemenu;
+                    $scope.location = $location;
+                    console.log($scope.location);
+                });
+    });
+</script>
+</body>
+</html>
