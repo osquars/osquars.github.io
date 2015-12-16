@@ -18,7 +18,7 @@
         <div class="osq-brand uk-flex uk-flex-middle">
             <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="{{ hostUrl }}"><span>O</span>squars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
         </div>
-        <div class="uk-flex uk-flex-center uk-hidden-small">
+        <div class="uk-flex uk-flex-center uk-hidden-small" ng-cloak>
             <ul class="uk-navbar-nav">
                 <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
                     <a href="{{ hostUrl }}{{ x.Url }}">{{ x.Title }}</a>
