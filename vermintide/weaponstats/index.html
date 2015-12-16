@@ -17,7 +17,7 @@
         <div class="osq-brand uk-flex uk-flex-middle">
             <a class="uk-navbar-brand uk-navbar-nav-subtitle" href="{{ hostUrl }}"><span>O</span>squars<div style="margin-top: -15px; text-align: center; font-weight: 800;">Laboratory</div></a>
         </div>
-        <div class="uk-flex uk-flex-center uk-hidden-small">
+        <div class="uk-flex uk-flex-center uk-hidden-small" ng-cloak>
             <ul class="uk-navbar-nav">
                 <li class="uk-parent" data-uk-dropdown="{pos:'bottom-center'}" ng-repeat="x in mainlinks">
                     <a href="{{ hostUrl }}{{ x.Url }}">{{ x.Title }}</a>
@@ -43,31 +43,75 @@
             <!-- Main -->
             <div class="uk-width-medium-3-4">
                 <div class="uk-article" id="weapon-stats">
-                    <h2 class="uk-article-title">Weapon Stats</h2>
-                    <p style="text-align: center;">This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated. If you find anything that I have written wrong or do not think it is true, as I have written it. Please comment.</p>
+                    <h1 class="uk-article-title">Weapon Stats</h1>
                     <p>We all want to kill skaven but we want to do it in our way to satisfy our self. To understand what weapon is best for you I have here something of a list for you to look on and see what can be a good weapon for you to use on your favorite character.</p>
-                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" style="margin: 0 auto;"></div>
-                    <h3>Weapon Stats</h3>
-                    <p><img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" style="float: right; margin-left: 5px;" /></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Damage</span></p>
-                    <p><ul><li>The higher bar you have the easier it is the kill with one blow.</li><li>Clan rats kills with one blow from around 1/2 of the bar (Various from mission difficulty).</li><li>Depending on rarity of the weapon you will get a higher damage boost. Damage boost varies from weapon types.</li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Attack speed</span></p>
-                    <p><ul><li>Hard to set a number on this.</li><li>Max is like almost instant while in the bottom we have maybe up to 2 sec.</li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Targets</span> (how many targets you can hit)</p>
-                    <p><ul><li>See it as a cone in front of you, the higher bar you have the bigger the the cone are. Max is like 90 degree from you.</li><li>If you like to see with numbers I have split it up in 6 zones:</li><li style="list-style: none;"><ul><li>1 target</li><li>1-2 targets</li><li>2-3 targets</li><li>3-4 targets</li><li>4-5 targets</li><li>5-7 targets</li></ul></li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Knockback</span> (pushback on hits)</p>
-                    <p><ul><li>The Higher you have the more push/stun on the enemy you get on a hit.</li><li>Low bar is likely not to push/stun at all</li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Range</span></p>
-                    <p><ul><li>The distance is from just in front of you to almost the other side of a square (Thinking of the big square with the Sigmar statue in the magnus mission)</li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Special</span></p>
+                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker-2.png" alt="Divider-2" width="450" height="69" class="uk-align-center">
+                    <h3 id="weaponstats">Weapon Stats</h3>
+                    <img src="http://forums.fatsharkgames.com/uploads/Uploader/1b/b49d5c98b26095d2a15ed7ea661a39.jpg" class="uk-align-center uk-width-medium-1-2" />
+                    <h4 class="uk-text-success">Damage</h4>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> The higher bar you have the easier it is the kill with one blow.</li>
+                        <li><i class="uk-icon-certificate"></i> Clan rats kills with one blow from around 1/2 of the bar (Various from mission difficulty).</li>
+                        <li><i class="uk-icon-certificate"></i> Depending on rarity of the weapon you will get a higher damage boost. Damage boost varies from weapon types.</li>
+                    </ul>
+                    <h4 class="uk-text-success">Attack speed</h4>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> Hard to set a number on this.</li>
+                        <li><i class="uk-icon-certificate"></i> Max is like almost instant while in the bottom we have maybe up to 2 sec.</li>
+                    </ul>
+                    <h4 class="uk-text-success">Targets <span class="uk-text-muted">(how many targets you can hit)</span></h4>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> See it as a cone in front of you, the higher bar you have the bigger the the cone are. Max is like 90 degree from you.</li>
+                        <li><i class="uk-icon-certificate"></i> If you like to see with numbers I have split it up in 6 zones:</li>
+                        <li>
+                            <ul>
+                                <li><i class="uk-icon-certificate"></i> 1 target</li>
+                                <li><i class="uk-icon-certificate"></i> 1-2 targets</li>
+                                <li><i class="uk-icon-certificate"></i> 2-3 targets</li>
+                                <li><i class="uk-icon-certificate"></i> 3-4 targets</li>
+                                <li><i class="uk-icon-certificate"></i> 4-5 targets</li>
+                                <li><i class="uk-icon-certificate"></i> 5-7 targets</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h4 class="uk-text-success">Knockback <span class="uk-text-muted">(pushback on hits)</span></h4>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> The Higher you have the more push/stun on the enemy you get on a hit.</li>
+                        <li><i class="uk-icon-certificate"></i> Low bar is likely not to push/stun at all</li>
+                    </ul>
+                    <h4 class="uk-text-success">Range</h4>
+                    <ul>
+                        <li>The distance is from just in front of you to almost the other side of a square (Thinking of the big square with the Sigmar statue in the magnus mission)</li>
+                    </ul>
+                    <h4 class="uk-text-success">Special</h4>
                     <p>Some weapons have special passive characteristics.</p>
-                    <p><ul><li><span style="font-weight: bold;">Armor penetration</span> - Can penetrate heavy armor</li><li><span style="font-weight: bold;">Head shot</span> - High damage when hitting the head</li><li><span style="font-weight: bold;">Burn</span> - Small damage over time</li><li><span style="font-weight: bold;">Poison</span> - Small damage over time</li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Stamina</span></p>
-                    <p><ul><li>All melee weapons have their stamina for blocking and pushing.</li><li>Push off cost two Stamina (one shield icon)</li><li>Higher mission difficulty makes blocking and pushing more important to use.</li></ul></p>
-                    <p><span style="font-weight: bold;color: rgb(0, 153, 0);">Traits</span></p>
-                    <p><ul><li>Passive traits that can be unlocked on <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) from <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li><li>Depending on rarity of the weapon will give you different amount of trait slots.</li><li style="list-style: none;"><ul><li><span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span> (1 Trait slot)</li><li><span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span> (2 Trait slots)</li><li><span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span> (3 Trait slots)</li></ul></li><li>List of traits can be found at my <a href="http://forums.fatsharkgames.com/discussion/952/weapon-and-trinket-traits-explaining">weapon and trinket traits</a> thread.</li></ul></p>
-                    <div><img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" style="margin: 0 auto;"></div>
-                    <h3>Weapons and their strength</h3>
+                    <ul>
+                        <li><span style="font-weight: bold;">Armor penetration</span> - Can penetrate heavy armor</li>
+                        <li><span style="font-weight: bold;">Head shot</span> - High damage when hitting the head</li>
+                        <li><span style="font-weight: bold;">Burn</span> - Small damage over time</li>
+                        <li><span style="font-weight: bold;">Poison</span> - Small damage over time</li>
+                    </ul>
+                    <h4 class="uk-text-success">Stamina</h4>
+                    <ul>
+                        <li>All melee weapons have their stamina for blocking and pushing.</li>
+                        <li>Push off cost two Stamina (one shield icon)</li>
+                        <li>Higher mission difficulty makes blocking and pushing more important to use.</li>
+                    </ul>
+                    <h4 class="uk-text-success">Traits</h4>
+                    <ul>
+                        <li>Passive traits that can be unlocked on <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) from <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li>
+                        <li>Depending on rarity of the weapon will give you different amount of trait slots.</li>
+                        <li style="list-style: none;">
+                            <ul>
+                                <li><span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span> (1 Trait slot)</li>
+                                <li><span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span> (2 Trait slots)</li>
+                                <li><span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span> (3 Trait slots)</li>
+                            </ul>
+                        </li>
+                        <li>List of traits can be found at my <a href="http://forums.fatsharkgames.com/discussion/952/weapon-and-trinket-traits-explaining">weapon and trinket traits</a> thread.</li>
+                    </ul>
+                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
+                    <h3 id="weaponstrength">Weapons and their strength</h3>
                     <p>Below I have one post for each character and I have started to list all the weapons with the stats as rarity Plentiful (White).</p>
                     <p>For now the list will not be big, but I will work on it. I have rumor it might be a lot of info.</p>
                     <div ng-app="charApp" ng-controller="charCtrl">
@@ -154,15 +198,18 @@
             <!-- Sidebar -->
             <aside class="uk-width-medium-1-4">
                 <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
-                    <ul class="uk-nav uk-nav-side uk-position-z-index" style="margin: 0;" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                    <ul class="uk-nav uk-nav-side uk-position-z-index" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
                         <li class="uk-nav-header">Page Index</li>
-                        <li><a href="#">Red Moon Inn</a></li>
-                        <li><a href="#">The Map</a></li>
+                        <li><a href="#weaponstats">Weapon Stats</a></li>
+                        <li><a href="#weaponstrength">Weapons and their strength</a></li>
                         <li><a href="#">Ammo Crate</a></li>
                         <li><a href="#">Inventory</a></li>
                         <li><a href="#">Forge</a></li>
                         <li><a href="#">Change Character</a></li>
                     </ul>
+                </div>
+                <div class="uk-panel uk-panel-box uk-margin-large-top">
+                    <p>This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated.</p>
                 </div>
             </aside>
         </div>
