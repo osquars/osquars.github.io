@@ -122,34 +122,34 @@
                         <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                             <thead>
                             <tr>
-                                <th width="80px"></th>
+                                <th width="60px" class="uk-padding-remove"></th>
                                 <th width="90px">Weapon</th>
-                                <th width="60px">Stamina</th>
-                                <th width="70px">Attack</th>
-                                <th width="80px">Damage</th>
-                                <th width="110px">Attack Speed</th>
-                                <th width="70px">Targets</th>
-                                <th width="80px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
                                 <th>Special</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr ng-repeat-start="x in bwMelee">
-                                <td rowspan="3"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
-                                <td rowspan="3">{{ x.Name }}</td>
-                                <td rowspan="3">{{ x.Stamina }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }}</td>
                                 <td>Normal</td>
                                 <td>{{ x.NormalDmg }}</td>
                                 <td>{{ x.NormalAttSp }}</td>
-                                <td>{{ x.NormalTargets }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
                                 <td>{{ x.NormalKnockback }}</td>
                                 <td>{{ x.NormalSpecial }}</td>
                             </tr>
-                            <tr>
+                            <tr class="uk-panel-box-primary">
                                 <td>Charged</td>
                                 <td>{{ x.ChargedDmg }}</td>
                                 <td>{{ x.ChargedAttSp }}</td>
-                                <td>{{ x.ChargedTargets }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
                                 <td>{{ x.ChargedKnockback }}</td>
                                 <td>{{ x.ChargedSpecial }}</td>
                             </tr>
@@ -157,68 +157,60 @@
                                 <td>Special</td>
                                 <td>{{ x.SpecialDmg }}</td>
                                 <td>{{ x.SpecialAttSp }}</td>
-                                <td>{{ x.SpecialTargets }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
                                 <td>{{ x.SpecialKnockback }}</td>
                                 <td>{{ x.SpecialSpecial }}</td>
                             </tr>
                             </tbody>
-                            <!--<tbody>
-                            <tr>
-                                <td rowspan="3"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png" width="80" height="80"></td>
-                                <td rowspan="3">Sword</td>
-                                <td>Normal</td>
-                                <td>Mid-Low</td>
-                                <td>Mid-High</td>
-                                <td>3-4</td>
-                                <td>Low</td>
-                                <td></td>
-                                <td rowspan="3">6 (3)</td>
-                            </tr>
-                            <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid-Low</td><td>Mid</td><td>5-7</td><td>Mid</td><td>Head shot, Armor Penetration</td></tr>
-                            <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
-
-                            </tbody>-->
                         </table>
-                        <h4>Range</h4>
+                        <h4 class="uk-text-success">Range</h4>
                         <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                             <thead>
-                            <tr style="height:20px;">
-                                <th width="80px"></th>
-                                <th width="100px" style="text-align: center;">Weapon</th>
-                                <th width="70px" style="text-align: center;">Attack</th>
-                                <th width="80px" style="text-align: center;">Damage</th>
-                                <th width="110px" style="text-align: center;">Attack Speed</th>
-                                <th width="70px" style="text-align: center;">Targets</th>
-                                <th width="80px" style="text-align: center;">Knockback</th>
-                                <th width="70px" style="text-align: center;">Range</th>
-                                <th style="text-align: center;">Special</th>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
                             </tr>
                             </thead>
                             <tbody>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_firball.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Fireball Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>High</td><td>Mid</td><td>Armor Penetration, Burn</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_spear.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Bolt Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;">High</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>Mid-Low</td><td>High</td><td>Head Shot, Armor Penetration</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_beam.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Beam Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">4-5</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Burn</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Low</td><td>High</td><td>1</td><td>Low</td><td>High</td><td>Armor Penetration, Burn</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_geiser.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Conflagration Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-Low</td><td>Mid-Low</td><td>5-7</td><td>High</td><td>Mid-Low</td><td>Burn</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        </tbody></table>
+                            <tr ng-repeat-start="x in bwRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <script>
-                        var app = angular.module('charApp', []);
-                        app.controller('charCtrl', function($scope, $http) {
-                            $http.get("weapon-stats.json")
-                                    .then(function(response) {
-                                        $scope.bwMelee = response.data.bwMelee;
-                                        $scope.bwRange = response.data.bwRange;
-                                    });
-                        });
-                    </script>
                 </div>
             </div>
             <!-- Sidebar -->
