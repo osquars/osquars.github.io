@@ -5,5 +5,7 @@ app.controller('weaponCtrl', function($scope, $http) {
             $scope.weaponList = response.data.weaponList;
             $scope.bwMelee = response.data.bwMelee;
             $scope.bwRange = response.data.bwRange;
+            $scope.drMelee = response.data.drMelee;
+            $scope.drRange = response.data.drRange;
         });
 });

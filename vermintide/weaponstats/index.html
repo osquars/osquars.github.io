@@ -115,9 +115,9 @@
                     <p>Below I have one post for each character and I have started to list all the weapons with the stats as rarity Plentiful (White).</p>
                     <p>For now the list will not be big, but I will work on it. I have rumor it might be a lot of info.</p>
                     <div ng-controller="weaponCtrl">
+<!-- Bright Wizard -->
                         <h3 id="brightwizard"><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Bright_Wizard_Symbols.png" /> <span style="font-weight: bold; color: rgb(120, 11, 12);">Bright Wizard</span></h3>
                         <p>Brun them all. If you are not afraid of a little fire, Bright Wizard is a character for you. With the balance of fire and death you as at Bright Wizard will do a lot of damage. Bright Wizard is a special character and have unique mechanics. Staff is the weapon with most variations of attacks. Every one is unique and can be from single enemy to Multi enemies and Area of effect.</p>
-                        <p>(*) Starter weapon.</p>
                         <h4 class="uk-text-success">Melee</h4>
                         <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                             <thead>
@@ -210,6 +210,101 @@
                             </tr>
                             </tbody>
                         </table>
+<!-- Dwarf Ranger -->
+                        <h3 id="dwarfranger"><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Dwarf_Ranger_Symbols.png" /> <span style="font-weight: bold; color: rgb(113, 113, 103);">Dwarf Ranger</span></h3>
+                        <p>Dwarf Ranger is in the beginning a good character to use if you are more of a passive or tanking player. The only one that start with a shield and it can help push off skavens on your friends.</p>
+                        <h4 class="uk-text-success">Melee</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in drMelee">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Charged</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="uk-text-success">Range</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in drRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -221,9 +316,10 @@
                         <li><a href="#weaponstats">Weapon Stats</a></li>
                         <li><a href="#weaponlist">Weapon List</a></li>
                         <li><a href="#brightwizard">- Bright Wizard</a></li>
-                        <li><a href="#">Inventory</a></li>
-                        <li><a href="#">Forge</a></li>
-                        <li><a href="#">Change Character</a></li>
+                        <li><a href="#dwarfranger">-Dwarf Ranger</a></li>
+                        <li><a href="#">Char</a></li>
+                        <li><a href="#">Char</a></li>
+                        <li><a href="#">Char</a></li>
                     </ul>
                 </div>
                 <div class="uk-panel uk-panel-box uk-margin-large-top">
@@ -245,7 +341,7 @@
     <footer class="uk-width-medium-1-2 uk-container-center">
         <p>
             <a href="https://twitter.com/osquars" title="Osquars | Twitter" target="_blank" class="uk-button uk-text-primary uk-text-bold"><i class="uk-icon-twitter uk-icon-medium"></i> Twitter</a> <!-- <a href="https://discord.gg/0ZPZTcCUTVhJHq0k" target="_blank" class="uk-button"><img src="http://i379.photobucket.com/albums/oo237/osquars/osquars_github/Discord-Logo-Wordmark-Color-1b_zpskn32dfzp.png" width="95" /></a> -->
-            <a class="uk-align-right" href="#" data-uk-smooth-scroll><i class="uk-icon-arrow-up uk-icon-button uk-icon-medium"></i></a></a>
+            <a class="uk-align-right" href="#" data-uk-smooth-scroll><i class="uk-icon-arrow-up uk-icon-button uk-icon-medium"></i></a>
         </p>
 
     </footer>
