@@ -7,5 +7,7 @@ app.controller('weaponCtrl', function($scope, $http) {
             $scope.bwRange = response.data.bwRange;
             $scope.drMelee = response.data.drMelee;
             $scope.drRange = response.data.drRange;
+            $scope.esMelee = response.data.esMelee;
+            $scope.esRange = response.data.esRange;
         });
 });
