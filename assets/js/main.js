@@ -17,7 +17,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide/redmooninn", {templateUrl: "partials/vermintide/redmooninn.html", controller: "PageCtrl"})
         .when("/vermintide/characteritemsandstats", {templateUrl: "partials/vermintide/characteritemsandstats.html", controller: "PageCtrl"})
         .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "PageCtrl"})
-        .when("/vermintide", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+        .when("/vermintide/link1", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
         // Blog
         .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
         .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
