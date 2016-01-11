@@ -466,6 +466,103 @@
                             </tbody>
                         </table>
                         <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
+
+                        <!-- Witch Hunter -->
+                        <h3 id="witchhunter" class="uk-panel-box uk-panel-box-secondary"><img src="http://www.vermintide.com/wp-content/uploads/2015/04/Witch_Hunter_Icon.png" /> <span style="color: rgb(213, 104, 10);">Witch Hunter</span></h3>
+                        <p>Witch Hunter have one of the quickest attacks from start and also have extra range attack from the special of the Rapier. Very good for backstabbing or holding flanks.</p>
+                        <h4 class="uk-text-bold">Melee</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in whMelee">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }} <i class="uk-icon-shield"></i></td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Charged</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="uk-text-bold">Range</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in whRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
                     </div>
                 </div>
             </div>
@@ -480,7 +577,7 @@
                         <li><a href="#dwarfranger">- Dwarf Ranger</a></li>
                         <li><a href="#empiresoldier">- Empire Soldier</a></li>
                         <li><a href="#waywatcher">- Waywatcher</a></li>
-                        <li><a href="#">Char</a></li>
+                        <li><a href="#witchhunter">- Witch Hunter</a></li>
                     </ul>
                 </div>
                 <div class="uk-panel uk-panel-box uk-margin-large-top">

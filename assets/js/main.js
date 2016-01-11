@@ -65,5 +65,7 @@ app.controller('weaponCtrl', function($scope, $http) {
             $scope.esRange = response.data.esRange;
             $scope.wwMelee = response.data.wwMelee;
             $scope.wwRange = response.data.wwRange;
+            $scope.whMelee = response.data.whMelee;
+            $scope.whRange = response.data.whRange;
         });
 });
