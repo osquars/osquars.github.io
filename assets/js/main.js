@@ -17,7 +17,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide/redmooninn", {templateUrl: "partials/vermintide/redmooninn.html", controller: "PageCtrl"})
         .when("/vermintide/characteritemsandstats", {templateUrl: "partials/vermintide/characteritemsandstats.html", controller: "PageCtrl"})
         .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "weaponCtrl"})
-        .when("/vermintide/link1", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+        .when("/vermintide/weapontrinkettraits", {templateUrl: "partials/vermintide/weapontrinkettraits.html", controller: "traitsCtrl"})
         // Pages (Division)
         .when("/division", {templateUrl: "partials/division.html", controller: "PageCtrl"})
         // Blog
@@ -51,7 +51,7 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 //    })
 });
 
-/* Controller for menus */
+/* Controller for character weapons */
 app.controller('weaponCtrl', function($scope, $http) {
     console.log("Weapon Controller reporting for duty.");
     $http.get('assets/json/weapon-stats.json')
@@ -68,4 +68,22 @@ app.controller('weaponCtrl', function($scope, $http) {
             $scope.whMelee = response.data.whMelee;
             $scope.whRange = response.data.whRange;
         });
+});
+/* Controller for traits */
+app.controller('traitsCtrl', function($scope, $http) {
+    console.log("Trait Controller reporting for duty.");
+    /*$http.get('assets/json/weapon-stats.json')
+        .then(function(response) {
+            $scope.weaponList = response.data.weaponList;
+            $scope.bwMelee = response.data.bwMelee;
+            $scope.bwRange = response.data.bwRange;
+            $scope.drMelee = response.data.drMelee;
+            $scope.drRange = response.data.drRange;
+            $scope.esMelee = response.data.esMelee;
+            $scope.esRange = response.data.esRange;
+            $scope.wwMelee = response.data.wwMelee;
+            $scope.wwRange = response.data.wwRange;
+            $scope.whMelee = response.data.whMelee;
+            $scope.whRange = response.data.whRange;
+        });*/
 });
