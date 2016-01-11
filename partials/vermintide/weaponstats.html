@@ -41,120 +41,432 @@
                         <li><i class="uk-icon-certificate"></i> The Higher you have the more push/stun on the enemy you get on a hit.</li>
                         <li><i class="uk-icon-certificate"></i> Low bar is likely not to push/stun at all</li>
                     </ul>
-                    <h4 class="uk-text-success">Range</h4>
-                    <ul>
-                        <li>The distance is from just in front of you to almost the other side of a square (Thinking of the big square with the Sigmar statue in the magnus mission)</li>
+                    <h4 class="uk-text-bold">Range</h4>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> The distance is from just in front of you to almost the other side of a square (Thinking of the big square with the Sigmar statue in the magnus mission)</li>
                     </ul>
                     <h4 class="uk-text-success">Special</h4>
                     <p>Some weapons have special passive characteristics.</p>
-                    <ul>
-                        <li><span style="font-weight: bold;">Armor penetration</span> - Can penetrate heavy armor</li>
-                        <li><span style="font-weight: bold;">Head shot</span> - High damage when hitting the head</li>
-                        <li><span style="font-weight: bold;">Burn</span> - Small damage over time</li>
-                        <li><span style="font-weight: bold;">Poison</span> - Small damage over time</li>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> <span class="uk-text-success">Armor penetration</span> - Can penetrate heavy armor</li>
+                        <li><i class="uk-icon-certificate"></i> <span class="uk-text-success">Head shot</span> - High damage when hitting the head</li>
+                        <li><i class="uk-icon-certificate"></i> <span class="uk-text-success">Burn</span> - Small damage over time</li>
+                        <li><i class="uk-icon-certificate"></i> <span class="uk-text-success">Poison</span> - Small damage over time</li>
                     </ul>
                     <h4 class="uk-text-success">Stamina</h4>
-                    <ul>
-                        <li>All melee weapons have their stamina for blocking and pushing.</li>
-                        <li>Push off cost two Stamina (one shield icon)</li>
-                        <li>Higher mission difficulty makes blocking and pushing more important to use.</li>
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> All melee weapons have their stamina for blocking and pushing.</li>
+                        <li><i class="uk-icon-certificate"></i> Push off cost two Stamina (one shield icon)</li>
+                        <li><i class="uk-icon-certificate"></i> Higher mission difficulty makes blocking and pushing more important to use.</li>
                     </ul>
                     <h4 class="uk-text-success">Traits</h4>
-                    <ul>
-                        <li>Passive traits that can be unlocked on <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) from <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li>
-                        <li>Depending on rarity of the weapon will give you different amount of trait slots.</li>
-                        <li style="list-style: none;">
+                    <ul class="uk-list">
+                        <li><i class="uk-icon-certificate"></i> Passive traits that can be unlocked on <a href="http://forums.fatsharkgames.com/discussion/844/red-moon-inn-lobby-explaining">the Forge</a> (Red Moon Inn thread) from <span style="font-weight: bold; color: rgb(51, 204, 0);">common</span> and higher rarity weapons</li>
+                        <li><i class="uk-icon-certificate"></i> Depending on rarity of the weapon will give you different amount of trait slots.</li>
+                        <li>
                             <ul>
-                                <li><span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span> (1 Trait slot)</li>
-                                <li><span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span> (2 Trait slots)</li>
-                                <li><span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span> (3 Trait slots)</li>
+                                <li><i class="uk-icon-certificate"></i> <span style="font-weight: bold; color: rgb(51, 204, 0);">Common</span> (1 Trait slot)</li>
+                                <li><i class="uk-icon-certificate"></i> <span style="font-weight: bold; color: rgb(51, 102, 255);">Rare</span> (2 Trait slots)</li>
+                                <li><i class="uk-icon-certificate"></i> <span style="font-weight: bold; color: rgb(255, 102, 0);">Exotic</span> (3 Trait slots)</li>
                             </ul>
                         </li>
-                        <li>List of traits can be found at my <a href="http://forums.fatsharkgames.com/discussion/952/weapon-and-trinket-traits-explaining">weapon and trinket traits</a> thread.</li>
+                        <li><i class="uk-icon-certificate"></i> List of traits can be found at my <a href="http://forums.fatsharkgames.com/discussion/952/weapon-and-trinket-traits-explaining">weapon and trinket traits</a> thread.</li>
                     </ul>
                     <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
-                    <h3 id="weaponstrength">Weapons and their strength</h3>
+                    <h3 id="weaponlist">Weapons and their strength</h3>
                     <p>Below I have one post for each character and I have started to list all the weapons with the stats as rarity Plentiful (White).</p>
                     <p>For now the list will not be big, but I will work on it. I have rumor it might be a lot of info.</p>
-                    <div ng-app="charApp" ng-controller="charCtrl">
-                        <h3><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Bright_Wizard_Symbols.png" style="display: inline-block;" /> <span style="font-weight: bold; color: rgb(120, 11, 12);">Bright Wizard</span></h3>
+                    <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
+                    <div ng-controller="weaponCtrl">
+
+                        <!-- Bright Wizard -->
+                        <h3 id="brightwizard" class="uk-panel-box uk-panel-box-secondary"><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Bright_Wizard_Symbols.png" /> <span style="font-weight: bold; color: rgb(120, 11, 12);">Bright Wizard</span></h3>
                         <p>Brun them all. If you are not afraid of a little fire, Bright Wizard is a character for you. With the balance of fire and death you as at Bright Wizard will do a lot of damage. Bright Wizard is a special character and have unique mechanics. Staff is the weapon with most variations of attacks. Every one is unique and can be from single enemy to Multi enemies and Area of effect.</p>
-                        <p>(*) Starter weapon.</p>
-                        <h4>Melee</h4>
-                        <table cellspacing="0" cellpadding="0">
-                            <tbody>
+                        <h4 class="uk-text-bold">Melee</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
                             <tr>
-                                <th width="80px"></th>
-                                <th width="100px" style="text-align: center;">Weapon</th>
-                                <th width="70px" style="text-align: center;">Attack</th>
-                                <th width="80px" style="text-align: center;">Damage</th>
-                                <th width="110px" style="text-align: center;">Attack Speed</th>
-                                <th width="70px" style="text-align: center;">Targets</th>
-                                <th width="80px" style="text-align: center;">Knockback</th>
-                                <th style="text-align: center;">Special</th>
-                                <th width="80px" style="text-align: center;">Stamina</th>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th>Special</th>
                             </tr>
-                            <tr ng-repeat="x in bwMelee">
-                                <td rowspan="3"></td>
-                                <td rowspan="3">{{ x.Name }}</td>
-                                <td rowspan="3">{{ x.Stamina }}</td>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in bwMelee">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }} <i class="uk-icon-shield"></i></td>
                                 <td>Normal</td>
                                 <td>{{ x.NormalDmg }}</td>
                                 <td>{{ x.NormalAttSp }}</td>
-                                <td>{{ x.NormalTargets }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
                                 <td>{{ x.NormalKnockback }}</td>
                                 <td>{{ x.NormalSpecial }}</td>
                             </tr>
-                            <tr>
+                            <tr class="uk-panel-box-primary">
                                 <td>Charged</td>
                                 <td>{{ x.ChargedDmg }}</td>
                                 <td>{{ x.ChargedAttSp }}</td>
-                                <td>{{ x.ChargedTargets }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
                                 <td>{{ x.ChargedKnockback }}</td>
                                 <td>{{ x.ChargedSpecial }}</td>
                             </tr>
-                            <tr>
+                            <tr ng-repeat-end>
                                 <td>Special</td>
                                 <td>{{ x.SpecialDmg }}</td>
                                 <td>{{ x.SpecialAttSp }}</td>
-                                <td>{{ x.SpecialTargets }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
                                 <td>{{ x.SpecialKnockback }}</td>
                                 <td>{{ x.SpecialSpecial }}</td>
                             </tr>
-                            <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_flame_sword.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Flaming Sword (Old Stats)</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
-                            <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid</td><td>5-7</td><td>Mid-High</td><td>Armor Penetration, Burn</td></tr>
-                            <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
-                            <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_morningstar.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle;text-align: left; border-top: solid 1px #eee; font-weight: bold;">Mace</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">2-3</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;"></td><td rowspan="3" style="text-align: center; vertical-align: middle; border-top: solid 1px #eee;">6 (3)</td></tr>
-                            <tr style="height:20px; background:#666;"><td>Charged</td><td>Mid</td><td>Mid-Low</td><td>1-2</td><td>Mid-Low</td><td>Armor Penetration</td></tr>
-                            <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td></tr>
-                            </tbody></table>
-                        <h4>Range</h4>
-                        <table cellspacing="0" cellpadding="0" style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; text-align: center;"><tbody>
-                        <tr style="height:20px;"><th width="80px"></th><th width="100px" style="text-align: center;">Weapon</th><th width="70px" style="text-align: center;">Attack</th><th width="80px" style="text-align: center;">Damage</th><th width="110px" style="text-align: center;">Attack Speed</th><th width="70px" style="text-align: center;">Targets</th><th width="80px" style="text-align: center;">Knockback</th><th width="70px" style="text-align: center;">Range</th><th style="text-align: center;">Special</th></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;vertical-align: middle;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_firball.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Fireball Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>High</td><td>Mid</td><td>Armor Penetration, Burn</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_spear.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Bolt Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Low</td><td style="border-top: solid 1px #eee;">High</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid-High</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-High</td><td>Mid-Low</td><td>4-5</td><td>Mid-Low</td><td>High</td><td>Head Shot, Armor Penetration</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_beam.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Beam Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">4-5</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">Burn</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Low</td><td>High</td><td>1</td><td>Low</td><td>High</td><td>Armor Penetration, Burn</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr style="height:20px;"><td rowspan="3" width="80px" style="border-top: solid 1px #eee;"><img src="http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_staff_geiser.png" width="80" height="80"></td><td rowspan="3" style="vertical-align: middle; text-align: left; font-weight: bold; border-top: solid 1px #eee;">Conflagration Staff</td><td style="border-top: solid 1px #eee;">Normal</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid-Low</td><td style="border-top: solid 1px #eee;">1-2</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Mid</td><td style="border-top: solid 1px #eee;">Armor Penetration</td></tr>
-                        <tr style="height:20px; background:#666;"><td>Aiming</td><td>Mid-Low</td><td>Mid-Low</td><td>5-7</td><td>High</td><td>Mid-Low</td><td>Burn</td></tr>
-                        <tr style="height:20px;"><td>Special</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                        </tbody></table>
+                            </tbody>
+                        </table>
+                        <h4 class="uk-text-bold">Range</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in bwRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
+
+                        <!-- Dwarf Ranger -->
+                        <h3 id="dwarfranger" class="uk-panel-box uk-panel-box-secondary"><img src="http://www.vermintide.com/wp-content/uploads/2015/06/Dwarf_Ranger_Symbols.png" /> <span style="font-weight: bold; color: rgb(113, 113, 103);">Dwarf Ranger</span></h3>
+                        <p>Dwarf Ranger is in the beginning a good character to use if you are more of a passive or tanking player. The only one that start with a shield and it can help push off skavens on your friends.</p>
+                        <h4 class="uk-text-bold">Melee</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in drMelee">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }} <i class="uk-icon-shield"></i></td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Charged</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="uk-text-bold">Range</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in drRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
+
+                        <!-- Empire Soldier -->
+                        <h3 id="empiresoldier" class="uk-panel-box uk-panel-box-secondary"><img src="http://www.vermintide.com/wp-content/uploads/2015/05/Empire_Soldier_Symbol.png" /> <span style="font-weight: bold; color: rgb(238, 234, 236);">Empire Soldier</span></h3>
+                        <p>Empire Soldier is good start for one that can handle two handed weapon.</p>
+                        <h4 class="uk-text-bold">Melee</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in esMelee">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }} <i class="uk-icon-shield"></i></td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Charged</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="uk-text-bold">Range</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in esRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
+
+                        <!-- Waywatcher -->
+                        <h3 id="waywatcher" class="uk-panel-box uk-panel-box-secondary"><img src="http://www.vermintide.com/wp-content/uploads/2015/04/Waywatcher_Icon.png" /> <span style="color: rgb(50, 73, 54);">Waywatcher</span></h3>
+                        <p>With a quick bow you are good vs horde in range and a good with stabbing a single enemy.</p>
+                        <h4 class="uk-text-bold">Melee</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Stamina</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in wwMelee">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td rowspan="3" class="uk-text-center uk-text-middle">{{ x.Stamina }} <i class="uk-icon-shield"></i></td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Charged</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="uk-text-bold">Range</h4>
+                        <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
+                            <thead>
+                            <tr>
+                                <th width="60px" class="uk-padding-remove"></th>
+                                <th width="90px">Weapon</th>
+                                <th width="55px">Attack</th>
+                                <th width="55px">Damage</th>
+                                <th width="55px">Attack Speed</th>
+                                <th width="55px">Targets</th>
+                                <th width="72px">Knockback</th>
+                                <th width="55px">Stamina</th>
+                                <th>Special</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat-start="x in wwRange">
+                                <td rowspan="3" class="uk-text-center uk-text-middle uk-padding-remove"><img ng-src="{{ x.Icon }}" width="60" height="60"></td>
+                                <td rowspan="3" class="uk-text-middle">{{ x.Name }}</td>
+                                <td>Normal</td>
+                                <td>{{ x.NormalDmg }}</td>
+                                <td>{{ x.NormalAttSp }}</td>
+                                <td class="uk-text-center">{{ x.NormalTargets }}</td>
+                                <td>{{ x.NormalKnockback }}</td>
+                                <td>{{ x.NormalRange }}</td>
+                                <td>{{ x.NormalSpecial }}</td>
+                            </tr>
+                            <tr class="uk-panel-box-primary">
+                                <td>Aiming</td>
+                                <td>{{ x.ChargedDmg }}</td>
+                                <td>{{ x.ChargedAttSp }}</td>
+                                <td class="uk-text-center">{{ x.ChargedTargets }}</td>
+                                <td>{{ x.ChargedKnockback }}</td>
+                                <td>{{ x.ChargedRange }}</td>
+                                <td>{{ x.ChargedSpecial }}</td>
+                            </tr>
+                            <tr ng-repeat-end>
+                                <td>Special</td>
+                                <td>{{ x.SpecialDmg }}</td>
+                                <td>{{ x.SpecialAttSp }}</td>
+                                <td class="uk-text-center">{{ x.SpecialTargets }}</td>
+                                <td>{{ x.SpecialKnockback }}</td>
+                                <td>{{ x.SpecialRange }}</td>
+                                <td>{{ x.SpecialSpecial }}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <img src="http://vermintide.com/wp-content/uploads/2015/03/Pagebreaker1.png" alt="Divider" width="500" height="33" class="uk-align-center" />
                     </div>
-                    <script>
-                        var app = angular.module('charApp', []);
-                        app.controller('charCtrl', function($scope, $http) {
-                            $http.get("weapon-stats.json")
-                                    .then(function(response) {
-                                        $scope.bwMelee = response.data.bwMelee;
-                                        $scope.bwRange = response.data.bwRange;
-                                    });
-                        });
-                    </script>
                 </div>
             </div>
             <!-- Sidebar -->
@@ -163,11 +475,12 @@
                     <ul class="uk-nav uk-nav-side uk-position-z-index" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
                         <li class="uk-nav-header">Page Index</li>
                         <li><a href="#weaponstats">Weapon Stats</a></li>
-                        <li><a href="#weaponstrength">Weapons and their strength</a></li>
-                        <li><a href="#">Ammo Crate</a></li>
-                        <li><a href="#">Inventory</a></li>
-                        <li><a href="#">Forge</a></li>
-                        <li><a href="#">Change Character</a></li>
+                        <li><a href="#weaponlist">Weapon List</a></li>
+                        <li><a href="#brightwizard">- Bright Wizard</a></li>
+                        <li><a href="#dwarfranger">- Dwarf Ranger</a></li>
+                        <li><a href="#empiresoldier">- Empire Soldier</a></li>
+                        <li><a href="#waywatcher">- Waywatcher</a></li>
+                        <li><a href="#">Char</a></li>
                     </ul>
                 </div>
                 <div class="uk-panel uk-panel-box uk-margin-large-top">

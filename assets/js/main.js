@@ -16,8 +16,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide", {templateUrl: "partials/vermintide.html", controller: "PageCtrl"})
         .when("/vermintide/redmooninn", {templateUrl: "partials/vermintide/redmooninn.html", controller: "PageCtrl"})
         .when("/vermintide/characteritemsandstats", {templateUrl: "partials/vermintide/characteritemsandstats.html", controller: "PageCtrl"})
-        .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "PageCtrl"})
+        .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "weaponCtrl"})
         .when("/vermintide/link1", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+        // Pages (Division)
+        .when("/division", {templateUrl: "partials/division.html", controller: "PageCtrl"})
         // Blog
         .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
         .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
@@ -47,4 +49,21 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
 //    $('.tooltip-social').tooltip({
 //        selector: "a[data-toggle=tooltip]"
 //    })
+});
+
+/* Controller for menus */
+app.controller('weaponCtrl', function($scope, $http) {
+    console.log("Weapon Controller reporting for duty.");
+    $http.get('assets/json/weapon-stats.json')
+        .then(function(response) {
+            $scope.weaponList = response.data.weaponList;
+            $scope.bwMelee = response.data.bwMelee;
+            $scope.bwRange = response.data.bwRange;
+            $scope.drMelee = response.data.drMelee;
+            $scope.drRange = response.data.drRange;
+            $scope.esMelee = response.data.esMelee;
+            $scope.esRange = response.data.esRange;
+            $scope.wwMelee = response.data.wwMelee;
+            $scope.wwRange = response.data.wwRange;
+        });
 });
