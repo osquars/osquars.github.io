@@ -1,12 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html>
 <head>
 
     <!-- Meta-Information -->
@@ -30,7 +23,7 @@
 
 <!-- Our Website Content Goes Here -->
 <div class="headerbar" data-uk-sticky="{top:-200}" ng-include='"templates/header.html"'></div>
-<div ng-view></div>
+<div ng-view autoscroll></div>
 <div class="osq-block-footer uk-block uk-block-default uk-block-large" ng-include='"templates/footer.html"'></div>
 
 <!-- Javascripts -->
@@ -43,8 +36,9 @@
 
 <!-- Angular -->
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
 <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script> -->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script> -->
 
 <!-- Our Website Javascripts -->
 <script src="assets/js/main.js"></script>
