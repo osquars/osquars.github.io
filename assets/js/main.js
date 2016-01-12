@@ -10,6 +10,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
     // Home
         .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+        // Pages (Blood Moon Inn)
+        .when("/bloodmooninn", {templateUrl: "partials/bloodmooninn.html", controller: "BlogCtrl"})
         // Pages (Vermintide)
         .when("/vermintide", {templateUrl: "partials/vermintide.html", controller: "PageCtrl"})
         .when("/vermintide/redmooninn", {templateUrl: "partials/vermintide/redmooninn.html", controller: "PageCtrl"})
@@ -21,9 +23,6 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide/skavenenemy", {templateUrl: "partials/vermintide/skavenenemy.html", controller: "PageCtrl"})
         // Pages (Division)
         .when("/division", {templateUrl: "partials/division.html", controller: "PageCtrl"})
-        // Blog
-        .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
-        .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
         // else 404
         .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);
@@ -31,9 +30,9 @@ app.config(['$routeProvider', function ($routeProvider) {
 /**
  * Controls the Blog
  */
-//app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
-//    console.log("Blog Controller reporting for duty.");
-//});
+app.controller('BlogCtrl', function ($scope, $location, $http) {
+    console.log("Blog Controller reporting for duty.");
+});
 
 /**
  * Controls all other Pages
