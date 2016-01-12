@@ -18,6 +18,9 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide/characteritemsandstats", {templateUrl: "partials/vermintide/characteritemsandstats.html", controller: "PageCtrl"})
         .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "weaponCtrl"})
         .when("/vermintide/weapontrinkettraits", {templateUrl: "partials/vermintide/weapontrinkettraits.html", controller: "traitsCtrl"})
+        .when("/vermintide/missionitems", {templateUrl: "partials/vermintide/missionitems.html", controller: "PageCtrl"})
+        .when("/vermintide/lootandroll", {templateUrl: "partials/vermintide/lootandroll.html", controller: "PageCtrl"})
+        .when("/vermintide/skavenenemy", {templateUrl: "partials/vermintide/skavenenemy.html", controller: "PageCtrl"})
         // Pages (Division)
         .when("/division", {templateUrl: "partials/division.html", controller: "PageCtrl"})
         // Blog
