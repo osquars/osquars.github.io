@@ -9,22 +9,77 @@ var app = angular.module('pageApp', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
     // Home
-        .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+        .when("/", {
+            title: "Home",
+            templateUrl: "partials/home.html",
+            controller: "PageCtrl"
+        })
         // Pages (Blood Moon Inn)
-        .when("/bloodmooninn", {templateUrl: "partials/bloodmooninn.html", controller: "BlogCtrl"})
+        .when("/bloodmooninn", {
+            title: "Blood Moon Inn",
+            templateUrl: "partials/bloodmooninn.html",
+            controller: "BlogCtrl"
+        })
         // Pages (Vermintide)
-        .when("/vermintide", {templateUrl: "partials/vermintide.html", controller: "PageCtrl"})
-        .when("/vermintide/redmooninn", {templateUrl: "partials/vermintide/redmooninn.html", controller: "PageCtrl"})
-        .when("/vermintide/characteritemsandstats", {templateUrl: "partials/vermintide/characteritemsandstats.html", controller: "PageCtrl"})
-        .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "weaponCtrl"})
-        .when("/vermintide/weapontrinkettraits", {templateUrl: "partials/vermintide/weapontrinkettraits.html", controller: "traitsCtrl"})
-        .when("/vermintide/missionitems", {templateUrl: "partials/vermintide/missionitems.html", controller: "PageCtrl"})
-        .when("/vermintide/lootandroll", {templateUrl: "partials/vermintide/lootandroll.html", controller: "PageCtrl"})
-        .when("/vermintide/skavenenemy", {templateUrl: "partials/vermintide/skavenenemy.html", controller: "PageCtrl"})
+        .when("/vermintide", {
+            title: "Warhammer: The End Times - Vermintide",
+            templateUrl: "partials/vermintide.html",
+            controller: "PageCtrl"
+        })
+        .when("/vermintide/redmooninn", {
+            title: "Red Moon Inn",
+            templateUrl: "partials/vermintide/redmooninn.html",
+            controller: "PageCtrl"
+        })
+        .when("/vermintide/characteritemsandstats", {
+            title: "Character Items and Stats",
+            templateUrl: "partials/vermintide/characteritemsandstats.html",
+            controller: "PageCtrl"
+        })
+        .when("/vermintide/weaponstats", {
+            title: "Weapon Stats",
+            templateUrl: "partials/vermintide/weaponstats.html",
+            controller: "weaponCtrl"
+        })
+        .when("/vermintide/weapontrinkettraits", {
+            title: "Weapon and Trinket Traits",
+            templateUrl: "partials/vermintide/weapontrinkettraits.html",
+            controller: "traitsCtrl"
+        })
+        .when("/vermintide/missionitems", {
+            title: "Mission Items",
+            templateUrl: "partials/vermintide/missionitems.html",
+            controller: "PageCtrl"
+        })
+        .when("/vermintide/lootandroll", {
+            title: "Loot and Loot roll",
+            templateUrl: "partials/vermintide/lootandroll.html",
+            controller: "PageCtrl"
+        })
+        .when("/vermintide/skavenenemy", {
+            title: "Skaven - The Enemy",
+            templateUrl: "partials/vermintide/skavenenemy.html",
+            controller: "PageCtrl"
+        })
         // Pages (Division)
-        .when("/division", {templateUrl: "partials/division.html", controller: "PageCtrl"})
+        .when("/division", {
+            title: "Tom Clancy’s The Division",
+            templateUrl: "partials/division.html",
+            controller: "PageCtrl"
+        })
         // else 404
-        .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+        .otherwise("/404", {
+            title: "404",
+            templateUrl: "partials/404.html",
+            controller: "PageCtrl"
+        });
+}]);
+
+app.run(['$rootScope', function($rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+        $rootScope.title = current.$$route.title;
+        console.log("Hopp");
+    });
 }]);
 
 /**
