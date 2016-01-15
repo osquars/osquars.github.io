@@ -17,7 +17,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide/redmooninn", {templateUrl: "partials/vermintide/redmooninn.html", controller: "PageCtrl"})
         .when("/vermintide/characteritemsandstats", {templateUrl: "partials/vermintide/characteritemsandstats.html", controller: "PageCtrl"})
         .when("/vermintide/weaponstats", {templateUrl: "partials/vermintide/weaponstats.html", controller: "weaponCtrl"})
-        .when("/vermintide/weapontrinkettraits", {templateUrl: "partials/vermintide/weapontrinkettraits.html", controller: "traitsCtrl"})
+        .when("/vermintide/weapontrinkettraits", {templateUrl: "partials/vermintide/weapontrinkettraits.html", controller: "traitCtrl"})
         .when("/vermintide/missionitems", {templateUrl: "partials/vermintide/missionitems.html", controller: "PageCtrl"})
         .when("/vermintide/lootandroll", {templateUrl: "partials/vermintide/lootandroll.html", controller: "PageCtrl"})
         .when("/vermintide/skavenenemy", {templateUrl: "partials/vermintide/skavenenemy.html", controller: "PageCtrl"})
@@ -70,20 +70,11 @@ app.controller('weaponCtrl', function($scope, $http) {
         });
 });
 /* Controller for traits */
-app.controller('traitsCtrl', function($scope, $http) {
+app.controller('traitCtrl', function($scope, $http) {
     console.log("Trait Controller reporting for duty.");
-    /*$http.get('assets/json/weapon-stats.json')
+    $http.get('assets/json/trait-list.json')
         .then(function(response) {
-            $scope.weaponList = response.data.weaponList;
-            $scope.bwMelee = response.data.bwMelee;
-            $scope.bwRange = response.data.bwRange;
-            $scope.drMelee = response.data.drMelee;
-            $scope.drRange = response.data.drRange;
-            $scope.esMelee = response.data.esMelee;
-            $scope.esRange = response.data.esRange;
-            $scope.wwMelee = response.data.wwMelee;
-            $scope.wwRange = response.data.wwRange;
-            $scope.whMelee = response.data.whMelee;
-            $scope.whRange = response.data.whRange;
-        });*/
+            $scope.WeaponTraitList = response.data.WeaponTraitList;
+            $scope.TrinketTraitList = response.data.TrinketTraitList;
+        });
 });

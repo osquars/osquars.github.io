@@ -1,0 +1,186 @@
+{
+  "WeaponTraitList": [
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_ammunitionholder.png",
+      "Name": "Ammunition Holder",
+      "Description": "Increases the maximum amount of carried ammunition for this weapon by 30%."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_backstabbery.png",
+      "Name": "Backstabbery",
+      "Description": "Attacking enemies from the rear will deal extra damage."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_berserking.png",
+      "Name": "Berserking",
+      "Description": "When killing an enemy with this weapon, there is a 5.0-12.0% chance to increase your attack speed by 30% for 5.0 seconds."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_bloodlust.png",
+      "Name": "Bloodlust",
+      "Description": "When killing an enemy with this weapon, there is a 3-10% chance to recover 10% health."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_channelingrune.png",
+      "Name": "Channeling Rune",
+      "Description": "Reduce the damage you take from venting this weapon by x%."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_devastatingblow.png",
+      "Name": "Devastating Blow",
+      "Description": "Pushes made with this weapon will be extra powerful."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_distraction.png",
+      "Name": "Diversion",
+      "Description": "Attacking an enemy that is attacking a Knocked Down ally, will extend the ally's Knocked Down health."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_earthingrune.png",
+      "Name": "Earthing rune",
+      "Description": "When hitting an enemy with a normal attack, there is x-x% chance to vent x% of your overcharge."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_endurance.png",
+      "Name": "Endurance",
+      "Description": "When hitting an enemy there is x-x% chance that the player replenishes stamina."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_extracapacity.png",
+      "Name": "Extra Capacity",
+      "Description": "Increases the amount of ammunition this weapon can hold in a clip by 100%."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_hailofdoom.png",
+      "Name": "Hail of Doom",
+      "Description": "Each shot with this weapon has a 5-15% chance to split into 2 projectiles."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_haste.png",
+      "Name": "Haste",
+      "Description": "When hitting an enemy, there is a 3.0-7.0% chance to increase your attack speed by 30%, for 5 seconds."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_hawkeye.png",
+      "Name": "Hawk Eye",
+      "Description": "Increases the zoom distance while aiming with this weapon."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_heroic_killingblow.png",
+      "Name": "Heroic Killing Blow (Charged Attack)",
+      "Description": "When hitting an enemy of any size with a charged attack there is a 1.0-3.0% chance to instantly slay it."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_improvedguard.png",
+      "Name": "Improved Guard",
+      "Description": "When blocking an enemy with this weapon, there is 10-30% chance that the block won't cost any stamina."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_improvedpommel.png",
+      "Name": "Improved Pommel",
+      "Description": "When pushing with this weapon, there is a x-x% chance that the push won't cost any stamina."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_inspirational_shot.png",
+      "Name": "Inspirational Shot",
+      "Description": "Scoring headshots will replenish the stamina of your allies."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_killingblow.png",
+      "Name": "Killing Blow",
+      "Description": "When hitting a man-sized enemy with a normal attack there is a 5.0-15.0% chance to instantly slay it."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_knockback.png",
+      "Name": "Knockback",
+      "Description": "When hitting an enemy, there is a 5-10% chance to knock them back."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_mastercrafted.png",
+      "Name": "Master Crafted",
+      "Description": "Reloading this weapon is 50,0% faster."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_off_balance.png",
+      "Name": "Off Balance",
+      "Description": "Enemies whose attacks are blocked by the player will suffer extra damage from your allies’ attacks for a brief moment."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_perfectbalance.png",
+      "Name": "Perfect Balance",
+      "Description": "Adds 2 Stamina (1 Shield) to the weapon's max Stamina Points."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_regrowth.png",
+      "Name": "Regrowth (Normal Attack)",
+      "Description": "When hitting an enemy with a normal attack, there is a 3-10% chance to recover 5% health."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_regrowth_charged.png",
+      "Name": "Regrowth (Charged Attack)",
+      "Description": "When hitting an enemy with a charged attack, there is a 3-10% chance to recover 5% health."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_Rupture.png",
+      "Name": "Rupture",
+      "Description": "Projectiles from this weapon have a 80-100% chanse of penetrating one additional target."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_safety_in_numbers.png",
+      "Name": "Safety in Numbers",
+      "Description": "Assisting an ally (by attacking enemies attacking the ally) will apply a temporary protective aura to said ally."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_scavenger.png",
+      "Name": "Scavenger",
+      "Description": "When killing an enemy with this weapon, there is a 5-12% chance to replenish ammunition for your ranged weapon."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_secondwind.png",
+      "Name": "Second Wind",
+      "Description": "30.0-50.0% chance to instantly replenish all stamina if the player's block is broken."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_skirmisher.png",
+      "Name": "Skirmisher",
+      "Description": "Movement speed while aiming with this weapon is increased by 50%."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_skullcracker.png",
+      "Name": "Skull Cracker",
+      "Description": "When hitting an enemy, there is x-x% chance that it will count as an automatic headshot, regardless of where it hit."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icons_stability.png",
+      "Name": "Stability",
+      "Description": "Overcharge generated by this weapon is reduced by x%."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_swiftslaying.png",
+      "Name": "Swift Slaying (Normal Attack)",
+      "Description": "When hitting an enemy with a normal attack, there is x-x% chance to increase your attack speed by 30% for 5 seconds."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_swiftslaying_charged.png",
+      "Name": "Swift Slaying (Charged Attack)",
+      "Description": "When hitting an enemy with a charged attack, there is x-x% chance to increase your attack speed by 30% for 5 seconds."
+    },
+    {
+      "Img": "http://www.vermintide.com/wp-content/uploads/2015/09/trait_icon_targeteer.png",
+      "Name": "Targeteer",
+      "Description": "Decreases the spread of this weapon by 40%."
+    }
+  ],
+  "TrinketTraitList": [
+    {
+      "Img": "Bright Wizard",
+      "Name": "brightwizard",
+      "Description": "bwMelee"
+    },
+    {
+      "Img": "Bright Wizard",
+      "Name": "brightwizard",
+      "Description": "bwMelee"
+    }
+  ]
+}
