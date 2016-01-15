@@ -61,113 +61,14 @@
                     <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                         <thead>
                         <tr>
-                            <th width="250px">Name</th>
+                            <th width="225px">Name</th>
                             <th>Description</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>Brigandine</td>
-                            <td>While equipped, you will take less damage from the warpdust covered blades of Gutter
-                                Runners.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Bullet Resistant</td>
-                            <td>While equipped, you will take 20%/x%/x% less damage from the warp bullets of Ratling
-                                Gunners.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Coagulation</td>
-                            <td>While equipped, your health is increased while knocked down.</td>
-                        </tr>
-                        <tr>
-                            <td>Curse Ward</td>
-                            <td>While equipped, you are allegedly protected against curses.</td>
-                        </tr>
-                        <tr>
-                            <td>Explosive Ordnance</td>
-                            <td>While equipped, the effective radius of all grenades you throw is increased by
-                                x%/50.0%/x%
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Gleaming Luckstone</td>
-                            <td>You will get extra Luck.</td>
-                        </tr>
-                        <tr>
-                            <td>Grenadier</td>
-                            <td>When throwing a Granade there is a 20.0% chance that it won's be consumed.</td>
-                        </tr>
-                        <tr>
-                            <td>Group Treatment</td>
-                            <td>When using Medical Supplies & Healing Draughts on yourself, allies within 15.0
-                                meters will be healed for 10.0%/x%/x% of thier missing health.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Hand of Shallya</td>
-                            <td>When using Medical Supplies on an ally, you will be healed for x%/15.0%/x% of your
-                                missing health.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Healer's Touch</td>
-                            <td>When using Medical Supplies there is a chance that it won't be consumed.</td>
-                        </tr>
-                        <tr>
-                            <td>Healing Charm</td>
-                            <td>Group Treatment: When using Medical Supplies, allies within 15.0 meters will be
-                                healed for X% for your total heal.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Home Brewer</td>
-                            <td>When drinking a Potion of Speed or Strength there is a 10.0%/20.0%/x% chance that it
-                                will not be consumed.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Iron Lung</td>
-                            <td>While equipped, you will take less damage from Poison Wind Globadier clouds.</td>
-                        </tr>
-                        <tr>
-                            <td>Morr's Crown</td>
-                            <td>While equipped, your attacks have a 2.0%/4.0%/x% chance to apply a deadly poison.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Proxy</td>
-                            <td>When drinking a Potion of Speed or Strength, the effect will spread to all allies
-                                within 15.0 meters, but the duration is decreased by 33.0%.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ranald's Blessing</td>
-                            <td>While equipped, your luck is increased by 10.0%/x%/100%.</td>
-                        </tr>
-                        <tr>
-                            <td>Seal of Runner</td>
-                            <td>While equipped, your movement speed is increased by 2.0%.</td>
-                        </tr>
-                        <tr>
-                            <td>Sister of Shallya</td>
-                            <td>While equipped, you can no longer be interrupted while using Medical Supplies.</td>
-                        </tr>
-                        <tr>
-                            <td>Star of the Sisterhood</td>
-                            <td>While equipped, you share a common health pool with all other wearers of this
-                                trinket.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Triage</td>
-                            <td>While equipped, you will revive allies faster.</td>
-                        </tr>
-                        <tr>
-                            <td>Veteran Surgeon</td>
-                            <td>While equipped, you can no longer be interrupted while reviving an ally.</td>
+                        <tr ng-repeat="x in TrinketTraitList">
+                            <td class="uk-text-middle">{{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Description }}</td>
                         </tr>
                         </tbody>
                     </table>

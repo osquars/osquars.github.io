@@ -44,7 +44,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when("/vermintide/weapontrinkettraits", {
             title: "Weapon and Trinket Traits",
             templateUrl: "partials/vermintide/weapontrinkettraits.html",
-            controller: "traitsCtrl"
+            controller: "traitCtrl"
         })
         .when("/vermintide/missionitems", {
             title: "Mission Items",

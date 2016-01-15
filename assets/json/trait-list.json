@@ -173,14 +173,109 @@
   ],
   "TrinketTraitList": [
     {
-      "Img": "Bright Wizard",
-      "Name": "brightwizard",
-      "Description": "bwMelee"
+      "Img": "",
+      "Name": "Brigandine",
+      "Description": "While equipped, you will take less damage from the warpdust covered blades of Gutter Runners."
     },
     {
-      "Img": "Bright Wizard",
-      "Name": "brightwizard",
-      "Description": "bwMelee"
+      "Img": "",
+      "Name": "Bullet Resistant",
+      "Description": "While equipped, you will take 20%/x%/x% less damage from the warp bullets of Ratling Gunners."
+    },
+    {
+      "Img": "",
+      "Name": "Coagulation",
+      "Description": "While equipped, your health is increased while knocked down."
+    },
+    {
+      "Img": "",
+      "Name": "Curse Ward",
+      "Description": "While equipped, you are allegedly protected against curses."
+    },
+    {
+      "Img": "",
+      "Name": "Explosive Ordnance",
+      "Description": "While equipped, the effective radius of all grenades you throw is increased by 50.0%."
+    },
+    {
+      "Img": "",
+      "Name": "Gleaming Luckstone",
+      "Description": "You will get extra Luck."
+    },
+    {
+      "Img": "",
+      "Name": "Grenadier",
+      "Description": "When throwing a Granade there is a 20.0% chance that it won's be consumed."
+    },
+    {
+      "Img": "",
+      "Name": "Group Treatment",
+      "Description": "When using Medical Supplies & Healing Draughts on yourself, allies within 15.0 meters will be healed for 10.0%/x%/x% of their missing health."
+    },
+    {
+      "Img": "",
+      "Name": "Hand of Shallya",
+      "Description": "When using Medical Supplies on an ally, you will be healed for x%/15.0%/x% of your missing health."
+    },
+    {
+      "Img": "",
+      "Name": "Healer's Touch",
+      "Description": "When using Medical Supplies there is a chance that it won't be consumed."
+    },
+    {
+      "Img": "",
+      "Name": "Healing Charm",
+      "Description": "Group Treatment: When using Medical Supplies, allies within 15.0 meters will be healed for X% for your total heal."
+    },
+    {
+      "Img": "",
+      "Name": "Home Brewer",
+      "Description": "When drinking a Potion of Speed or Strength there is a 10.0%/20.0%/x% chance that it will not be consumed."
+    },
+    {
+      "Img": "",
+      "Name": "Iron Lung",
+      "Description": "While equipped, you will take less damage from Poison Wind Globadier clouds."
+    },
+    {
+      "Img": "",
+      "Name": "Morr's Crown",
+      "Description": "While equipped, your attacks have a 2.0%/4.0%/x% chance to apply a deadly poison."
+    },
+    {
+      "Img": "",
+      "Name": "Proxy",
+      "Description": "When drinking a Potion of Speed or Strength, the effect will spread to all allies within 15.0 meters, but the duration is decreased by 33.0%."
+    },
+    {
+      "Img": "",
+      "Name": "Ranald's Blessing",
+      "Description": "While equipped, your luck is increased by 10.0%/x%/100%."
+    },
+    {
+      "Img": "",
+      "Name": "Seal of Runner",
+      "Description": "While equipped, your movement speed is increased by 2.0%."
+    },
+    {
+      "Img": "",
+      "Name": "Sister of Shallya",
+      "Description": "While equipped, you can no longer be interrupted while using Medical Supplies."
+    },
+    {
+      "Img": "",
+      "Name": "Star of the Sisterhood",
+      "Description": "While equipped, you share a common health pool with all other wearers of this trinket."
+    },
+    {
+      "Img": "",
+      "Name": "Triage",
+      "Description": "While equipped, you will revive allies faster."
+    },
+    {
+      "Img": "",
+      "Name": "Veteran Surgeon",
+      "Description": "While equipped, you can no longer be interrupted while reviving an ally."
     }
   ]
 }
