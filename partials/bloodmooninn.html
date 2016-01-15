@@ -1,8 +1,8 @@
-<div class="osq-block-border uk-block">
+<div class="osq-block-border uk-block" data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}">
     <div class="uk-container uk-container-center">
         <div class="uk-grid" data-uk-grid-margin>
             <div class="uk-width-medium-3-4">
-                <div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+                <div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:300}">
                     <div class="uk-width-small-1-4">
                         <div class="uk-panel">
                             <img src="http://i379.photobucket.com/albums/oo237/osquars/osquars_github/bloodmooninn_zpsghe4szly.png" alt="Blood Moon Inn" />
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+                <div class="uk-grid" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300}">
                     <div class="uk-width-1-1">
                         <div class="uk-panel uk-panel-box">
                             <p>Discord is a free voice and text chat app designed specifically for gaming. It's free, easy to use, and with you even while you are AFK.</p>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <aside class="uk-width-medium-1-4">
-                <div class="uk-panel">
+                <div class="uk-panel" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}">
                     <iframe src="https://discordapp.com/widget?id=102253887838253056&theme=dark" width="auto" height="525" allowtransparency="true" frameborder="0" class="uk-responsive-width uk-align-center"></iframe>
                 </div>
             </aside>
@@ -45,4 +45,4 @@
 
     </div>
 </div>
-<div class="osq-block-footer uk-block uk-block-secondary uk-block-large" ng-include='"templates/footer-bloodmooninn.html"' ng-cloak></div>
+<div class="osq-block-footer uk-block uk-block-secondary uk-block-large" ng-include='"templates/footer-bloodmooninn.html"' ng-cloak data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}"></div>
