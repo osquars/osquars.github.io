@@ -278,3 +278,21 @@ body{
     text-align: center;
     color:#fff;
 }
+
+/* Vermintide Specific classes */
+.osq-vermintide-weapon-common {
+    font-weight: bold;
+    color: rgb(51, 204, 0);
+}
+.osq-vermintide-weapon-rare {
+    font-weight: bold;
+    color: rgb(51, 102, 255);
+}
+.osq-vermintide-weapon-exotic {
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+}
+.osq-vermintide-weapon-veteran {
+    font-weight: bold;
+    color: rgb(205, 0, 0);
+}
