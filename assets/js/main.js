@@ -87,7 +87,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         // if you don't wish to set base URL then use this
         $locationProvider.html5Mode({
             enabled: true,
-            requireBase: true
+            requireBase: false
         });
     }
 }]);
