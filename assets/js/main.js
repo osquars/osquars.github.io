@@ -77,6 +77,16 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: "partials/division.html",
             controller: "PageCtrl"
         })
+        .when("/division/theagents", {
+            title: "The Agents",
+            templateUrl: "partials/division/theagents.html",
+            controller: "PageCtrl"
+        })
+        .when("/division/items", {
+            title: "Items",
+            templateUrl: "partials/division/items.html",
+            controller: "PageCtrl"
+        })
         // else 404
         .otherwise("/404", {
             title: "404",
