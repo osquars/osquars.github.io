@@ -25,6 +25,11 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: "partials/bloodmooninn/serverrules.html",
             controller: "BlogCtrl"
         })
+        .when("/bloodmooninn/linktips", {
+            title: "Link and Tips",
+            templateUrl: "partials/bloodmooninn/linktips.html",
+            controller: "BlogCtrl"
+        })
         // Pages (Vermintide)
         .when("/vermintide", {
             title: "Warhammer: The End Times - Vermintide",
