@@ -92,6 +92,11 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: "partials/division/weapons.html",
             controller: "weaponsCtrl"
         })
+        .when("/division/factions", {
+            title: "Items",
+            templateUrl: "partials/division/factions.html",
+            controller: "PageCtrl"
+        })
         // else 404
         .otherwise("/404", {
             title: "404",
