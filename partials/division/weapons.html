@@ -1,0 +1,222 @@
+<!-- Content -->
+<div class="osq-block-main uk-block uk-block-default" data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+            <!-- Main -->
+            <div class="uk-width-medium-3-4">
+                <div class="uk-article" id="weapons">
+                    <h1 class="uk-article-title">Weapons</h1>
+                    <p class="uk-article-lead">The weapon arsenal in The Division covers from pistols to powerful calibers like the assault rifle and marksman rifle sector.</p>
+                    <h3 id="handling">Handling and Inventory</h3>
+                    <p>You can carry and use up to 3 weapons simultaneously, consisting of a primary and secondary weapon plus one sidearm (pistol).</p>
+                    <p>You still have an inventory where you can have more weapons and gear that you can swap to. You will even have a storage at the Base of Opperations.</p>
+                    <h3 id="allweapons">All Weapons</h3>
+                    <p>All weapons are characterized by the parameters of <i class="uk-icon-bolt"></i> damage, <i class="uk-icon-bullseye"></i> precision, <i class="uk-icon-arrows-h"></i> range, <i class="uk-icon-arrows-alt"></i> recoil and the number of <i class="uk-icon-clone"></i> mod slots, which can be changed and improved through appropriate extensions and attachments.</p>
+
+                    <!-- Pistol -->
+                    <h4 id="pistols" class="uk-text-bold">Pistols</h4>
+                    <p>Pistols are mainly used as sidearms with infinite ammo.</p>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-text-center">
+                        <thead>
+                        <tr>
+                            <th class="uk-text-left">Model</th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bolt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bullseye"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-h"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-alt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-clone"></i></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="x in dPistols">
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Damage }}</td>
+                            <td class="uk-text-middle">{{ x.Precision }}</td>
+                            <td class="uk-text-middle">{{ x.Range }}</td>
+                            <td class="uk-text-middle">{{ x.Recoil }}</td>
+                            <td class="uk-text-middle">{{ x.ModSlots }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Shotguns -->
+                    <h4 id="shotguns" class="uk-text-bold">Shotguns</h4>
+                    <p>Shotguns are designed for shooting at short distances and are thus ideally suited for urban warfare. Depending on ammunition realistic operational ranges between 10 and 50 meters can be reached.</p>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-text-center">
+                        <thead>
+                        <tr>
+                            <th class="uk-text-left">Model</th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bolt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bullseye"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-h"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-alt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-clone"></i></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="x in dShotguns">
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Damage }}</td>
+                            <td class="uk-text-middle">{{ x.Precision }}</td>
+                            <td class="uk-text-middle">{{ x.Range }}</td>
+                            <td class="uk-text-middle">{{ x.Recoil }}</td>
+                            <td class="uk-text-middle">{{ x.ModSlots }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Submachine Guns -->
+                    <h4 id="submachine" class="uk-text-bold">Submachine Guns</h4>
+                    <p>A submachine gun (SMG) is a fully automatic handgun designed to fire pistol cartridges. It’s used for combating targets at close range, the effective use of firing range achieved is generally not more than 200 meters.</p>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-text-center">
+                        <thead>
+                        <tr>
+                            <th class="uk-text-left">Model</th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bolt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bullseye"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-h"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-alt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-clone"></i></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="x in dSubmachine">
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Damage }}</td>
+                            <td class="uk-text-middle">{{ x.Precision }}</td>
+                            <td class="uk-text-middle">{{ x.Range }}</td>
+                            <td class="uk-text-middle">{{ x.Recoil }}</td>
+                            <td class="uk-text-middle">{{ x.ModSlots }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Assault Rifles -->
+                    <h4 id="assault" class="uk-text-bold">Assault Rifles</h4>
+                    <p>Assault rifle is a term for a relatively lightweight and compact multi-purpose military rifle. This is usually a fully automatic repeating firearm, in smaller (4.5 mm) to medium (7.62 mm) calibers. The gun type is introduced as a standard armament of the infantry in most armed forces.</p>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-text-center">
+                        <thead>
+                        <tr>
+                            <th class="uk-text-left">Model</th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bolt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bullseye"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-h"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-alt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-clone"></i></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="x in dAssault">
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Damage }}</td>
+                            <td class="uk-text-middle">{{ x.Precision }}</td>
+                            <td class="uk-text-middle">{{ x.Range }}</td>
+                            <td class="uk-text-middle">{{ x.Recoil }}</td>
+                            <td class="uk-text-middle">{{ x.ModSlots }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Designated Marksman Rifles -->
+                    <h4 id="dmr" class="uk-text-bold">Designated Marksman Rifles</h4>
+                    <p>A designated marksman rifle (DMR) is a self-loading rifle with telescopic sight. It usually covers combat distances of about 400 to 600 meters and at the same time closes the gap between assault rifle and sniper rifle.</p>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-text-center">
+                        <thead>
+                        <tr>
+                            <th class="uk-text-left">Model</th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bolt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bullseye"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-h"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-alt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-clone"></i></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="x in dDMR">
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Damage }}</td>
+                            <td class="uk-text-middle">{{ x.Precision }}</td>
+                            <td class="uk-text-middle">{{ x.Range }}</td>
+                            <td class="uk-text-middle">{{ x.Recoil }}</td>
+                            <td class="uk-text-middle">{{ x.ModSlots }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Light Machine Guns -->
+                    <h4 id="lmg" class="uk-text-bold">Light Machine Guns</h4>
+                    <p>A light machine gun (LMG) is a machine gun designed to be employed by an individual soldier, with or without an assistant and often set up for shooting standard rifle ammunition.</p>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-text-center">
+                        <thead>
+                        <tr>
+                            <th class="uk-text-left">Model</th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bolt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-bullseye"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-h"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-arrows-alt"></i></th>
+                            <th class="uk-text-center" width="55px"><i class="uk-icon-clone"></i></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="x in dLMG">
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-middle">{{ x.Damage }}</td>
+                            <td class="uk-text-middle">{{ x.Precision }}</td>
+                            <td class="uk-text-middle">{{ x.Range }}</td>
+                            <td class="uk-text-middle">{{ x.Recoil }}</td>
+                            <td class="uk-text-middle">{{ x.ModSlots }}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 id="modifications">Modifications</h3>
+                    <h4>Mod Slots</h4>
+                    <p>Weapons can be equipped with modifications that are nothing else than items. The number of modifications that can be attached is based on the number of mod slots the weapon has, which in turn depends on the weapon’s archetype, item level and rarity level.</p>
+                    <p>Beginning with classic silencers, to different types of ammunition, such as incendiary ammunition to magazine extensions, the modifications ensure that you can build the perfect weapon of your choice. The following modification types are available and also separated into sub-categories:</p>
+                    <ul class="uk-list uk-margin-large-left">
+                        <li><i class="uk-icon-square"></i> Handle (partially confirmed)</li>
+                        <li><i class="uk-icon-square"></i> Underbarrel (Short/Long)</li>
+                        <li><i class="uk-icon-square"></i> Magazine</li>
+                        <li><i class="uk-icon-square"></i> Muzzle (Small/Large)</li>
+                        <li><i class="uk-icon-square"></i> Optic (Short/Long)</li>
+                    </ul>
+                    <p>Because mods are handled as items, their quality is also based on a rarity level and item level and can have up to 2 random bonuses. Noticeable is that silencers will always have a threat reduction bonus and can therefore only get 1 other random bonus.</p>
+                    <h4>Skin Slot</h4>
+                    <p>In the fight rather meaningless, but for many players of great value are weapon skins. An additional mod slot allows you to apply either a color or a whole skin pattern to your gun.</p>
+                    <p>Here are 2 examples of the Hazmat (pre-order bonus) and National Guard (Gold Edition exclusive) skin, both for the POF P416.</p>
+                    <h4>Weapon Talents</h4>
+                    <p>Weapon talents are unlockables that allow you to customize your whole build even more. Although these unlockable abilities have nothing to do with the character’s abilities at first, they work similar to talents. They get activated when a special action is triggered. Examples are</p>
+                    <ul class="uk-list uk-margin-large-left">
+                        <li>Critical damage boost on headshot</li>
+                        <li>Regain health on critical hit</li>
+                        <li>Medkit used » increased damage for a short time</li>
+                    </ul>
+                    <p>and there are a bunch more of them. They make also use of the 3 main attributes and can sometimes depend on them.</p>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="uk-width-medium-1-4">
+                <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
+                    <ul class="uk-nav uk-nav-side uk-position-z-index" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                        <li class="uk-nav-header">Page Index</li>
+                        <li><a href="#weapons">Weapons</a></li>
+                        <li><a href="#handling">Handling and Inventory</a></li>
+                        <li><a href="#allweapons">All Weapons</a></li>
+                        <li><a href="#pistols">- Pistols</a></li>
+                        <li><a href="#shotguns">- Shotguns</a></li>
+                        <li><a href="#submachine">- Submachine Guns</a></li>
+                        <li><a href="#assault">- Assault Rifles</a></li>
+                        <li><a href="#dmr">- Designated Marksman Rifles</a></li>
+                        <li><a href="#lmg">- Light Machine Guns</a></li>
+                    </ul>
+                </div>
+                <div class="uk-panel uk-panel-box uk-margin-large-top">
+                    <p>This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated.</p>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</div>
+<!-- Content -->
+<div class="osq-block-footer uk-block uk-block-secondary uk-block-large" ng-include='"templates/footer-division.html"' ng-cloak data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}"></div>

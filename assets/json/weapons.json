@@ -1,0 +1,248 @@
+{
+  "dPistols" : [
+    {
+      "Name" : "Beretta M9",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "Beretta Px4 Storm",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "Colt M1911",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "Flare gun",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "HK USP",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    }
+  ],
+  "dShotguns" : [
+    {
+      "Name" : "Benelli M4 Super 90",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "M1014",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "Remington 1100 TAC 4",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "Saiga-12",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    }
+  ],
+  "dSubmachine" : [
+    {
+      "Name" : "HK MP5",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "KRISS Vector",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    }
+  ],
+  "dAssault" : [
+    {
+      "Name" : "ACR",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "AK-47",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "FN F2000",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "FN SCAR",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "L85 IW",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "LVOA-S",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "M4",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "Mk17 SR",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "POF P416",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "STEYR Aug",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    }
+  ],
+  "dDMR" : [
+    {
+      "Name" : "M14",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "M21",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "SRS",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    }
+  ],
+  "dLMG" : [
+    {
+      "Name" : "M249",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    },
+    {
+      "Name" : "M60E4",
+      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Damage" : "-",
+      "Precision" : "-",
+      "Range" : "-",
+      "Recoil" : "-",
+      "ModSlots" : "-"
+    }
+  ]
+}

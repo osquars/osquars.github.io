@@ -87,6 +87,11 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: "partials/division/items.html",
             controller: "PageCtrl"
         })
+        .when("/division/weapons", {
+            title: "Weapons",
+            templateUrl: "partials/division/weapons.html",
+            controller: "weaponsCtrl"
+        })
         // else 404
         .otherwise("/404", {
             title: "404",
@@ -151,5 +156,18 @@ app.controller('traitCtrl', function($scope, $http) {
         .then(function(response) {
             $scope.WeaponTraitList = response.data.WeaponTraitList;
             $scope.TrinketTraitList = response.data.TrinketTraitList;
+        });
+});
+/* Controller for Division weapons */
+app.controller('weaponsCtrl', function($scope, $http) {
+    console.log("Weapons Controller reporting for duty.");
+    $http.get('assets/json/weapons.json')
+        .then(function(response) {
+            $scope.dPistols = response.data.dPistols;
+            $scope.dShotguns = response.data.dShotguns;
+            $scope.dSubmachine = response.data.dSubmachine;
+            $scope.dAssault = response.data.dAssault;
+            $scope.dDMR = response.data.dDMR;
+            $scope.dLMG = response.data.dLMG;
         });
 });
