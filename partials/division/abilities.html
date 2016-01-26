@@ -1,0 +1,544 @@
+<!-- Content -->
+<div class="osq-block-main uk-block uk-block-default" data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}">
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid" data-uk-grid-match data-uk-grid-margin>
+            <!-- Main -->
+            <div class="uk-width-medium-3-4">
+                <div class="uk-article" id="abilities">
+                    <h1 class="uk-article-title">Abilities</h1>
+                    <p class="uk-article-lead"></p>
+                    <h2 id="skills">Skills</h2>
+                    <p>You can equip 2 base skills and 1 signature skill. Base skills can have 1 of 3 modifications and 1 master (passive) modification.</p>
+
+                    <!-- Skill Medical -->
+                    <h3 id="skills-medical">Medical</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>(*) - Signature Skill | MWU - Medical Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required MWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Pulse</td>
+                            <td>Sends out recon pulse that marks hostiles and allies through walls and covers.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">First Aid</td>
+                            <td>Deploys a device that heals all allies within a small radius.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Support Station</td>
+                            <td>Drops a support station that heals allies and can be used to revive downed allies.</td>
+                            <td>Virus Lab</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Recovery Link*</td>
+                            <td>Heals and cures nearby allies. Revives downed allies within range. Can “overheal” beyond maximum health.</td>
+                            <td>Disaster Aid</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Skill Tech -->
+                    <h3 id="skills-tech">Tech</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>(*) - Signature Skill | TWU - Tech Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required TWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Sticky Bomb</td>
+                            <td>Deploys a bomb that sticks to most surfaces and explodes when detonated remotely.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Turret</td>
+                            <td>Deploys a stationary turret that attacks nearby hostiles until it is destroyed or its battery runs out.</td>
+                            <td>Control Room</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Seeker Mine</td>
+                            <td>Deploys an automated mine that seeks out hostile targets before exploding on proximity.</td>
+                            <td>Communications</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Tactical Link*</td>
+                            <td>Increases damage and critical hit chance to a user and all nearby allies.</td>
+                            <td>Division Tech</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Skill Security -->
+                    <h3 id="skills-security">Security</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>(*) - Signature Skill | SWU - Security Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required SWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Ballistic Shield</td>
+                            <td>Equips a portal Ballistic Shield that absorbs damage. You can only use sidearm while the shield is active.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Smart Cover</td>
+                            <td>Reinforces a cover, increasing the damage and decreasing the incoming damage for all allies behind it.</td>
+                            <td>Situation Room</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Mobile Cover</td>
+                            <td>Deploys a temporary cover for one person, which provides standard cover protection until destroyed.</td>
+                            <td>Armory</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Survivor Link*</td>
+                            <td>Increases damage resistance and speed for the users and nearby allies.</td>
+                            <td>Barracks</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="talents">Talents</h2>
+                    <p>You can equip up to 4 talents. Talent slots unlocked by leveling up (or by a perk).</p>
+
+                    <!-- Talents Medical -->
+                    <h3 id="talents-medical">Medical</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>MWU - Medical Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required MWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Adrenaline</td>
+                            <td>Use a medkit when not at full health to receive an overheal.</td>
+                            <td>Decontamination Unit</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Triage</td>
+                            <td>Heal an ally with a skill to reduce skill cooldowns by 15%.</td>
+                            <td>Decontamination Unit</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Shock and Awe</td>
+                            <td>Suppress a hostile to increase movement speed by 25% for 10 seconds.</td>
+                            <td>Pharmacy</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Battle Buddy</td>
+                            <td>Revive a downed agent to reduce incoming damage by 50% for 10 seconds for both players.</td>
+                            <td>Pharmacy</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Critical Save</td>
+                            <td>Use a medkit during low health to increase damage resistance by 40% for 10 seconds.</td>
+                            <td>Counseling</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Shrapnel</td>
+                            <td>Applying Bleed to any target triggers a 30% chance to apply the effect to all targets within 10m.</td>
+                            <td>Counseling</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Combat Medic</td>
+                            <td>Use a medkit near allies to heal group members and proxies within 20m by 40%.</td>
+                            <td>Pediatric</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Strike Back</td>
+                            <td>Reach low health to reduce active skill cooldowns by 20%.</td>
+                            <td>Pediatric</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Talents Tech -->
+                    <h3 id="talents-tech">Tech</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>TWU - Tech Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required TWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Tactical Advance</td>
+                            <td>Complete a cover to cover move to increase weapon damage by 2% per meter covered for 10s.</td>
+                            <td>Central Heating</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Demolition Expert</td>
+                            <td>Kill a hostile with an explosion to increase explosion damage by 40% for 15s.</td>
+                            <td>Central Heating</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Police Up</td>
+                            <td>Kill a hostile with any skill for a 25% chance of auto-refilling all ammo types to capacity.</td>
+                            <td>SatComms</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Fear Tactics</td>
+                            <td>Applying Shock to any target triggers a 30% chance to apply the effect to all targets within 10m.</td>
+                            <td>SatComms</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Evasive Action</td>
+                            <td>During a cover to cover move incoming damage is reduced by 30%.</td>
+                            <td>Recalibration</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Tech Support</td>
+                            <td>Kill a hostile while any skill is deployed to extended any active skills duration by 10%.</td>
+                            <td>Recalibration</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Wildfire</td>
+                            <td>Applying Burn to any target triggers a 30% chance to apply the effect to all targets within 10m.</td>
+                            <td>Recharge Center</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Death by Proxy</td>
+                            <td>Destroy a hostile’s deployed skill to increase skill power by 20% for 30s.</td>
+                            <td>Recharge Center</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Talents Security -->
+                    <h3 id="talents-security">Security</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>SWU - Security Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required SWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Steady Hands</td>
+                            <td>Enter any cover to reduce recoil by 25% for 10s.</td>
+                            <td>Procurement Team</td>
+                        </tr>
+                        <tr>
+                            <td>On the Move</td>
+                            <td>Kill a hostile while moving to reduce incoming damage by 30% for 10s.</td>
+                            <td>Procurement Team</td>
+                        </tr>
+                        <tr>
+                            <td>Precision</td>
+                            <td>Headshot a hostile to pulse them for 10s.</td>
+                            <td>Guard Posts</td>
+                        </tr>
+                        <tr>
+                            <td>Chain Reaction</td>
+                            <td>Damage multiple hostiles with an explosion to apply 40% more damage from the blast.</td>
+                            <td>Guard Posts</td>
+                        </tr>
+                        <tr>
+                            <td>Desperate Times</td>
+                            <td>Reach low health to increase blind fire accuracy by 25%.</td>
+                            <td>Shooting Range</td>
+                        </tr>
+                        <tr>
+                            <td>Stopping Power</td>
+                            <td>Suppress a hostile to increase headshot damage by 25% for 10s.</td>
+                            <td>Shooting Range</td>
+                        </tr>
+                        <tr>
+                            <td>Repo Reaper</td>
+                            <td>Kill a hostile with the sidearm to receive 1 magazine for your primary weapon.</td>
+                            <td>Canine Unit</td>
+                        </tr>
+                        <tr>
+                            <td>One is None</td>
+                            <td>Headshot a hostile to have a 50% chance of not consuming the bullet.</td>
+                            <td>Canine Unit</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="perks">Perks</h2>
+                    <p>All passive.</p>
+
+                    <!-- Perks Medical -->
+                    <h3 id="perks-medical">Medical</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>MWU - Medical Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required MWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Medkits</td>
+                            <td>Increases Medkit inventory by 1 slot. 3 different base upgrades +1 each</td>
+                            <td>Clinic, Intensive Care, Pediatric Care</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Protective Measures</td>
+                            <td>Increases Virus Protection by 1, gaining access to higher contamination areas. 3 different base upgrades +1 each.</td>
+                            <td>Virus Lab, Hazmat Unit, Pharmacy</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Canned Food</td>
+                            <td>Increase Canned Food effect duration by 10s.</td>
+                            <td>Disaster Aid</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Supplier</td>
+                            <td>Collect canned food, water, energy bar and soda in the Supply Line once per hour.</td>
+                            <td>Disaster Aid</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Contamination Intel</td>
+                            <td>Reveal all contaminated areas on the map.</td>
+                            <td>Quarantine</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Hazardous Materials</td>
+                            <td>Increases Dark Zone inventory by 1 slot.</td>
+                            <td>Decontamination Unit</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Rigger</td>
+                            <td>Collect fabric (crafting materials) in the Medical Wing once per hour.</td>
+                            <td>Pharmacy</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Credit</td>
+                            <td>Increase credit gains by 10%.</td>
+                            <td>Counseling</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Talents</td>
+                            <td>Increase active talents by 1 slot.</td>
+                            <td>Build All Upgrades</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Perks Tech -->
+                    <h3 id="perks-tech">Tech</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>TWU - Tech Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required TWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="uk-text-bold">Inventory</td>
+                            <td>Increase inventory by 10 slots.</td>
+                            <td>Control Room</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Hazardous Materials</td>
+                            <td>Increases Dark Zone inventory by 1 slot.</td>
+                            <td>Communications</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Division Tech Materials</td>
+                            <td>Convert Division Tech crafting materials into other materials at the crafting station.</td>
+                            <td>Division Tech</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Engineer</td>
+                            <td>Collect electronics (crafting materials) in the Tech Wing once per hour.</td>
+                            <td>Division Tech</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Soda</td>
+                            <td>Increase Soda consumable effect duration by 10s.</td>
+                            <td>Generators</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Water</td>
+                            <td>Increase Water consumable effect duration by 10s.</td>
+                            <td>Water Purification</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Craftsman</td>
+                            <td>Collect tools (crafting materials) in the Tech Wing once per hour.</td>
+                            <td>Field Engineering</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Energy Bar</td>
+                            <td>Increase energy bar effect duration by 5s.</td>
+                            <td>Central Heating</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Resource Assessment</td>
+                            <td>Reveal all Division Tech crafting nodes on the Dark Zone map.</td>
+                            <td>SatComms</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Stat Switch</td>
+                            <td>Unlock item stat switching at the Recalibration Station.</td>
+                            <td>Recalibration</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Dark Zone Funds</td>
+                            <td>Increase looted Dark Zone fund gains by 10%.</td>
+                            <td>Recharge Center</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold">Stash</td>
+                            <td>Increase stash by 10 slots.</td>
+                            <td>Build All upgrades</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Perks Security -->
+                    <h3 id="perks-security">Security</h3>
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                        <caption>SWU - Security Wing Upgrade</caption>
+                        <thead>
+                        <tr>
+                            <th class="uk-width-1-6">Name</th>
+                            <th>Description</th>
+                            <th class="uk-width-1-6">Required SWU</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Experienced Agent</td>
+                            <td>Increase XP gained from all activities by 10%.</td>
+                            <td>Situation Room</td>
+                        </tr>
+                        <tr>
+                            <td>Grenades</td>
+                            <td>Increase the grenade inventory by 1 slot.</td>
+                            <td>Armory</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Weaponry</td>
+                            <td>Unlock advanced weapons vendor in the Security Wing.</td>
+                            <td>Armory</td>
+                        </tr>
+                        <tr>
+                            <td>Combat Veteran</td>
+                            <td>Increase XP gained from accolades by 25%.</td>
+                            <td>Barracks</td>
+                        </tr>
+                        <tr>
+                            <td>Hazardous Materials</td>
+                            <td>Increases Dark Zone inventory by 1 slot.</td>
+                            <td>Dark Zone Ops</td>
+                        </tr>
+                        <tr>
+                            <td>Black Market Vendor</td>
+                            <td>Unlock Dark Zone fund purchases in the Base of Operations.</td>
+                            <td>Dark Zone Ops</td>
+                        </tr>
+                        <tr>
+                            <td>Clothes Vendor</td>
+                            <td>Unlock a clothes vendor in the Base of Operations.</td>
+                            <td>Supply Line</td>
+                        </tr>
+                        <tr>
+                            <td>Explosive Bullets</td>
+                            <td>Increase Explosive Bullets effect duration by 10s.</td>
+                            <td>Gunsmith</td>
+                        </tr>
+                        <tr>
+                            <td>Gunsmith</td>
+                            <td>Collect weapon parts (crafting materials) in the Security Wing once per hour.</td>
+                            <td>Gunsmith</td>
+                        </tr>
+                        <tr>
+                            <td>Scavenger</td>
+                            <td>Collect items from the scavenger box in the Security Wing once per hour.</td>
+                            <td>Procurement Team</td>
+                        </tr>
+                        <tr>
+                            <td>Incendiary Bullets</td>
+                            <td>Increase Incendiary Bullets effect duration by 10s.</td>
+                            <td>Guard Posts</td>
+                        </tr>
+                        <tr>
+                            <td>Special Ammo</td>
+                            <td>Collect incendiary and explosive bullets (ammo) in the Supply Line once per hour.</td>
+                            <td>Guard Posts</td>
+                        </tr>
+                        <tr>
+                            <td>Shooting Range</td>
+                            <td>Train in Marksmanship at the Shooting Range.</td>
+                            <td>Shooting Range</td>
+                        </tr>
+                        <tr>
+                            <td>Intel Discovery</td>
+                            <td>When completing all Side Missions and Encounters in a Named Zone, reveal all undiscovered Intel on the map.</td>
+                            <td>Canine Unit</td>
+                        </tr>
+                        <tr>
+                            <td>Collector</td>
+                            <td>Increases Scavenging by 15%.</td>
+                            <td>Build All upgrades</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="uk-width-medium-1-4">
+                <div class="uk-panel uk-panel-box" data-uk-sticky="{top: 82}">
+                    <ul class="uk-nav uk-nav-side uk-position-z-index" data-uk-scrollspy-nav="{closest:'li', smoothscroll: {offset: 50} }">
+                        <li class="uk-nav-header">Page Index</li>
+                        <li><a href="#abilities">Abilities</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#skills-medical">- Medical</a></li>
+                        <li><a href="#skills-tech">- Tech</a></li>
+                        <li><a href="#skills-security">- Security</a></li>
+                        <li><a href="#talents">Talents</a></li>
+                        <li><a href="#talents-medical">- Medical</a></li>
+                        <li><a href="#talents-tech">- Tech</a></li>
+                        <li><a href="#talents-security">- Security</a></li>
+                        <li><a href="#perks">Perks</a></li>
+                        <li><a href="#perks-medical">- Medical</a></li>
+                        <li><a href="#perks-tech">- Tech</a></li>
+                        <li><a href="#perks-security">- Security</a></li>
+                    </ul>
+                </div>
+                <div class="uk-panel uk-panel-box uk-margin-large-top">
+                    <p>This content can be changed and are not officially from the Fatshark. This is my own observations, from when I played. I've been wrong before. ^_^<br>Will try to keep this updated.</p>
+                </div>
+            </aside>
+        </div>
+
+    </div>
+</div>
+<!-- Content -->
+<div class="osq-block-footer uk-block uk-block-secondary uk-block-large" ng-include='"templates/footer-division.html"' ng-cloak data-uk-scrollspy="{cls:'uk-animation-fade', delay:200}"></div>
