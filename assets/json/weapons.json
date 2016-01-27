@@ -2,7 +2,7 @@
   "dPistols" : [
     {
       "Name" : "Beretta M9",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -11,7 +11,7 @@
     },
     {
       "Name" : "Beretta Px4 Storm",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -20,7 +20,7 @@
     },
     {
       "Name" : "Colt M1911",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -29,7 +29,7 @@
     },
     {
       "Name" : "Flare gun",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -38,7 +38,7 @@
     },
     {
       "Name" : "HK USP",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -49,7 +49,7 @@
   "dShotguns" : [
     {
       "Name" : "Benelli M4 Super 90",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -58,7 +58,7 @@
     },
     {
       "Name" : "M1014",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -67,7 +67,7 @@
     },
     {
       "Name" : "Remington 1100 TAC 4",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -76,7 +76,7 @@
     },
     {
       "Name" : "Saiga-12",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -87,7 +87,7 @@
   "dSubmachine" : [
     {
       "Name" : "HK MP5",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -96,7 +96,7 @@
     },
     {
       "Name" : "KRISS Vector",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -107,7 +107,7 @@
   "dAssault" : [
     {
       "Name" : "ACR",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -116,7 +116,7 @@
     },
     {
       "Name" : "AK-47",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -125,7 +125,7 @@
     },
     {
       "Name" : "FN F2000",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -134,7 +134,7 @@
     },
     {
       "Name" : "FN SCAR",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -143,7 +143,7 @@
     },
     {
       "Name" : "L85 IW",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -152,7 +152,7 @@
     },
     {
       "Name" : "LVOA-S",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -161,7 +161,7 @@
     },
     {
       "Name" : "M4",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -170,7 +170,7 @@
     },
     {
       "Name" : "Mk17 SR",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -179,7 +179,7 @@
     },
     {
       "Name" : "POF P416",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -188,7 +188,7 @@
     },
     {
       "Name" : "STEYR Aug",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -199,7 +199,7 @@
   "dDMR" : [
     {
       "Name" : "M14",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -208,7 +208,7 @@
     },
     {
       "Name" : "M21",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -217,7 +217,7 @@
     },
     {
       "Name" : "SRS",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -228,7 +228,7 @@
   "dLMG" : [
     {
       "Name" : "M249",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",
@@ -237,7 +237,7 @@
     },
     {
       "Name" : "M60E4",
-      "Img" : "http://www.vermintide.com/wp-content/uploads/2015/09/forge_icon_bw_1h_sword.png",
+      "Img" : "http://placehold.it/60x60",
       "Damage" : "-",
       "Precision" : "-",
       "Range" : "-",

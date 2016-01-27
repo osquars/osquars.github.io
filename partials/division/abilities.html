@@ -6,13 +6,14 @@
             <div class="uk-width-medium-3-4">
                 <div class="uk-article" id="abilities">
                     <h1 class="uk-article-title">Abilities</h1>
-                    <p class="uk-article-lead"></p>
+                    <p class="uk-article-lead">The ability system in The Division compensates for the nonexistent character classes and is divided into the three main sections skills, talents and perks.</p>
                     <h2 id="skills">Skills</h2>
                     <p>You can equip 2 base skills and 1 signature skill. Base skills can have 1 of 3 modifications and 1 master (passive) modification.</p>
+                    <p>You unlock skills and mods by upgrading each wings in the Base of Operation.</p>
 
                     <!-- Skill Medical -->
                     <h3 id="skills-medical">Medical</h3>
-                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                         <caption>(*) - Signature Skill | MWU - Medical Wing Upgrade</caption>
                         <thead>
                         <tr>
@@ -22,32 +23,92 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Pulse</td>
                             <td>Sends out recon pulse that marks hostiles and allies through walls and covers.</td>
                             <td>-</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Increase range and highlights nearby loot containers.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Protects your self and team from nearby pulses.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Increase damage (and crit chance?) to enemies identified by the pulse.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Pulse provides an early warning for hostiles and lets you know if you’ve been pulsed.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">First Aid</td>
                             <td>Deploys a device that heals all allies within a small radius.</td>
                             <td>-</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>the device can revive downed allies and grant them a portion of their normal health.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>The device heals targets more efficiently, and may even extend the target’s health beyond its normal rating.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Temporarily increases damage for the affected targets in addition to the normal healing effect.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Extends duration of heal, giving allies more chance to get inside the circle.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Support Station</td>
                             <td>Drops a support station that heals allies and can be used to revive downed allies.</td>
                             <td>Virus Lab</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Revive down allies within circle.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Remove status effects for those within the circle.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Recover ammo for those within the circle and faster skill recharge.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Once device is disabled all allies receive healing.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Recovery Link*</td>
                             <td>Heals and cures nearby allies. Revives downed allies within range. Can “overheal” beyond maximum health.</td>
                             <td>Disaster Aid</td>
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <!-- Skill Tech -->
                     <h3 id="skills-tech">Tech</h3>
-                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                         <caption>(*) - Signature Skill | TWU - Tech Wing Upgrade</caption>
                         <thead>
                         <tr>
@@ -57,32 +118,92 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Sticky Bomb</td>
                             <td>Deploys a bomb that sticks to most surfaces and explodes when detonated remotely.</td>
                             <td>-</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Increase blast radius and potential for bleed effect.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Removes explosion in exchange for a blind effect.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Turn it into a proximity mine that explodes when enemies get near.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Bomb produce less light and sound so its harder for hostiles to detect.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Turret</td>
                             <td>Deploys a stationary turret that attacks nearby hostiles until it is destroyed or its battery runs out.</td>
                             <td>Control Room</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Increase damage and adds a pulse effect to enemies that it attacks.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Turns it into a flame thrower.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Make it shoot electrical shots that can shock multiple targets.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Makes turret explode if it’s manually disabled.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Seeker Mine</td>
                             <td>Deploys an automated mine that seeks out hostile targets before exploding on proximity.</td>
                             <td>Communications</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Allows mine to launch into air on impact releasing small cluster explosives.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jump between multiple targets releasing a cloud of gas.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Seperates into smaller mines that seek out multiple targets.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Bounces onto and over low cover and move directly towards target.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Tactical Link*</td>
                             <td>Increases damage and critical hit chance to a user and all nearby allies.</td>
                             <td>Division Tech</td>
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <!-- Skill Security -->
                     <h3 id="skills-security">Security</h3>
-                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
+                    <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table">
                         <caption>(*) - Signature Skill | SWU - Security Wing Upgrade</caption>
                         <thead>
                         <tr>
@@ -92,28 +213,90 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Ballistic Shield</td>
                             <td>Equips a portal Ballistic Shield that absorbs damage. You can only use sidearm while the shield is active.</td>
                             <td>-</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Makes it stronger and lighter and pulses targets that shoot it.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Strengthen shield while getting increased sidearm damage, knockback, accuracy, and reload speed.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Converts a small portion of incoming damage to the shield as healing.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Shield repairs itself after a small period of taking no damage.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Smart Cover</td>
                             <td>Reinforces a cover, increasing the damage and decreasing the incoming damage for all allies behind it.</td>
                             <td>Situation Room</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Hostiles using this cover take increased damage and do less damage while behind it.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Slow health recovery with faster skill cooldown.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Allies are immune to pulse while hostiles are pulsed when shot.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>Extends the effect to a few seconds after leaving the cover.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Mobile Cover</td>
                             <td>Deploys a temporary cover for one person, which provides standard cover protection until destroyed.</td>
                             <td>Armory</td>
                         </tr>
+                        <!-- Mods and master -->
                         <tr>
+                            <td rowspan="3" class="uk-text-bold"><i class="uk-icon-puzzle-piece"></i> Mods</td>
+                            <td>Cover extends so more than 1 person can use it.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Fit it with explosives and damages any one in front of it.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Deal increased damage while behind it and immune to pulses.</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="uk-text-bold"><i class="uk-icon-star"></i> Master</td>
+                            <td>When shield is destroyed, allies behind it will receive temporary damage resistance.</td>
+                            <td>All Mods</td>
+                        </tr>
+                        <!-- Mods and master -->
+                        <tr class="uk-panel-box-primary">
                             <td class="uk-text-bold">Survivor Link*</td>
                             <td>Increases damage resistance and speed for the users and nearby allies.</td>
                             <td>Barracks</td>
                         </tr>
                         </tbody>
                     </table>
+
+                    <hr class="uk-article-divider">
 
                     <h2 id="talents">Talents</h2>
                     <p>You can equip up to 4 talents. Talent slots unlocked by leveling up (or by a perk).</p>
@@ -172,7 +355,7 @@
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <!-- Talents Tech -->
                     <h3 id="talents-tech">Tech</h3>
                     <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
@@ -227,7 +410,7 @@
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <!-- Talents Security -->
                     <h3 id="talents-security">Security</h3>
                     <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
@@ -241,48 +424,48 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Steady Hands</td>
+                            <td class="uk-text-bold">Steady Hands</td>
                             <td>Enter any cover to reduce recoil by 25% for 10s.</td>
                             <td>Procurement Team</td>
                         </tr>
                         <tr>
-                            <td>On the Move</td>
+                            <td class="uk-text-bold">On the Move</td>
                             <td>Kill a hostile while moving to reduce incoming damage by 30% for 10s.</td>
                             <td>Procurement Team</td>
                         </tr>
                         <tr>
-                            <td>Precision</td>
+                            <td class="uk-text-bold">Precision</td>
                             <td>Headshot a hostile to pulse them for 10s.</td>
                             <td>Guard Posts</td>
                         </tr>
                         <tr>
-                            <td>Chain Reaction</td>
+                            <td class="uk-text-bold">Chain Reaction</td>
                             <td>Damage multiple hostiles with an explosion to apply 40% more damage from the blast.</td>
                             <td>Guard Posts</td>
                         </tr>
                         <tr>
-                            <td>Desperate Times</td>
+                            <td class="uk-text-bold">Desperate Times</td>
                             <td>Reach low health to increase blind fire accuracy by 25%.</td>
                             <td>Shooting Range</td>
                         </tr>
                         <tr>
-                            <td>Stopping Power</td>
+                            <td class="uk-text-bold">Stopping Power</td>
                             <td>Suppress a hostile to increase headshot damage by 25% for 10s.</td>
                             <td>Shooting Range</td>
                         </tr>
                         <tr>
-                            <td>Repo Reaper</td>
+                            <td class="uk-text-bold">Repo Reaper</td>
                             <td>Kill a hostile with the sidearm to receive 1 magazine for your primary weapon.</td>
                             <td>Canine Unit</td>
                         </tr>
                         <tr>
-                            <td>One is None</td>
+                            <td class="uk-text-bold">One is None</td>
                             <td>Headshot a hostile to have a 50% chance of not consuming the bullet.</td>
                             <td>Canine Unit</td>
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <h2 id="perks">Perks</h2>
                     <p>All passive.</p>
 
@@ -345,7 +528,7 @@
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <!-- Perks Tech -->
                     <h3 id="perks-tech">Tech</h3>
                     <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
@@ -420,7 +603,7 @@
                         </tr>
                         </tbody>
                     </table>
-
+                    <hr class="uk-article-divider">
                     <!-- Perks Security -->
                     <h3 id="perks-security">Security</h3>
                     <table cellspacing="0" cellpadding="0" ng-cloak class="uk-table uk-table-striped uk-table-hover">
@@ -434,82 +617,83 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Experienced Agent</td>
+                            <td class="uk-text-bold">Experienced Agent</td>
                             <td>Increase XP gained from all activities by 10%.</td>
                             <td>Situation Room</td>
                         </tr>
                         <tr>
-                            <td>Grenades</td>
+                            <td class="uk-text-bold">Grenades</td>
                             <td>Increase the grenade inventory by 1 slot.</td>
                             <td>Armory</td>
                         </tr>
                         <tr>
-                            <td>Advanced Weaponry</td>
+                            <td class="uk-text-bold">Advanced Weaponry</td>
                             <td>Unlock advanced weapons vendor in the Security Wing.</td>
                             <td>Armory</td>
                         </tr>
                         <tr>
-                            <td>Combat Veteran</td>
+                            <td class="uk-text-bold">Combat Veteran</td>
                             <td>Increase XP gained from accolades by 25%.</td>
                             <td>Barracks</td>
                         </tr>
                         <tr>
-                            <td>Hazardous Materials</td>
+                            <td class="uk-text-bold">Hazardous Materials</td>
                             <td>Increases Dark Zone inventory by 1 slot.</td>
                             <td>Dark Zone Ops</td>
                         </tr>
                         <tr>
-                            <td>Black Market Vendor</td>
+                            <td class="uk-text-bold">Black Market Vendor</td>
                             <td>Unlock Dark Zone fund purchases in the Base of Operations.</td>
                             <td>Dark Zone Ops</td>
                         </tr>
                         <tr>
-                            <td>Clothes Vendor</td>
+                            <td class="uk-text-bold">Clothes Vendor</td>
                             <td>Unlock a clothes vendor in the Base of Operations.</td>
                             <td>Supply Line</td>
                         </tr>
                         <tr>
-                            <td>Explosive Bullets</td>
+                            <td class="uk-text-bold">Explosive Bullets</td>
                             <td>Increase Explosive Bullets effect duration by 10s.</td>
                             <td>Gunsmith</td>
                         </tr>
                         <tr>
-                            <td>Gunsmith</td>
+                            <td class="uk-text-bold">Gunsmith</td>
                             <td>Collect weapon parts (crafting materials) in the Security Wing once per hour.</td>
                             <td>Gunsmith</td>
                         </tr>
                         <tr>
-                            <td>Scavenger</td>
+                            <td class="uk-text-bold">Scavenger</td>
                             <td>Collect items from the scavenger box in the Security Wing once per hour.</td>
                             <td>Procurement Team</td>
                         </tr>
                         <tr>
-                            <td>Incendiary Bullets</td>
+                            <td class="uk-text-bold">Incendiary Bullets</td>
                             <td>Increase Incendiary Bullets effect duration by 10s.</td>
                             <td>Guard Posts</td>
                         </tr>
                         <tr>
-                            <td>Special Ammo</td>
+                            <td class="uk-text-bold">Special Ammo</td>
                             <td>Collect incendiary and explosive bullets (ammo) in the Supply Line once per hour.</td>
                             <td>Guard Posts</td>
                         </tr>
                         <tr>
-                            <td>Shooting Range</td>
+                            <td class="uk-text-bold">Shooting Range</td>
                             <td>Train in Marksmanship at the Shooting Range.</td>
                             <td>Shooting Range</td>
                         </tr>
                         <tr>
-                            <td>Intel Discovery</td>
+                            <td class="uk-text-bold">Intel Discovery</td>
                             <td>When completing all Side Missions and Encounters in a Named Zone, reveal all undiscovered Intel on the map.</td>
                             <td>Canine Unit</td>
                         </tr>
                         <tr>
-                            <td>Collector</td>
+                            <td class="uk-text-bold">Collector</td>
                             <td>Increases Scavenging by 15%.</td>
                             <td>Build All upgrades</td>
                         </tr>
                         </tbody>
                     </table>
+                    <hr class="uk-article-divider">
                 </div>
             </div>
             <!-- Sidebar -->

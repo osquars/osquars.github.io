@@ -103,7 +103,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: "PageCtrl"
         })
         .when("/division/baseofoperation", {
-            title: "Abilities",
+            title: "Base of Operation",
             templateUrl: "partials/division/baseofoperation.html",
             controller: "PageCtrl"
         })
