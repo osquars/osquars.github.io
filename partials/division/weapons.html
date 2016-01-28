@@ -9,7 +9,7 @@
                     <p class="uk-article-lead">The weapon arsenal in The Division covers from pistols to powerful calibers like the assault rifle and marksman rifle sector.</p>
                     <h2 id="handling">Handling and Inventory</h2>
                     <p>You can carry and use up to 3 weapons simultaneously, consisting of a primary and secondary weapon plus one sidearm (pistol).</p>
-                    <p>You still have an inventory where you can have more weapons and gear that you can swap to. You will even have a storage at the Base of Opperations.</p>
+                    <p>You still have an inventory where you can have more weapons and gear that you can swap to. You will even have a stash at the Base of Opperation.</p>
                     <h2 id="allweapons">All Weapons</h2>
                     <p>All weapons are characterized by the parameters of <i class="uk-icon-bolt"></i> damage, <i class="uk-icon-crosshairs"></i> precision, <i class="uk-icon-arrows-h"></i> range, <i class="uk-icon-bullseye"></i> recoil and the number of <i class="uk-icon-clone"></i> mod slots, which can be changed and improved through appropriate extensions and attachments.</p>
 
@@ -29,7 +29,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="x in dPistols">
-                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60" class="uk-hidden-small"> {{ x.Name }}</td>
                             <td class="uk-text-middle">{{ x.Damage }}</td>
                             <td class="uk-text-middle">{{ x.Precision }}</td>
                             <td class="uk-text-middle">{{ x.Range }}</td>
@@ -55,7 +55,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="x in dShotguns">
-                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60" class="uk-hidden-small"> {{ x.Name }}</td>
                             <td class="uk-text-middle">{{ x.Damage }}</td>
                             <td class="uk-text-middle">{{ x.Precision }}</td>
                             <td class="uk-text-middle">{{ x.Range }}</td>
@@ -81,7 +81,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="x in dSubmachine">
-                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60" class="uk-hidden-small"> {{ x.Name }}</td>
                             <td class="uk-text-middle">{{ x.Damage }}</td>
                             <td class="uk-text-middle">{{ x.Precision }}</td>
                             <td class="uk-text-middle">{{ x.Range }}</td>
@@ -107,7 +107,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="x in dAssault">
-                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60" class="uk-hidden-small"> {{ x.Name }}</td>
                             <td class="uk-text-middle">{{ x.Damage }}</td>
                             <td class="uk-text-middle">{{ x.Precision }}</td>
                             <td class="uk-text-middle">{{ x.Range }}</td>
@@ -133,7 +133,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="x in dDMR">
-                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60" class="uk-hidden-small"> {{ x.Name }}</td>
                             <td class="uk-text-middle">{{ x.Damage }}</td>
                             <td class="uk-text-middle">{{ x.Precision }}</td>
                             <td class="uk-text-middle">{{ x.Range }}</td>
@@ -159,7 +159,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="x in dLMG">
-                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60"> {{ x.Name }}</td>
+                            <td class="uk-text-left"><img ng-src="{{ x.Img }}" width="60" height="60" class="uk-hidden-small"> {{ x.Name }}</td>
                             <td class="uk-text-middle">{{ x.Damage }}</td>
                             <td class="uk-text-middle">{{ x.Precision }}</td>
                             <td class="uk-text-middle">{{ x.Range }}</td>
